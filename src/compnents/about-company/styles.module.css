@@ -1,3 +1,8 @@
+.about-company {
+    margin: 100px 60px;
+    border: solid 1px red;
+}
+
 .container {
     margin-left: 60px;
     margin-right: 60px;
