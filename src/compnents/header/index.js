@@ -2,24 +2,19 @@ import MoHeaderLink from '@/molecules/header-link';
 import MoLogo from '@/compnents/logo';
 import s from './styles.module.css';
 import menuSvg from '../../assets/menu.svg';
+import { Inter } from 'next/font/google';
+
+const inter = Inter({
+    subsets: ["latin"],
+    weights: ['400']
+})
 function CoHeader() {
     return (
         <div className={s['container']}>
-            <div className={s['flex-2']}>
+            <div className={s['logo']}>
                 <MoLogo />
             </div>
-            <div className={s['flex-2']}>
-                <div>
-                    <MoHeaderLink text={'info@transline.kz'} href='/s' />
-                </div>
-                <div>
-                    <MoHeaderLink text={'+7 (707) 367-11-04'} href='/s' />
-                </div>
-            </div>
-            <div className={s['flex-2']}>
-                <MoHeaderLink text={'Направления'} href='/s' />
-            </div>
-            <div className={s['flex-3']}>
+            <div className={s['navigation-bar']}>
                 <div>
                     <MoHeaderLink text={'О компании'} href='/s' />
                 </div>
@@ -27,22 +22,27 @@ function CoHeader() {
                     <MoHeaderLink text={'Услуги'} href='/s' />
                 </div>
                 <div>
-                    <MoHeaderLink text={'Сертификаты'} href='/s' />
+                    <MoHeaderLink text={'Сервисы'} href='/s' />
+                </div>
+                <div>
+                    <MoHeaderLink text={'Авто парк'} href='/s' />
                 </div>
                 <div>
                     <MoHeaderLink text={'Контакты'} href='/s' />
                 </div>
             </div>
-            <div className={s['flex-1']}>
-                <MoHeaderLink text={'Связвться'} href='/s' />
+            <div className={s['contacts-info']}>
+                <div style={{marginBottom: 8}}>
+                    <MoHeaderLink text={'info@transline.kz'} href='/s' underLine/>
+                </div>
+                <div>
+                    <MoHeaderLink text={'+7 (707) 367-11-04'} href='/s' />
+                </div>
             </div>
-            <div className={s['flex-1']}>
-                <MoHeaderLink text={'Поиск'} href='/s' />
-            </div>
-            <div className={s['flex-1']} style={{
-                textAlign: 'right',
-            }}>
-                <MoHeaderLink text={'Меню'} href='/s' svg={menuSvg}/>
+            <div>
+                <button className={s['contact-us-button']}>
+                    <a className={inter.className}>Связаться</a>
+                </button>
             </div>
         </div>
     )
