@@ -37,3 +37,27 @@
 .flex-2 { flex: 2; }
 .flex-3 { flex: 3; }
 .flex-4 { flex: 4; }
+
+@media (max-width: 1743px) {
+    .container {
+        padding-top: 24px;
+        padding-left: 20px;
+        padding-right: 0;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .navigation-bar {
+        display: none;
+    }
+
+    .contacts-info {
+        display: none;
+    }
+
+    #hide-button {
+        display: none;
+    }
+}

@@ -39,7 +39,7 @@ function CoHeader() {
                     <MoHeaderLink text={'+7 (707) 367-11-04'} href='/s' />
                 </div>
             </div>
-            <div>
+            <div id={s['hide-button']}>
                 <button className={s['contact-us-button']}>
                     <a className={inter.className}>Связаться</a>
                 </button>
