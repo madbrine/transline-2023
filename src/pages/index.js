@@ -27,11 +27,8 @@ export default function Home() {
       <main>
         <CoHeader/>
         <CoIntro/>
-        <CoAboutCompany/>
         <CoOurServices/>
-        <CoWhyWe/>
-        <CoRegions/>
-        <CoOurClients/>
+        <CoAboutCompany/>
         <CoNews/>
         <CoSubmitApplication/>
       </main>
