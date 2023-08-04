@@ -8,8 +8,8 @@ const inter = Inter({
 function CoIntro() {
     return (
         <div className={s['container']}>
-            <h1 className={inter.className}>Крупнейшая логистическя</h1>
-            <h1 className={inter.className}>компания центральной азии</h1>
+            <h1 className={inter.className}>Крупнейшая логистическая</h1>
+            <h1 className={inter.className}>компания Центральной Азии</h1>
             <div className={s['form-container']}>
                 <div className={s['form-switches']}>
                     <a className={inter.className}>Рассчитать</a>
@@ -17,15 +17,11 @@ function CoIntro() {
                 </div>
                 <div className={s['form-inputs-container']}>
                     <div className={s['form-input']}>
-                        <input type="text" name="name"
-                            style={{ borderTopLeftRadius: 10, borderBottomLeftRadius: 10 }}
-                        />
+                        <input className={s['input-top-border']} type="text" name="name"/>
                         <input type="text" name="name" />
                         <input type="text" name="name" />
                         <input type="text" name="name" />
-                        <input type="text" name="name"
-                            style={{ borderTopRightRadius: 10, borderBottomRightRadius: 10 }}
-                        />
+                        <input className={s['input-bottom-border']} type="text" name="name"/>
                         <a>
                             <button className={inter.className}>Рассчитать</button>
                         </a>

@@ -15,41 +15,13 @@ function CoSubmitApplication() {
     return (
         <div>
             <MoBlockLine text="Оставить заявку" />
-            <div>
-                <div
-                    style={{
-                        display: 'flex',
-                        marginLeft: '60px',
-                        marginRight: '60px',
-                        justifyContent: 'space-between',
-                        alignItems: 'flex-start',
-                    }}>
-                    <div style={{
-                        width: '800px',
-                        display: 'flex',
-                    }}>
-                        <h1
-                            className={inter.className}
-                            style={{
-                                fontSize: '92px',
-                                margin: '0 0 0 0',
-                                lineHeight: '94%',
-                                display: 'inline-block',
-                            }}
-                        >
+            <div className={s['block-pos']}>
+                <div className={s['container']}>
+                    <div className={s['container-width']}>
+                        <h1 className={inter.className}>
                             Получить консультацию
                         </h1>
                     </div>
-                    <div className={s['form-input-container']}>
-                        <input className={s['form-input']} />
-                        <input className={s['form-input']} />
-                        <input className={s['form-input']}
-                            style={{ marginBottom: '19px' }}
-                        />
-                    </div>
-                </div>
-                <div className={s['line-gray']} />
-                <div className={s['contacts-and-form-finish']}>
                     <div className={s['contacts-container']}>
                         <div className={inter.className} style={{
                             width: '138px',
@@ -64,27 +36,35 @@ function CoSubmitApplication() {
                             </div>
                         </div>
                         <div className={inter.className}>
-                            <div className={s['contacts-header']}>Соц. сети:</div>
+                            <div className={s['contacts-header']}>Контакты:</div>
                             <div>
-                                <a>Facebook</a>
+                                <a>+7 (727)-367-11-04</a>
                             </div>
                             <div>
-                                <a>Twitter</a>
+                                <a>info@transline.kz</a>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className={s['contacts-and-form-finish']}>
+                    <div className={s['form-input-container']}>
+                        <input className={s['form-input']} placeholder="Имя" />
+                        <input className={s['form-input']} placeholder="Телефон" />
+                        <input className={s['form-input']} placeholder="Email" />
+                        <input className={s['form-input']} placeholder="Коментарии (не обязательно)" />
+                    </div>
                     <div className={s['form-input-finish-container']}>
-                        <input className={s['form-input']} />
                         <div className={s['form-input-button-container']}>
                             <button>Отправить</button>
                             <div className={s['form-input-button-desc']}>
-                                <a className={inter.className} style={{color: '#666'}}>Нажимая "Отправить" вы </a>
+                                <a className={inter.className} style={{ color: '#666' }}>Нажимая "Отправить" вы </a>
                                 <a className={inter.className}>соглашаетесь с обработкой персональных данных</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div className={s['line-gray']} />
         </div>
     )
 }
