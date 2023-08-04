@@ -1,0 +1,14 @@
+.news-container {
+    margin-top: 16px;
+    margin-right: 160px;
+}
+.news-line {
+    display: flex;
+    margin-left: 160px;
+    margin-bottom: 40px;
+}
+.news-line div {
+    border: solid 1px #e3e3e3;
+    width: calc((100vw - 800px)/2);
+    height: 400px;
+}

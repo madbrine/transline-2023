@@ -1,0 +1,26 @@
+.container {
+    --margin-btn-wrap: 35px;
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: calc(100px - var(--margin-btn-wrap));
+}
+.wrap-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.wrap-item {
+    height: 265px;
+    width: 424px;
+    border-radius: 11px;
+    border: solid 1px #000;
+    margin-bottom: var(--margin-btn-wrap);
+}
+.wrap-item-white {
+    height: 265px;
+    width: 424px;
+    border-radius: 11px;
+    border: solid 1px #fff;
+    margin-bottom: var(--margin-btn-wrap);
+}

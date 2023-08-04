@@ -1,0 +1,68 @@
+.container {
+    margin-top: 294px;
+    text-align: center;
+}
+.container h1 {
+    font-size: 48px;
+    height: 53px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    color: #4E4E4E
+}
+.form-container {
+    margin-top: 67px;
+}
+.form-switches {
+    padding: 6px;
+    background-color: #fff;
+    border-radius: 13px;
+    border: solid 1px #d4d4d4;
+    display:inline-flex;
+}
+.form-switches a {
+    height: 18px;
+    margin: 14px 22px;
+    font-size: 16px;
+}
+.form-inputs-container {
+    margin-top: 20px;
+}
+.form-input {
+    display: flex;
+    justify-content: center;
+
+}
+.form-input input {
+    height: 61px;
+    width: 205px;
+    margin-right: 2px;
+    border: none;
+    background-color: #4E4E4E;
+    padding: 0px 0px;
+}
+.form-input button {
+    height: 61px;
+    width: 172px;
+    border: none;
+    border-radius: 10px;
+    font-size: 19px;
+}
+.insurance-container {
+    display: flex;
+    justify-content: center;
+}
+.insurance-box {
+    width: 1204px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.insurance-box button {
+    background-color: #00ACCD;
+    border: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 6px;
+    margin-right: 8px;
+    margin-bottom: 68px;
+}

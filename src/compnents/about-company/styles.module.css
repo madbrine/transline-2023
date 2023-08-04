@@ -1,0 +1,43 @@
+.container {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.container h1 {
+    width: 1039px;
+    color: var(--black-black-100, #161616);
+    font-size: 64px;
+    font-style: normal;
+    line-height: 94%;
+    opacity: 0.6;
+    margin: 0;
+}
+.video-container {
+    margin-top: 66px;
+    aspect-ratio: 1800 / 658;
+    background-color:  #ccc;
+    border-radius: 20px;
+}
+.link-read-more {
+    border: 1px solid #999;
+    padding: 14px 25px;
+    display: inline-block;
+    margin-top: 47px;
+    border-radius: 10px;
+}
+.reason-value {
+    font-size: 69px;
+    color: #161616
+}
+.reason-line {
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+    background-color: #e3e3e3;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.reason-desc {
+    color: #161616;
+    opacity: 0.8;
+
+}
