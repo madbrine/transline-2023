@@ -17,30 +17,17 @@ function CoNews() {
         <div>
             <MoBlockLine text="Новости" />
             <div>
-                <div
-                    style={{
-                        display: 'flex',
-                        marginLeft: '60px',
-                        marginRight: '60px',
-                        justifyContent: 'space-between',
-                        alignItems: 'flex-start',
-                    }}>
-                    <h1
-                        className={inter.className}
-                        style={{
-                            fontSize: '112px',
-                            margin: '0 0 0 0'
-                        }}
-                    >
+                <div className={s['container']}>
+                    <h1 className={inter.className}>
                         Новости
                     </h1>
                     <div className={s['news-container']}>
                         <div className={s['news-line']}>
-                            <div style={{marginRight: '30px'}}></div>
+                            <div id={s['margin-card']}></div>
                             <div></div>
                         </div>
                         <div className={s['news-line']}>
-                            <div style={{marginRight: '30px'}}></div>
+                            <div id={s['margin-card']}></div>
                             <div></div>
                         </div>
                     </div>
