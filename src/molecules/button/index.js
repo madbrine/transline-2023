@@ -10,15 +10,13 @@ function MoButton(props) {
         <div className={inter.className}>
             {!props.href ?
                 <button style={props.blue ? styles.buttonBlue : styles.buttonWhite}
-                    onClick={props.onClick}
-                >
+                    onClick={props.onClick}>
                     {props.text}
                 </button>
                 :
                 <a style={props.blue ? styles.buttonBlue : styles.buttonWhite}
                     href={props.href}
-                    className={s['a-button']}
-                >
+                    className={s['a-button']}>
                     {props.text}
                 </a>
             }
@@ -38,7 +36,7 @@ const styles = {
         fontSize: '17px',
     },
     buttonWhite: {
-        backgroundColor: '#fff',
+        background: 'none',
         color: '#161616',
         padding: '9px 17px',
         border: 'solid 1px #E3E3E3',
