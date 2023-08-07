@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
 }
 
@@ -22,7 +21,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .description p {

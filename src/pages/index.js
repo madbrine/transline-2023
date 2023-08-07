@@ -12,6 +12,7 @@ import CoRegions from '@/compnents/regions'
 import CoOurClients from '@/compnents/our-clients'
 import CoNews from '@/compnents/news'
 import CoSubmitApplication from '@/compnents/submit-application'
+import CoFooter from '@/compnents/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,6 +32,7 @@ export default function Home() {
         <CoAboutCompany/>
         <CoNews/>
         <CoSubmitApplication/>
+        <CoFooter/>
       </main>
     </>
   )
