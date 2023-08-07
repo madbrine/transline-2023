@@ -1,0 +1,32 @@
+.container {
+    margin-top: 104px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.body {
+    width: 1190px;
+    display: flex;
+    margin-bottom: 120px;
+}
+.column {
+    margin-right: 193px;
+}
+.column a {
+    color: #999;
+}
+.column div {
+    font-size: 20px;
+    color: #161616;
+    opacity: 0.8;
+}
+.line {
+    height: 1px;
+    width: 1190px;
+    background-color: #999;
+    margin-bottom: 100px;
+}
+.map {
+    width: 1190px;
+    height: 385px;
+    background-color: #999;
+}

@@ -15,7 +15,8 @@ function CoIntro() {
                     <a className={inter.className}>Рассчитать</a>
                     <a className={inter.className}>Консультация</a>
                 </div>
-                <div className={s['form-inputs-container']}>
+                <div className={s['form-inputs-container']}
+                style={{marginBottom: -50,}}>
                     <div className={s['form-input']}>
                         <input className={s['input-top-border']} type="text" name="name"/>
                         <input type="text" name="name" />

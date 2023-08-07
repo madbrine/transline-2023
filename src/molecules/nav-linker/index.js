@@ -21,11 +21,14 @@ function MoNavLinker(props) {
                 <div className={inter.className}>
                     <a style={styles.text}>{props.text2}</a>
                 </div>
+
+                {/* 
                 <div style={styles.icon}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M6.66656 4.00012L5.72656 4.94012L8.7799 8.00012L5.72656 11.0601L6.66656 12.0001L10.6666 8.00012L6.66656 4.00012Z" fill="#161616" />
                     </svg>
-                </div>
+                </div> 
+                */}
             </div>
         </div>
     )

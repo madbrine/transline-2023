@@ -1,9 +1,10 @@
 .container {
-    padding-top: 294px;
+    padding-top: 284px;
     text-align: center;
     flex-shrink: 0;
-    background-image: linear-gradient(to bottom, rgba(242,242,242,0.5), rgba(242,242,242,1)), url('../../assets/truck-back.webp');
+    background-image: linear-gradient(to bottom, rgba(242,242,242,0.5), rgba(242,242,242,1)), url('../../assets/background.jpg');
     background-size: cover ;
+    background-position: bottom center;
     padding-bottom: 351px;
 }
 
@@ -12,7 +13,8 @@
     height: 53px;
     margin-block-start: 0em;
     margin-block-end: 0em;
-    color: #4E4E4E
+    color: #4E4E4E;
+
 }
 
 .form-container {
@@ -93,7 +95,7 @@
 
 @media (max-width: 1200px) {
     .container {
-        margin-top: 112px;
+        margin-top: 112px; 
     }
 
     .container h1 {

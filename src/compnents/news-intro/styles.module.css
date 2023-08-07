@@ -1,0 +1,15 @@
+.left-margin {
+    flex: 2
+}
+.news-container {
+    flex: 5;
+    display: flex;
+}
+.news-row {
+    display: flex;
+}
+.photo {
+    height: 100%;
+    background-color: aliceblue;
+    aspect-ratio: 2 / 3;
+}
