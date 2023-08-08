@@ -41,32 +41,40 @@ function SertifikatyIntro() {
                         </p>
                         <button className={s['download-button']} style={{ marginBottom: '21px' }}>
                             <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="41" viewBox="0 0 32 41" fill="none">
-                                    <path d="M28 40H4C2.067 40 0.5 38.433 0.5 36.5V4.5C0.5 2.567 2.067 1 4 1H23.3017L31.5 8.71604V36.5C31.5 38.433 29.933 40 28 40Z" fill="#E3E3E3" stroke="#E3E3E3" />
-                                </svg>
-                                <a className={s['pdf']}>PDF</a>
+                                <a href="pdf/certificate_of_conformity_ISO_9001_14001_45001.pdf" download>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="41" viewBox="0 0 32 41" fill="none">
+                                        <path d="M28 40H4C2.067 40 0.5 38.433 0.5 36.5V4.5C0.5 2.567 2.067 1 4 1H23.3017L31.5 8.71604V36.5C31.5 38.433 29.933 40 28 40Z" fill="#E3E3E3" stroke="#E3E3E3" />
+                                    </svg>
+                                    <span className={s['pdf']}>PDF</span>
+                                </a>
                             </div>
                             <div className={s['download-button-text']}>
-                                <div>Сертификат соответствия №1.pdf</div>
-                                <a>24,2 Mb</a>
+                                <a href="pdf/certificate_of_conformity_ISO_9001_14001_45001.pdf" download>
+                                    <div>Сертификат соответствия ISO 9001, 14001, 45001.pdf</div>
+                                    <span>24,2 Mb</span>
+                                </a>
                             </div>
                         </button>
                         <button className={s['download-button']} style={{ marginBottom: '21px' }}>
                             <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="41" viewBox="0 0 32 41" fill="none">
-                                    <path d="M28 40H4C2.067 40 0.5 38.433 0.5 36.5V4.5C0.5 2.567 2.067 1 4 1H23.3017L31.5 8.71604V36.5C31.5 38.433 29.933 40 28 40Z" fill="#E3E3E3" stroke="#E3E3E3" />
-                                </svg>
-                                <a className={s['pdf']}>PDF</a>
+                                <a href="pdf/certificate_of_conformity_ISO_27001.pdf" download>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="41" viewBox="0 0 32 41" fill="none">
+                                        <path d="M28 40H4C2.067 40 0.5 38.433 0.5 36.5V4.5C0.5 2.567 2.067 1 4 1H23.3017L31.5 8.71604V36.5C31.5 38.433 29.933 40 28 40Z" fill="#E3E3E3" stroke="#E3E3E3" />
+                                    </svg>
+                                    <span className={s['pdf']}>PDF</span>
+                                </a>
                             </div>
                             <div className={s['download-button-text']}
                                 style={{ marginBottom: '48px' }}>
-                                <div>Сертификат соответствия №1.pdf</div>
-                                <a>24,2 Mb</a>
+                                <a href="pdf/certificate_of_conformity_ISO_27001.pdf" download>
+                                    <div>Сертификат соответствия ISO 27001.pdf</div>
+                                    <span>24,2 Mb</span>
+                                </a>
                             </div>
                         </button>
                         <div style={{ marginTop: '64px', display: 'flex' }}>
                             <MoButton text={'Рассчитать'} blue onClick={console.log('clicked')} />
-                            <div style={{marginLeft: '21px'}}>
+                            <div style={{ marginLeft: '21px' }}>
                                 <MoButton text={'Услуги'} href="/" />
                             </div>
                         </div>
@@ -74,7 +82,7 @@ function SertifikatyIntro() {
                 </div>
                 <CoSubmitApplication />
             </div>
-        </div>
+        </div >
     )
 }
 export default SertifikatyIntro;

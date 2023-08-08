@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+import axios from 'axios';
 import MoBlockLine from "@/molecules/block-line";
 import { Inter } from "next/font/google";
 import s from './styles.module.css'
@@ -12,6 +14,40 @@ const inter = Inter({
 })
 
 function CoSubmitApplication() {
+    const [formData, setFormData] = useState({
+        name: '',
+        phone: '',
+        email: '',
+        comments: '',
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevFormData) => ({
+            ...prevFormData,
+            [name]: value,
+        }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            // Отправка данных формы на сервер
+            await axios.post('http://localhost:4444/submit-form-multimodal', formData);
+
+            // Успешное оповещение о отправке заявки
+            alert('Заявка успешно отправлена');
+        } catch (error) {
+            console.error('Ошибка при отправке заявки:', error);
+
+            console.log('Содержимое ошибки:', error.response.data);
+
+            // Оповещение об ошибке при отправке заявки
+            alert('Произошла ошибка при отправке заявки');
+        }
+    };
+
     return (
         <div>
             <MoBlockLine text="Оставить заявку" />
@@ -48,14 +84,38 @@ function CoSubmitApplication() {
                 </div>
                 <div className={s['contacts-and-form-finish']}>
                     <div className={s['form-input-container']}>
-                        <input className={s['form-input']} placeholder="Имя" />
-                        <input className={s['form-input']} placeholder="Телефон" />
-                        <input className={s['form-input']} placeholder="Email" />
-                        <input className={s['form-input']} placeholder="Коментарии (не обязательно)" />
+                        <input
+                            className={s['form-input']}
+                            placeholder="Имя"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleChange}
+                        />
+                        <input
+                            className={s['form-input']}
+                            placeholder="Телефон"
+                            name="phone"
+                            value={formData.phone}
+                            onChange={handleChange}
+                        />
+                        <input
+                            className={s['form-input']}
+                            placeholder="Email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                        />
+                        <input
+                            className={s['form-input']}
+                            placeholder="Коментарии (не обязательно)"
+                            name="comments"
+                            value={formData.comments}
+                            onChange={handleChange}
+                        />
                     </div>
                     <div className={s['form-input-finish-container']}>
                         <div className={s['form-input-button-container']}>
-                            <button>Отправить</button>
+                            <button onClick={handleSubmit}>Отправить</button>
                             <div className={s['form-input-button-desc']}>
                                 <a className={inter.className} style={{ color: '#666' }}>Нажимая "Отправить" вы </a>
                                 <a className={inter.className}>соглашаетесь с обработкой персональных данных</a>
