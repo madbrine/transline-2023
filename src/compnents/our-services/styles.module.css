@@ -5,22 +5,22 @@
     margin-right: 60px;
     margin-bottom: calc(100px - var(--margin-btn-wrap));
 }
-.wrap-container {
+.services-container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: row;
+    border-radius: 20px;
+    position: relative;
+}   
+.service {
+
+    flex: 1;
+    height: 646px;
+    padding: 30px;
+    background-color: white;
+    margin-right: 29px;
 }
-.wrap-item {
-    height: 265px;
-    width: 424px;
-    border-radius: 11px;
-    border: solid 1px #000;
-    margin-bottom: var(--margin-btn-wrap);
-}
-.wrap-item-white {
-    height: 265px;
-    width: 424px;
-    border-radius: 11px;
-    border: solid 1px #fff;
-    margin-bottom: var(--margin-btn-wrap);
+.service-image {
+    height: 278px;
+    width: 100%;
+    background-color: gray;
 }
