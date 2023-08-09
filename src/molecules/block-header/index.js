@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import s from './styles.module.css'
 
 const interM = Inter({
     subsets: ["latin"],
@@ -11,39 +12,18 @@ const inter = Inter({
 
 function MoBlockHeader(props) {
     return (
-        <div
-        style={{
-            display: 'flex',
-            marginLeft: '60px',
-            marginRight: '60px',
-            justifyContent: 'space-between',
-            alignItems: 'flex-end',
-        }}>
-            <h1 
+        <div className={s['container']}>
+            <h1
                 className={inter.className}
-                style={{
-                    fontSize: '112px',
-                    margin: '0 0 0 0'
-                }}
+                id={s['h1_style']}
             >
                 {props.text}
             </h1>
             {props.getFormButton &&
-                <div style={{
-                    border: 'solid 1px #999',
-                    borderWidth: '1px',
-                    borderColor: '#999',
-                    borderRadius: '10px',
-                    height: '48px'
-                }}>
+                <div className={s['border_style']}>
                     <a className={interM.className}
-                        style={{
-                            paddingLeft: '25px',
-                            paddingRight: '25px',
-                            paddingTop: '14px',
-                            paddingBottom: '14px',
-                            display: 'inline-block',
-                        }}>
+                        id={s['a_style']}
+                        >
                         Получить консультацию
                     </a>
                 </div>

@@ -15,7 +15,7 @@ function SertifikatyIntro() {
     return (
         <div className={inter.className}>
 
-            <div style={{ marginTop: '140px' }}>
+            <div className={s['margin-block']}>
                 <MoBlockHeader text="Сертификаты" />
                 <MoNavLinker
                     text2="Сертификаты"
@@ -31,6 +31,7 @@ function SertifikatyIntro() {
                             светотехнической лаборатории
                         </div>
                     </div>
+                    <div className={s['line']}></div>
                     <div className={s['desc']}>
                         <h2>Описание</h2>
                         <p>
