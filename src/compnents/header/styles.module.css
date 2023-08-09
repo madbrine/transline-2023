@@ -8,6 +8,7 @@
     position: fixed;
     top: 0;
     width: calc(100vw - 135px);
+    z-index: 100;
 }
 .logo { 
     margin-right: 60px; 
