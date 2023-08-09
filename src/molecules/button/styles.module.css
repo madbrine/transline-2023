@@ -1,6 +1,43 @@
-.a-button {
+#a-button {
     text-decoration: none;
     margin: 0px;
     display: flex;
     
+}
+
+.button-blue {
+    background-color: #00ACCD;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.button-white {
+    background: none;
+    color: #161616;
+    padding: 9px 17px;
+    border: solid 1px #E3E3E3;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+@media (max-width: 1200px) {
+    .button-blue {
+        padding: 0;
+        height: 44px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .button-white {
+        padding: 0;
+        height: 44px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
 }

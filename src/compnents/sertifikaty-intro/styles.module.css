@@ -58,6 +58,7 @@
     background: none;
     padding: none;
     display: flex;
+    margin-bottom: 21px;
 }
 .download-button-text {
     text-align: left;
@@ -75,8 +76,19 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%; 
-    color: #666
+    color: #666;
+    text-decoration: none;
 }
+
+.buttons {
+    margin-top: 64px;
+    display: flex;
+}
+
+.margin-button {
+    margin-left: 21px;
+}
+
 .pdf {
     position: absolute;
     font-size: 9px;
@@ -132,5 +144,30 @@
         font-size: 14px;
         margin-bottom: 18px;
         width: 100%;
+    }
+
+    .download-button {
+        margin-bottom: 24px;
+    }
+
+    #margin-top {
+        margin-top: 40px;
+    }
+
+    #margin-bottom {
+        margin-bottom: 40px;
+    }
+
+    .download-button-text div {
+        font-size: 14px;
+    }
+
+    .buttons {
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .margin-button {
+        margin-left: 0;
     }
 }

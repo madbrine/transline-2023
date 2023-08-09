@@ -14,7 +14,6 @@ const inter = Inter({
 function SertifikatyIntro() {
     return (
         <div className={inter.className}>
-
             <div className={s['margin-block']}>
                 <MoBlockHeader text="Сертификаты" />
                 <MoNavLinker
@@ -40,7 +39,7 @@ function SertifikatyIntro() {
                         <p>
                             С другой стороны дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям.
                         </p>
-                        <button className={s['download-button']} style={{ marginBottom: '21px' }}>
+                        <button className={s['download-button']} id={s['margin-top']}>
                             <div>
                                 <a href="pdf/certificate_of_conformity_ISO_9001_14001_45001.pdf" download>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="41" viewBox="0 0 32 41" fill="none">
@@ -52,11 +51,11 @@ function SertifikatyIntro() {
                             <div className={s['download-button-text']}>
                                 <a href="pdf/certificate_of_conformity_ISO_9001_14001_45001.pdf" download>
                                     <div>Сертификат соответствия ISO 9001, 14001, 45001.pdf</div>
-                                    <span>24,2 Mb</span>
+                                    <span>1,8 Mb</span>
                                 </a>
                             </div>
                         </button>
-                        <button className={s['download-button']} style={{ marginBottom: '21px' }}>
+                        <button className={s['download-button']} id={s['margin-bottom']}>
                             <div>
                                 <a href="pdf/certificate_of_conformity_ISO_27001.pdf" download>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="41" viewBox="0 0 32 41" fill="none">
@@ -65,17 +64,16 @@ function SertifikatyIntro() {
                                     <span className={s['pdf']}>PDF</span>
                                 </a>
                             </div>
-                            <div className={s['download-button-text']}
-                                style={{ marginBottom: '48px' }}>
+                            <div className={s['download-button-text']}>
                                 <a href="pdf/certificate_of_conformity_ISO_27001.pdf" download>
                                     <div>Сертификат соответствия ISO 27001.pdf</div>
-                                    <span>24,2 Mb</span>
+                                    <span>1,7 Mb</span>
                                 </a>
                             </div>
                         </button>
-                        <div style={{ marginTop: '64px', display: 'flex' }}>
+                        <div className={s['buttons']}>
                             <MoButton text={'Рассчитать'} blue onClick={console.log('clicked')} />
-                            <div style={{ marginLeft: '21px' }}>
+                            <div className={s['margin-button']}>
                                 <MoButton text={'Услуги'} href="/" />
                             </div>
                         </div>
