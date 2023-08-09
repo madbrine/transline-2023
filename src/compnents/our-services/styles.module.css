@@ -10,17 +10,23 @@
     flex-direction: row;
     border-radius: 20px;
     position: relative;
+    width: 2809px;
+    margin-left: -480px;
 }   
 .service {
-
     flex: 1;
     height: 646px;
     padding: 30px;
     background-color: white;
     margin-right: 29px;
+    border-radius: 20px;
 }
 .service-image {
     height: 278px;
     width: 100%;
     background-color: gray;
+    border-radius: 10px;
+}
+.flex-1 {
+    flex: 1;
 }
