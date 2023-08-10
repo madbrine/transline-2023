@@ -3,6 +3,7 @@ import axios from 'axios';
 import MoBlockLine from "@/molecules/block-line";
 import { Inter } from "next/font/google";
 import s from './styles.module.css'
+import VanishDiv from '@/molecules/vanish-div';
 
 const interM = Inter({
     subsets: ["latin"],
@@ -50,7 +51,9 @@ function CoSubmitApplication() {
 
     return (
         <div>
-            <MoBlockLine text="Оставить заявку" />
+            <VanishDiv>
+                <MoBlockLine text="Оставить заявку" />
+            </VanishDiv>
             <div className={s['block-pos']}>
                 <div className={s['container']}>
                     <div className={s['container-width']}>
