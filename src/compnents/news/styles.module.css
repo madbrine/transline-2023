@@ -23,6 +23,7 @@
     border: solid 1px #e3e3e3;
     width: calc((100vw - 800px)/2);
     height: 400px;
+    background-color: #999;
 }
 
 #margin-card {

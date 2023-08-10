@@ -25,8 +25,8 @@ function CoOurServices() {
     });
 
     //animate for horizontal services scroll
-    const offset1 = "start start";
-    const offset2 = "88vh end";
+    const offset1 = "150vh 100vh";
+    const offset2 = "100vh end";
 
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({

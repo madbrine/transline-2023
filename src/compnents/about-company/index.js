@@ -43,12 +43,6 @@ function CoAboutCompany() {
         target: refDesc,
         offset: ["start start", "85vh end"]
     })
-
-    const refValues = useRef(null);
-    const scrollValues = useScroll({
-        target: refDesc,
-        offset: ["start start", "85vh end"]
-    })
     //animate for horizontal services scroll
     const offset1 = "start 20vh";
     const offset2 = "70vh end";
