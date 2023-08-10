@@ -1,0 +1,43 @@
+.container {
+    margin: 0 60px;
+}
+
+.line {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 1px;
+    background-color: #e3e3e3;
+}
+
+.bar {
+    display: flex;
+    text-align: center;
+    height: 20px;
+}
+
+.text {
+    margin-right: 6px;
+    font-size: 13px;
+}
+
+.icon {
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        margin: 0 20px;
+    }
+
+    .line {
+        margin-top: 32px;
+        margin-bottom: 24px;
+    }
+
+    .text {
+        margin-right: 4px;
+    }
+}

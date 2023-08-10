@@ -4,8 +4,6 @@ import CoOurServices from "@/compnents/our-services";
 import CoSubmitApplication from "@/compnents/submit-application";
 import MoHeaderLink from "@/molecules/header-link";
 import Head from "next/head";
-import MoNavLinker from "@/molecules/nav-linker";
-import MoBlockHeader from "@/molecules/block-header";
 import KontaktyIntro from "@/compnents/kontakty-intro";
 
 function Kontakty() {
@@ -19,11 +17,6 @@ function Kontakty() {
             </Head>
             <main>
                 <CoHeader />
-                
-                <div style={{marginTop: '188px'}}>
-                    <MoBlockHeader text="Контакты" />
-                    <MoNavLinker text2="Контакты" />
-                </div>
                 <KontaktyIntro/>
                 <CoSubmitApplication />
                 <CoFooter />
