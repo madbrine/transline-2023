@@ -44,6 +44,14 @@
     margin-top: 47px;
 }
 
+.services-intro .button-1 {
+    display: block;
+}
+
+.services-intro .button-2 {
+    display: none;
+}
+
 .line {
     width: 100%;
     height: 1px;
@@ -56,6 +64,7 @@
     height: 454px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .desc {
@@ -104,4 +113,105 @@
     height: 100%;
     background-color: gray;
     border-radius: 20px;
+}
+
+@media (max-width: 1200px) {
+    .margin-block {
+        margin-top: 114px;
+    }
+
+    .container {
+        margin-top: 64px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .services-intro {
+        background-image: url('../../assets/services-intro-mobile.png');
+        padding-left: 0;
+        padding-bottom: 0;
+        margin-bottom: 92px;
+    }
+
+    .services-intro p {
+        font-size: 14px;
+        width: auto;
+        height: 140px;
+        line-height: 20px;
+        margin: 0 25px;
+    }
+
+    .services-intro a {
+        width: auto;
+        height: 44px;
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+
+    .services-intro .button-1 {
+        display: none;
+    }
+
+    .services-intro .button-2 {
+        display: block;
+    }
+
+    .line {
+        margin: 32px 0;
+    }
+
+    .service {
+        height: 509px;
+        flex-direction: column-reverse;
+    }
+
+    .desc {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: solid 1px red
+    }
+
+    .desc h1 {
+        border: solid 1px red;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 40px;
+        margin-bottom: 8px;
+    }
+
+    .desc p {
+        color: #161616;
+        font-size: 17px;
+        line-height: 23px;
+        width: 477px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .desc a {
+        width: 128px;
+        height: 40px;
+        background-color: #00ACCD;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    .img {
+        width: 100%;
+        height: 245px;
+        background-color: gray;
+        border-radius: 20px;
+    }
 }

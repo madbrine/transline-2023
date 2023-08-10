@@ -2,6 +2,7 @@ import MoBlockHeader from "@/molecules/block-header";
 import MoNavLinker from "@/molecules/nav-linker";
 import { Inter } from "next/font/google";
 import s from './styles.module.css'
+import CoSubmitApplication from "../submit-application";
 
 const inter = Inter({
     subsets: ['latin'],
@@ -20,7 +21,8 @@ function ServicesIntro() {
                 <div className={s['container']}>
                     <div className={s['services-intro']}>
                         <p>Транспортная группа TRANSLINE предлагает широкий спектр логистических решений с использованием возможностей собственного автомобильного транспорта в Крупнейших портах Азии и СНГ и разветвленной сети представительств по всему миру.</p>
-                        <a>Получить консультацию</a>
+                        <div className={s['button-1']}><a>Получить консультацию</a></div>
+                        <div className={s['button-2']}><a>Рассчитать</a></div>
                     </div>
                     <div className={s['line']} />
                     <div className={s['service']}>
@@ -140,6 +142,7 @@ function ServicesIntro() {
                         </div>
                     </div>
                 </div>
+                <CoSubmitApplication />
             </div>
         </div>
     )
