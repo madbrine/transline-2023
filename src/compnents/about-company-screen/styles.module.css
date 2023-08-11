@@ -1,0 +1,37 @@
+.container {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.header {
+    color: #4E4E4E;
+    font-size: 58px;
+    line-height: 110%; /* 63.8px */
+    letter-spacing: -1.16px;
+    font-weight: 400;
+    margin-top: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    width: 806px;
+}
+.header-photo {
+    margin-top: 60px;
+    height: 486px;
+    width: 100%;
+    background-color: #999;
+}
+.box {
+    flex: 1;
+    display: flex;
+}
+.left {
+    border: solid 1px red;
+    flex: 1;
+    height: 600px;
+}
+.right {
+    border: solid 1px blue;
+    flex: 1;
+    padding-left: 20px;
+    height: 600px;
+}

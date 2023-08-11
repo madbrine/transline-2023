@@ -3,7 +3,7 @@ import s from './styles.module.css';
 function CoUslugi() {
     return(
         <div>
-
+            
         </div>
     )
 }
