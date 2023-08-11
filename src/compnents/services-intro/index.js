@@ -16,7 +16,7 @@ function ServicesIntro() {
                 <MoBlockHeader text="Услуги" />
                 <MoNavLinker
                     text2="Услуги"
-                    link2="/services"
+                    link2="/vidy-perevozok"
                 />
                 <div className={s['container']}>
                     <div className={s['services-intro']}>
@@ -33,8 +33,9 @@ function ServicesIntro() {
                             </div>
                             <a>Подробнее</a>
                         </div>
-                        <div>
+                        <div className={s['pos-count']}>
                             <div className={s['img']} />
+                            <span>01</span>
                         </div>
                     </div>
                     <div className={s['line']} />
@@ -46,8 +47,9 @@ function ServicesIntro() {
                             </div>
                             <a>Подробнее</a>
                         </div>
-                        <div>
+                        <div className={s['pos-count']}>
                             <div className={s['img']} />
+                            <span>02</span>
                         </div>
                     </div>
                     <div className={s['line']} />
@@ -59,8 +61,9 @@ function ServicesIntro() {
                             </div>
                             <a>Подробнее</a>
                         </div>
-                        <div>
+                        <div className={s['pos-count']}>
                             <div className={s['img']} />
+                            <span>03</span>
                         </div>
                     </div>
                     <div className={s['line']} />
@@ -72,8 +75,9 @@ function ServicesIntro() {
                             </div>
                             <a>Подробнее</a>
                         </div>
-                        <div>
+                        <div className={s['pos-count']}>
                             <div className={s['img']} />
+                            <span>04</span>
                         </div>
                     </div>
                     <div className={s['line']} />
@@ -85,8 +89,9 @@ function ServicesIntro() {
                             </div>
                             <a>Подробнее</a>
                         </div>
-                        <div>
+                        <div className={s['pos-count']}>
                             <div className={s['img']} />
+                            <span>05</span>
                         </div>
                     </div>
                     <div className={s['line']} />
@@ -98,8 +103,9 @@ function ServicesIntro() {
                             </div>
                             <a>Подробнее</a>
                         </div>
-                        <div>
+                        <div className={s['pos-count']}>
                             <div className={s['img']} />
+                            <span>06</span>
                         </div>
                     </div>
                     <div className={s['line']} />
@@ -111,21 +117,9 @@ function ServicesIntro() {
                             </div>
                             <a>Подробнее</a>
                         </div>
-                        <div>
+                        <div className={s['pos-count']}>
                             <div className={s['img']} />
-                        </div>
-                    </div>
-                    <div className={s['line']} />
-                    <div className={s['service']}>
-                        <div className={s['desc']}>
-                            <div>
-                                <h1>Складские услуги</h1>
-                                <p>Максимальное качество транспортно-экспедиционных услуг при минимальных затратах.</p>
-                            </div>
-                            <a>Подробнее</a>
-                        </div>
-                        <div>
-                            <div className={s['img']} />
+                            <span>07</span>
                         </div>
                     </div>
                     <div className={s['line']} />
@@ -137,8 +131,9 @@ function ServicesIntro() {
                             </div>
                             <a>Подробнее</a>
                         </div>
-                        <div>
+                        <div className={s['pos-count']}>
                             <div className={s['img']} />
+                            <span>08</span>
                         </div>
                     </div>
                 </div>
