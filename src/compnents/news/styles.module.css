@@ -12,7 +12,7 @@
 
 .news-container {
     margin-top: 16px;
-    margin-right: 160px;
+    margin-left: 170px;
 }
 .news-line {
     display: flex;
@@ -28,6 +28,10 @@
 
 #margin-card {
     margin-right: 30px;
+}
+
+.news-items {
+    border: solid 1px red;
 }
 
 @media (max-width: 1200px) {

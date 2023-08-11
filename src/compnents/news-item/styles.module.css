@@ -1,5 +1,5 @@
 .news-item {
-    width: 654px;
+    max-width: 654px;
     height: 608px;
     display: flex;
     flex-direction: column;
