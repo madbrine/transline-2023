@@ -9,3 +9,16 @@
     display: flex;
     justify-content: flex-end;
 }
+
+@media (max-width: 1200px) {
+    .margin-block{
+        margin-top: 114px;
+    }
+
+    .container {
+        margin-top: 54px;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: none;
+    }
+}
