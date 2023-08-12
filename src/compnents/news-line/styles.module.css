@@ -1,0 +1,24 @@
+.news-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.news-item-wrapper {
+    margin-right: 36px;
+    margin-bottom: 36px;
+}
+
+.news-item-wrapper:nth-child(2n) {
+    margin-right: 0;
+}
+
+@media (max-width: 1200px) {
+    .news-line {
+        flex-direction: column;
+    }
+    
+    .news-item-wrapper {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+}

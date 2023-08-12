@@ -1,15 +1,24 @@
-.left-margin {
-    flex: 2
+.margin-block {
+    margin-top: 188px;
 }
-.news-container {
-    flex: 5;
+
+.container {
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
     display: flex;
+    justify-content: flex-end;
 }
-.news-row {
-    display: flex;
-}
-.photo {
-    height: 100%;
-    background-color: aliceblue;
-    aspect-ratio: 2 / 3;
+
+@media (max-width: 1200px) {
+    .margin-block{
+        margin-top: 114px;
+    }
+
+    .container {
+        margin-top: 54px;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: none;
+    }
 }
