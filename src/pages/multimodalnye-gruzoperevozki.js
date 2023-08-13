@@ -10,7 +10,7 @@ import photo1 from '../assets/auto-cargo-1.webp';
 import photo2 from '../assets/auto-cargo-2.webp';
 import photo3 from '../assets/auto-cargo-3.webp';
 
-function AvtomobilnyeGruzoperevozki() {
+function MultimodalnyeGruzoperevozki() {
     return (
         <>
             <Head>
@@ -22,7 +22,7 @@ function AvtomobilnyeGruzoperevozki() {
             <main>
                 <CoHeader />
                 <CoService
-                    MoBlockHeader="Автомобильные перевозки"
+                    MoBlockHeader="Мультимодальные перевозки"
                     HeaderPhoto={headerPhoto}
                     MoNavLinkerText2="Автомобильные перевозки"
                     MoNavLinkerLink2="/avtomobilnye-gruzoperevozki"
@@ -82,4 +82,4 @@ function AvtomobilnyeGruzoperevozki() {
         </>
     )
 }
-export default AvtomobilnyeGruzoperevozki;
+export default MultimodalnyeGruzoperevozki;

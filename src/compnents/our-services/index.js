@@ -16,7 +16,7 @@ const inter = Inter({
     subsets: ['latin'],
     weight: '400'
 })
-function CoOurServices() {
+function CoOurServices(props) {
 
     const refMoBlockLine = useRef(null);
     const scrollMoBlockLine = useScroll({
@@ -65,12 +65,14 @@ function CoOurServices() {
                     ref={refMoBlockHeader}
                     style={{ opacity: scrollMoBlockHeader.scrollYProgress }}
                 >
-                    <MoBlockHeader
-                        text="Решения, для компаний, любой сложности"
-                        small
-                        getFormButton
-                        buttonText="Все услуги"
-                    />
+                    {!props.withoutHeader &&
+                        <MoBlockHeader
+                            text="Решения, для компаний, любой сложности"
+                            small
+                            getFormButton
+                            buttonText="Все услуги"
+                        />
+                    }
                 </motion.div>
                 <div className={s['container']}>
                     <div className={inter.className}>
@@ -105,7 +107,7 @@ function CoOurServices() {
                                         </div>
                                     </div>
                                     <div>
-                                        <MoButton text='Узнать больше' blue href='/'/>
+                                        <MoButton text='Узнать больше' blue href='/' />
                                     </div>
                                 </div>
                             </div>
@@ -147,7 +149,7 @@ function CoOurServices() {
                                             Авиа перевозки
                                         </div>
                                         <div className={s['service-desc']}>
-                                        Мы обладаем знаниями, необходимыми для обслуживания широкого спектра отраслей
+                                            Мы обладаем знаниями, необходимыми для обслуживания широкого спектра отраслей
                                         </div>
                                     </div>
                                     <div >

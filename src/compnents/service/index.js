@@ -4,6 +4,7 @@ import VanishDiv from '@/molecules/vanish-div';
 import MoBlockHeader from '@/molecules/block-header';
 import MoNavLinker from '@/molecules/nav-linker';
 import MoBlockLine from '@/molecules/block-line';
+import Image from 'next/image';
 
 const inter = Inter({
     subsets: ['latin'],
@@ -25,22 +26,37 @@ function CoService(props) {
                 </VanishDiv>
                 <div className={s['header-container']}>
                     <VanishDiv big>
-                        <div className={s['header-photo']}></div>
+                        <div className={s['header-photo']}>
+                            <Image
+                                src={props.HeaderPhoto}
+                                objectFit="cover"
+                                layout="fill"
+                                style={{ borderRadius: 21 }}
+                            />
+                        </div>
                     </VanishDiv>
                 </div>
                 <VanishDiv>
                     <MoBlockLine text="Об услуге" />
                 </VanishDiv>
                 <div className={s['container']}>
-                    <VanishDiv big>
                         <div className={s['content-block']}>
                             <div className={s['content-photo']}>
+                                <Image
+                                    src={props.Photo1}
+                                    objectFit="cover"
+                                    layout="fill"
+                                    style={{ borderRadius: 20 }}
+                                />
                             </div>
                             <div className={s['margin-between']} />
                             <div className={s['content-box']}>
                                 <div className={s['box-header']}>
                                     {props.BoxHeader1}
                                 </div>
+                                <a>
+
+                                </a>
                                 {props.BoxDesc1.map((desc, key) =>
                                     <div key={key}>
                                         <a className={s['box-desc']}>{desc}</a>
@@ -50,44 +66,66 @@ function CoService(props) {
                                 </a>
                             </div>
                         </div>
-                    </VanishDiv>
-                    <VanishDiv big>
                         <div className={s['content-block']}>
                             <div className={s['content-box']}>
                                 <div className={s['box-header']}>
                                     {props.BoxHeader2}
+                                </div>
+                                <div style={{
+                                    marginBottom: '30px',
+                                    color: '#666'
+                                }}>
+                                    {props.BoxPreDesc2}
                                 </div>
                                 {props.BoxDesc2.map((desc, key) =>
                                     <div key={key}>
                                         <a className={s['box-desc']}>{desc}</a>
                                     </div>
                                 )}
-                                <a className={s['box-desc']}>
+                                <a style={{ color: '#666' }}>
+                                    {props.BoxPostDesc2}
                                 </a>
                             </div>
                             <div className={s['margin-between']} />
-                            <div className={s['content-photo']} />
+                            <div className={s['content-photo']}>
+                                <Image
+                                    src={props.Photo2}
+                                    objectFit="cover"
+                                    layout="fill"
+                                    style={{ borderRadius: 20 }}
+                                />
+                            </div>
                         </div>
-                    </VanishDiv>
-                    <VanishDiv >
                         <div className={s['content-block']}>
                             <div className={s['content-photo']}>
+                                <Image
+                                    src={props.Photo3}
+                                    objectFit="cover"
+                                    layout="fill"
+                                    style={{ borderRadius: 20 }}
+                                />
                             </div>
                             <div className={s['margin-between']} />
                             <div className={s['content-box']}>
                                 <div className={s['box-header']}>
                                     {props.BoxHeader3}
                                 </div>
+                                <div style={{
+                                    marginBottom: '30px',
+                                    color: '#666'
+                                }}>
+                                    {props.BoxPreDesc3}
+                                </div>
                                 {props.BoxDesc3.map((desc, key) =>
                                     <div key={key}>
                                         <a className={s['box-desc']}>{desc}</a>
                                     </div>
                                 )}
-                                <a className={s['box-desc']}>
+                                <a style={{ color: '#666' }}>
+                                    {props.BoxPostDesc3}
                                 </a>
                             </div>
                         </div>
-                    </VanishDiv>
                 </div>
             </div>
         </div>
