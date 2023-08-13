@@ -45,10 +45,10 @@ function CoIntro() {
                 ref={refForm}
                 style={{ opacity: ScrollForm.scrollYProgress }}
             >
-                <div className={s['form-switches']}>
+                {/* <div className={s['form-switches']}>
                     <a className={inter.className}>Рассчитать</a>
                     <a className={inter.className}>Консультация</a>
-                </div>
+                </div> */}
                 <div className={s['form-inputs-container']}
                     style={{ marginBottom: -50, }}>
                     <div className={s['form-input']}>

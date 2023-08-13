@@ -37,20 +37,20 @@ function CoOurServices() {
     });
 
     //animate for horizontal services scroll
-    const offset1 = "150vh 100vh";
-    const offset2 = "100vh end";
+    const offset1 = "start start";
+    const offset2 = "90vh end";
 
     const ref = useRef(null);
-    const { scrollYProgress } = useScroll({
-        target: ref,
+    const a = useScroll({
+        target: refMoBlockLine,
         offset: [offset1, offset2]
     });
-    const a = useScroll({
-        target: ref,
+    const b = useScroll({
+        target: refMoBlockLine,
         offset: [offset2, offset1]
     });
-    const leftY = useSpring(scrollYProgress, { stiffness: 100, damping: 20 });
-    const rightY = useSpring(a.scrollYProgress, { stiffness: 100, damping: 20 });
+    // const leftY = useSpring(scrollYProgress, { stiffness: 100, damping: 20 });
+    // const rightY = useSpring(a.scrollYProgress, { stiffness: 100, damping: 20 });
 
     return (
         <div>
@@ -69,6 +69,7 @@ function CoOurServices() {
                         text="Решения, для компаний, любой сложности"
                         small
                         getFormButton
+                        buttonText="Все услуги"
                     />
                 </motion.div>
                 <div className={s['container']}>
@@ -80,7 +81,7 @@ function CoOurServices() {
                         >
                             <motion.div className={s['flex-1']}
                                 style={{
-                                    flex: leftY,
+                                    flex: a.scrollYProgress,
                                     position: 'static'
                                 }}
                             >
@@ -104,7 +105,7 @@ function CoOurServices() {
                                         </div>
                                     </div>
                                     <div>
-                                        <MoButton text='sd' blue href='/'/>
+                                        <MoButton text='Узнать больше' blue href='/'/>
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +128,7 @@ function CoOurServices() {
                                         </div>
                                     </div>
                                     <div >
-                                        <MoButton text='sd' blue href='/' />
+                                        <MoButton text='Узнать больше' blue href='/' />
                                     </div>
                                 </div>
                             </div>
@@ -150,7 +151,7 @@ function CoOurServices() {
                                         </div>
                                     </div>
                                     <div >
-                                        <MoButton text='sd' blue href='/' />
+                                        <MoButton text='Узнать больше' blue href='/' />
                                     </div>
                                 </div>
                             </div>
@@ -173,13 +174,13 @@ function CoOurServices() {
                                         </div>
                                     </div>
                                     <div >
-                                        <MoButton text='sd' blue href='/' />
+                                        <MoButton text='Узнать больше' blue href='/' />
                                     </div>
                                 </div>
                             </div>
                             <motion.div className={s['flex-1']}
                                 style={{
-                                    flex: rightY,
+                                    flex: b.scrollYProgress,
                                     position: 'static'
                                 }}
                             >

@@ -9,8 +9,8 @@
     display: flex;
     flex-direction: row;
     border-radius: 20px;
-    width: 2809px;
-    margin-left: -480px;
+    width: calc(166vw - 180px);
+    margin-left: calc(-33vw + 60px);
 }
 .service {
     flex: 1;
