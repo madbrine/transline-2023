@@ -14,11 +14,11 @@ function MoButton(props) {
                     {props.text}
                 </button>
                 :
-                <a className={props.blue ? s['button-blue'] : s['button-white']}
-                    href={props.href}
-                    id={s['a-button']}>
-                    {props.text}
-                </a>
+                    <a className={props.blue ? s['button-blue'] : s['button-white']}
+                        href={props.href}
+                        id={s['a-button']}>
+                        {props.text}
+                    </a>
             }
         </div>
     )
