@@ -81,8 +81,8 @@
 .map {
     width: 1190px;
     height: 385px;
-    background-color: #999;
     border-radius: 10px;
+    border: solid 1px #999
 }
 
 @media (max-width: 1200px) {

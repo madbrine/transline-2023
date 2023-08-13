@@ -1,0 +1,22 @@
+.margin {
+    margin-top: 188px;
+}
+.container {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 100px;
+}
+.header-photo {
+    width: 100%;
+    height: 544px;
+    position: relative;
+    margin-bottom: 96px;
+}
+.desc {
+    width: 580px;
+    margin-bottom: 24px;
+}
+.desc a {
+    color: #161616;
+    opacity: 0.8;
+}

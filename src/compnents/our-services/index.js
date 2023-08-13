@@ -49,8 +49,8 @@ function CoOurServices(props) {
         target: refMoBlockLine,
         offset: [offset2, offset1]
     });
-    // const leftY = useSpring(scrollYProgress, { stiffness: 100, damping: 20 });
-    // const rightY = useSpring(a.scrollYProgress, { stiffness: 100, damping: 20 });
+    const leftY = useSpring(a.scrollYProgress, { stiffness: 100, damping: 20 });
+    const rightY = useSpring(b.scrollYProgress, { stiffness: 100, damping: 20 });
 
     return (
         <div>
@@ -67,7 +67,7 @@ function CoOurServices(props) {
                 >
                     {!props.withoutHeader &&
                         <MoBlockHeader
-                            text="Решения, для компаний, любой сложности"
+                            text="Решения для вашего бизнеса"
                             small
                             getFormButton
                             buttonText="Все услуги"
@@ -83,7 +83,7 @@ function CoOurServices(props) {
                         >
                             <motion.div className={s['flex-1']}
                                 style={{
-                                    flex: a.scrollYProgress,
+                                    flex: leftY,
                                     position: 'static'
                                 }}
                             >
@@ -182,7 +182,7 @@ function CoOurServices(props) {
                             </div>
                             <motion.div className={s['flex-1']}
                                 style={{
-                                    flex: b.scrollYProgress,
+                                    flex: rightY,
                                     position: 'static'
                                 }}
                             >
