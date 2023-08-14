@@ -1,22 +1,100 @@
-html, body {
+html,
+body {
     margin: 0px;
     padding: 0px;
     background-color: #f2f2f2;
     max-width: 100%;
     overflow-x: hidden;
 }
-html, a {
+
+html,
+a {
     font-size: 17px;
 }
+
 .not-found-container {
     margin: 240px 60px;
     opacity: 0.8;
     display: flex;
     align-items: center;
 }
+
+.spasibo-container {
+    margin-top: 114px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.spasibo-container h1 {
+    color: #333333;
+    font-size: 148px;
+    font-weight: 400;
+    line-height: 148px;
+    height: auto;
+    margin: 0;
+}
+
+.spasibo-text {
+    margin: 0;
+    color: #333333;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46px;
+    height: auto;
+    margin-top: 130px;
+    padding-right: 60px;
+}
+
+.spasibo-text p {
+    margin: 0;
+}
+
+.text-1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #e3e3e3;
+    margin-top: 106px;
+}
+
 @media(max-width:767px) {
 
-.not-found-container {
-    display: block;
+    .not-found-container {
+        display: block;
+    }
+
+
 }
+
+@media(max-width:1200px) {
+    .spasibo-container {
+        margin-top: 150px;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .spasibo-container h1 {
+        font-size: 64px;
+        line-height: 64px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .spasibo-text {
+        margin-top: 0;
+        padding-right: 10px;
+        font-size: 24px;
+        line-height: 31px;
+        margin-bottom: 80px;
+    }
 }
