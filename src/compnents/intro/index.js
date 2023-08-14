@@ -28,20 +28,24 @@ function CoIntro() {
     return (
         <div className={inter.className}>
             <div className={s['container']}>
-                <motion.h1
-                    ref={refH1}
-                    style={{ opacity: ScrollH1.scrollYProgress }}
-                    className={inter.className}
-                >
-                    Крупнейшая логистическая
-                </motion.h1>
-                <motion.h1
-                    ref={refH2}
-                    style={{ opacity: ScrollH2.scrollYProgress }}
-                    className={inter.className}
-                >
-                    компания Центральной Азии
-                </motion.h1>
+                <div className={s['header']}>
+                    <div>
+                        <motion.h1
+                            ref={refH1}
+                            style={{ opacity: ScrollH1.scrollYProgress }}
+                            className={inter.className}
+                        >
+                            Крупнейшая логистическая
+                        </motion.h1>
+                        <motion.h1
+                            ref={refH2}
+                            style={{ opacity: ScrollH2.scrollYProgress }}
+                            className={inter.className}
+                        >
+                            компания Центральной Азии
+                        </motion.h1>
+                    </div>
+                </div>
                 <motion.div className={s['form-container']}
                     ref={refForm}
                     style={{ opacity: ScrollForm.scrollYProgress }}
@@ -77,7 +81,7 @@ function CoIntro() {
                     </div>
                 </motion.div>
             </div>
-        </div>
+        </div >
     );
 }
 export default CoIntro;

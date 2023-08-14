@@ -1,11 +1,11 @@
 .container {
-    padding-top: 284px;
+    padding-top: calc(100vh - 900px);
     text-align: center;
     flex-shrink: 0;
-    background-image: linear-gradient(to bottom, rgba(242, 242, 242, 0.5), rgba(242, 242, 242, 1)), url('../../assets/background2.jpeg');
+    background-image: linear-gradient(to bottom, rgba(242, 242, 242, 0.5), rgba(242, 242, 242, 1)), url('../../assets/index-background.webp');
     background-size: cover;
-    background-position: center 70%;
-    padding-bottom: 351px;
+    background-position: center top;
+    padding-bottom: 580px;
 }
 
 .container h1 {
@@ -53,7 +53,7 @@
     width: 205px;
     margin-right: 2px;
     border: none;
-    background-color: #f2f2f2;
+    background-color: #fff;
     padding-left: 20px;
     color: black;
     font-size: 15px;
