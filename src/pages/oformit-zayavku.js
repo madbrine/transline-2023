@@ -16,7 +16,7 @@ import CoFooter from '@/compnents/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function OformitZayavku() {
     const formData = {
         from: 's',
         to: 'sd',
