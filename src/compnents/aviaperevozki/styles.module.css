@@ -71,14 +71,14 @@
 }
 
 .text-img {
-    width: 761px;
+    width: 740px;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.text-img h1 {
+.margin-block h1 {
     color: #161616;
     font-size: 64px;
     font-weight: 400;
@@ -121,6 +121,10 @@
     padding-left: 14px;
 }
 
+#padding-p {
+    padding-right: 14px;
+}
+
 .text-img p {
     color: #161616;
     font-size: 17px;
@@ -129,4 +133,17 @@
     margin: 0;
     margin-top: 12px;
     width: 370px;
+}
+
+.about-last {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-last img {
+    margin-top: 57px;
+}
+
+.services {
+    margin: 0 60px;
 }

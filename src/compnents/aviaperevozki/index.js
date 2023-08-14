@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import s from './styles.module.css';
 import MoNavLinker from "@/molecules/nav-linker";
 import MoBlockLine from "@/molecules/block-line";
+import CoBlockServices from "../add-block-services";
 
 const inter = Inter({
     subsets: ['latin'],
@@ -38,7 +39,7 @@ export default function AviaperevozkiIntro() {
                         </div>
                     </div>
                     <div className={s['about']} id={s['height-about']}>
-                        <div className={s['text-img']}>
+                        <div className={s['text-img']} id={s['padding-p']}>
                             <h1>Размеры авиаперевозок</h1>
                             <div>
                                 <p>Хотя у нас есть планы и опыт по обработке грузов различных форм и размеров, по-прежнему действуют ограничения по весу и габаритам.</p>
@@ -46,9 +47,14 @@ export default function AviaperevozkiIntro() {
                                 <p>Протяни руку, и давайте начнем разговор. Поговори с одним из наших экспертов по решениям.</p>
                             </div>
                         </div>
-                        <img className={s['about-img']} src="/aviaperevozki/aviaperevozki-about-2.png"></img>
+                        <img className={s['about-img']} src="/aviaperevozki/aviaperevozki-about-2.png" />
+                    </div>
+                    <div className={s['about-last']}>
+                        <h1>Воздушный чартер с оплатой</h1>
+                        <img src="/aviaperevozki/aviaperevozki-about-3.png" />
                     </div>
                 </div>
+                <CoBlockServices />
             </div>
 
         </div>
