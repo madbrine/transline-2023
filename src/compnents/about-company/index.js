@@ -178,7 +178,7 @@ function CoAboutCompany() {
                                     <div style={{}}>
                                         <div className={s['reason-value-big']}>100 млн</div>
                                         <div className={s['reason-line']} />
-                                        <div className={s['reason-desc']}>Страхование груза на 100 млн тенге</div>
+                                        <div className={s['reason-desc']}>Страхование на 100 млн тенге</div>
                                         <div className={s['reason-desc']}> </div>
                                     </div>
                                 </div>
@@ -190,7 +190,7 @@ function CoAboutCompany() {
                                     marginBottom: '140px'
                                 }}>
                                     <div style={{ width: '290px', marginRight: '90px' }}>
-                                        <div className={s['reason-value']}>300+</div>
+                                        <div className={s['reason-value']}>350+</div>
                                         <div className={s['reason-line']} />
                                         <a className={s['reason-desc']}>Единиц собственного транспорта</a>
                                     </div>
