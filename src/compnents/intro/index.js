@@ -52,19 +52,25 @@ function CoIntro() {
                 <div className={s['form-inputs-container']}
                     style={{ marginBottom: -50, }}>
                     <div className={s['form-input']}>
-                        <input className={s['input-top-border']} type="text" name="name" />
-                        <input type="text" name="name" />
-                        <input type="text" name="name" />
-                        <input type="text" name="name" />
-                        <input className={s['input-bottom-border']} type="text" name="name" />
+                        <input className={s['input-top-border']} type="text" name="name" placeholder="Откуда" />
+                        <input type="text" name="name" placeholder="Куда" />
+                        <div className={s['input-container']}>
+                            <input className={s['input-field']} type="text" name="name" placeholder="Объем" />
+                            <span className={s['input-addon']}>м³</span>
+                        </div>
+                        <div className={s['input-container']}>
+                            <input className={s['input-field']} type="text" name="name" placeholder="Вес" />
+                            <span className={s['input-addon']}>тонн</span>
+                        </div>
+                        <input className={s['input-bottom-border']} type="text" name="name" placeholder="Описание груза" />
                         <a>
                             <button className={inter.className}>Рассчитать</button>
                         </a>
                     </div>
                     <div className={s['insurance-container']}>
                         <div className={s['insurance-box']}>
-                            <button></button>
-                            <div className={inter.className}> Требуется страхование</div>
+                            <input className={s['insurance-checkbox']} type='checkbox' />
+                            <div className={inter.className} id={s['text-insurance']}> Требуется страхование</div>
                         </div>
                     </div>
                 </div>
