@@ -21,11 +21,14 @@ function MoBlockHeader(props) {
             </h1>
             {props.getFormButton &&
                 <div className={s['border_style']}>
-                    <a className={interM.className}
+                    <div className={interM.className}
                         id={s['a_style']}
                         >
-                        Получить консультацию
-                    </a>
+                        {props.buttonText ?
+                            props.buttonText :
+                            "Получить консультацию"
+                        }
+                    </div>
                 </div>
             }
         </div>

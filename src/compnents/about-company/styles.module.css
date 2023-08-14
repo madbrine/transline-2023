@@ -23,8 +23,8 @@
 .photos-position {
     position: absolute;
     display: flex;
-    width: 3204px;
-    margin-left: -400px;
+    width: calc( 166vw - 180px);
+    margin-left: calc(-33vw - 60px);
 }
 .image-flex {
     flex: 1;
@@ -34,8 +34,8 @@
     flex: 0.8;
     margin-right: 30px;
     height: 596px;
-    background-color: #999;
     border-radius: 18px;
+    position: relative;
 }
 .link-read-more {
     border: 1px solid #999;

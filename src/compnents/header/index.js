@@ -3,6 +3,7 @@ import MoLogo from '@/compnents/logo';
 import s from './styles.module.css';
 import menuSvg from '../../assets/menu.svg';
 import { Inter } from 'next/font/google';
+import CoApplicationModal from '../application-modal';
 
 const inter = Inter({
     subsets: ["latin"],
@@ -16,33 +17,34 @@ function CoHeader() {
             </div>
             <div className={s['navigation-bar']}>
                 <div>
-                    <MoHeaderLink text={'О компании'} href='/s' />
+                    <MoHeaderLink text={'О компании'} href='/o-kompanii' />
                 </div>
                 <div>
-                    <MoHeaderLink text={'Услуги'} href='/s' />
+                    <MoHeaderLink text={'Услуги'} href='/vidy-perevozok' />
                 </div>
-                <div>
+                {/* <div>
                     <MoHeaderLink text={'Сервисы'} href='/s' />
+                </div> */}
+                <div>
+                    <MoHeaderLink text={'Авто парк'} href='/avtopark' />
                 </div>
                 <div>
-                    <MoHeaderLink text={'Авто парк'} href='/s' />
-                </div>
-                <div>
-                    <MoHeaderLink text={'Контакты'} href='/s' />
+                    <MoHeaderLink text={'Контакты'} href='/kontakty' />
                 </div>
             </div>
             <div className={s['contacts-info']}>
                 <div style={{marginBottom: 8}}>
-                    <MoHeaderLink text={'info@transline.kz'} href='/s' underLine/>
+                    <MoHeaderLink text={'info@transline.kz'} underLine/>
                 </div>
                 <div>
-                    <MoHeaderLink text={'+7 (707) 367-11-04'} href='/s' />
+                    <MoHeaderLink text={'+7 (707) 367-11-04'} />
                 </div>
             </div>
             <div id={s['hide-button']}>
                 <button className={s['contact-us-button']}>
                     <a className={inter.className}>Связаться</a>
                 </button>
+                <CoApplicationModal />
             </div>
         </div>
     )

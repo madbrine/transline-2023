@@ -3,8 +3,13 @@ import MoBlockLine from "@/molecules/block-line";
 import VanishDiv from "@/molecules/vanish-div";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { Inter } from "next/font/google";
+import Image from "next/image";
 import { useRef } from "react";
 import s from './styles.module.css';
+import photoAbout1 from '../../assets/about1.webp';
+import photoAbout2 from '../../assets/about2.webp';
+import photoAbout3 from '../../assets/about3.webp';
+import photoAbout4 from '../../assets/about4.webp';
 
 const inter = Inter({
     subsets: [
@@ -89,10 +94,38 @@ function CoAboutCompany() {
                                 flex: leftY,
                             }}
                         />
-                        <div className={s['image']} />
-                        <div className={s['image']} />
-                        <div className={s['image']} />
-                        <div className={s['image']} />
+                        <div className={s['image']}>
+                            <Image 
+                                src={photoAbout1}
+                                objectFit="cover"
+                                layout="fill"
+                                style={{borderRadius: 18}}
+                            />
+                        </div>
+                        <div className={s['image']}>
+                            <Image 
+                                src={photoAbout2}
+                                objectFit="cover"
+                                layout="fill"
+                                style={{borderRadius: 18}}
+                            />
+                        </div>
+                        <div className={s['image']}>
+                            <Image 
+                                src={photoAbout3}
+                                objectFit="cover"
+                                layout="fill"
+                                style={{borderRadius: 18}}
+                            />
+                        </div>
+                        <div className={s['image']}>
+                            <Image 
+                                src={photoAbout4}
+                                objectFit="cover"
+                                layout="fill"
+                                style={{borderRadius: 18}}
+                            />
+                        </div>
                         <motion.div
                             className={s['image-flex']}
                             style={{

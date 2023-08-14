@@ -40,3 +40,7 @@
     background-size: 20px 1px;
     background-repeat: repeat-x;
 }
+.circle-container {
+    display: flex;
+    width: calc(100vw - 120px)
+}

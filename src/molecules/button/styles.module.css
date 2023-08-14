@@ -2,7 +2,6 @@
     text-decoration: none;
     margin: 0px;
     display: flex;
-    
 }
 
 .button-blue {
@@ -13,6 +12,8 @@
     border: none;
     cursor: pointer;
     font-size: 17px;
+    display: inline-block;
+    text-align: center;
 }
 
 .button-white {
