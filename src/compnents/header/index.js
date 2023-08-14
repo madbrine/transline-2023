@@ -44,7 +44,7 @@ function CoHeader() {
                 <button className={s['contact-us-button']}>
                     <a className={inter.className}>Связаться</a>
                 </button>
-                <CoApplicationModal />
+                {/* <CoApplicationModal /> */}
             </div>
         </div>
     )

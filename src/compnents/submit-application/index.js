@@ -16,7 +16,7 @@ const inter = Inter({
     weight: '400'
 })
 
-function CoSubmitApplication() {
+function CoSubmitApplication(props) {
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
@@ -115,6 +115,27 @@ function CoSubmitApplication() {
                 </div>
                 <div className={s['contacts-and-form-finish']}>
                     <div className={s['form-input-container']}>
+                        {
+                            props.formData &&
+                            props.formData.from &&
+                            props.formData.to &&
+                            props.formData.volume &&
+                            props.formData.weight &&
+                            <div className={inter.className}>
+                                <div className={s['form-input']}>
+                                    {props.formData.from}
+                                </div>
+                                <div className={s['form-input']}>
+                                    {props.formData.to}
+                                </div>
+                                <div className={s['form-input']}>
+                                    {props.formData.volume}
+                                </div>
+                                <div className={s['form-input']}>
+                                    {props.formData.weight}
+                                </div>
+                            </div>
+                        }
                         <input
                             className={s['form-input']}
                             placeholder="Имя"
