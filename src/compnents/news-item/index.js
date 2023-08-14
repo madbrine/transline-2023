@@ -8,7 +8,7 @@ const inter = Inter({
     weights: '400'
 })
 
-const NewsItem = ({ img, content, date, tag }) => {
+const NewsItem = ({ img, content, date, tag, title, text1, text2, img_text1, img_text2, text3, text4, text5, text6, text7 }) => {
     const [isModalWindowOpen, setIsModalWindowOpen] = useState(false);
 
     const handleOpenModalWindow = () => {
@@ -34,6 +34,16 @@ const NewsItem = ({ img, content, date, tag }) => {
                     </div>
                 </div>
             </div>
+            <span className={s['hide-news']}>{title}</span>
+            <span className={s['hide-news']}>{text1}</span>
+            <span className={s['hide-news']}>{text2}</span>
+            <img className={s['hide-news']} src={img_text1} />
+            <span className={s['hide-news']}>{text3}</span>
+            <span className={s['hide-news']}>{text4}</span>
+            <span className={s['hide-news']}>{text5}</span>
+            <span className={s['hide-news']}>{text6}</span>
+            <img className={s['hide-news']} src={img_text2} />
+            <span className={s['hide-news']}>{text7}</span>
             <ModalWindow isOpen={isModalWindowOpen} onClose={handleCloseModalWindow} img={img} content={content} date={date} tag={tag} />
         </div>
     );

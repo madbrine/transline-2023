@@ -56,6 +56,10 @@
     background-color: #e3e3e3;
 }
 
+.hide-news {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     .news-item {
         width: 100%;

@@ -27,4 +27,5 @@ function NewsIntro() {
         </div>
     )
 }
+
 export default NewsIntro;

@@ -4,18 +4,249 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Выше, чем другой контент */
+    z-index: 1000;
 }
 
 .modalContent {
     background-color: white;
-    width: 70%;
-    padding: 20px;
-    border-radius: 8px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 76%;
+    height: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    overflow-y: auto; /* Включить вертикальный скроллинг при необходимости */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.title {
+    height: 96px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.arrows-pos {
+    display: flex;
+    flex-direction: row;
+}
+
+.arrow-l {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.5px #E3E3E3;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.arrow-r {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.5px #E3E3E3;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#arrow-margin {
+    margin-right: 11px;
+}
+
+.container p {
+    max-width: 782px;
+}
+
+.text-title {
+    color: #161616;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.modalContent button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 60px;
+    margin-top: 24px;
+    color: #161616;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    border: solid 1px #EEEEEE;
+    border-radius: 10px;
+    width: 130px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.modalContent img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.preview-img {
+    height: 469px;
+    width: 100%;
+}
+
+.modalContent p {
+    margin: 0;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #e3e3e3;
+}
+
+#margin-line {
+    margin-bottom: 80px;
+}
+
+.text-date {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.date {
+    color: #999999;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.text {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding-bottom: 32px;
+    color: #161616;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.img-text {
+    border-radius: 20px;
+    margin-top: 48px;
+    margin-bottom: 80px;
+}
+
+.horizontal-container {
+    display: flex;
+    overflow-x: auto;
+    margin-left: 60px;
+    margin-bottom: 117px;
+}
+
+.element {
+    flex-shrink: 0;
+    margin-right: 32px;
+    white-space: normal;
+}
+
+#element-margin-right {
+    margin-right: 60px;
+}
+
+@media (max-width: 1200px) {
+    .modalContent {
+        width: 100%;
+    }
+
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        align-items: flex-start;
+    }
+
+    .title {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+
+    .arrows-pos {
+        margin-bottom: 20px;
+    }
+
+    .text-title {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .preview-img {
+        height: 300px;
+        width: 100%;
+    }
+
+    #margin-line {
+        margin-bottom: 0;
+    }
+
+    .text-date {
+        flex-direction: column;
+    }
+
+    .date {
+        font-size: 12px;
+        line-height: 16px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .text {
+        padding-bottom: 16px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .img-text {
+        border-radius: 20px;
+        margin-top: 24px;
+        margin-bottom: 36px;
+    }
+
+    .horizontal-container {
+        margin-left: 20px;
+        margin-bottom: 94px;
+    }
+
+    .element {
+        flex-shrink: 0;
+        margin-right: 32px;
+        white-space: normal;
+        width: 320px;
+    }
+
+    #element-margin-right {
+        margin-right: 20px;
+    }
 }

@@ -4,6 +4,8 @@ import MoBlockLine from "@/molecules/block-line";
 import { Inter } from "next/font/google";
 import s from './styles.module.css'
 import VanishDiv from '@/molecules/vanish-div';
+import validator from 'validator';
+import InputMask from 'react-input-mask';
 
 const interM = Inter({
     subsets: ["latin"],
@@ -22,6 +24,8 @@ function CoSubmitApplication() {
         comments: '',
     });
 
+    const [errors, setErrors] = useState({});
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevFormData) => ({
@@ -33,6 +37,13 @@ function CoSubmitApplication() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        // Проверяем валидность данных перед отправкой
+        const validationErrors = validateForm(formData);
+        if (Object.keys(validationErrors).length > 0) {
+            setErrors(validationErrors);
+            return;
+        }
+
         try {
             // Отправка данных формы на сервер
             await axios.post('http://localhost:4444/submit-form-multimodal', formData);
@@ -41,12 +52,29 @@ function CoSubmitApplication() {
             alert('Заявка успешно отправлена');
         } catch (error) {
             console.error('Ошибка при отправке заявки:', error);
-
             console.log('Содержимое ошибки:', error.response.data);
 
             // Оповещение об ошибке при отправке заявки
             alert('Произошла ошибка при отправке заявки');
         }
+    };
+
+    const validateForm = (data) => {
+        const errors = {};
+
+        if (validator.isEmpty(data.name)) {
+            errors.name = 'Введите имя';
+        }
+
+        if (!validator.isMobilePhone(data.phone, 'any', { strictMode: false })) {
+            errors.phone = 'Введите корректный номер телефона';
+        }
+
+        if (!validator.isEmail(data.email)) {
+            errors.email = 'Введите корректный email';
+        }
+
+        return errors;
     };
 
     return (
@@ -94,13 +122,20 @@ function CoSubmitApplication() {
                             value={formData.name}
                             onChange={handleChange}
                         />
-                        <input
-                            className={s['form-input']}
-                            placeholder="Телефон"
-                            name="phone"
+                        <InputMask
+                            mask="+7 (999) 999-99-99"
                             value={formData.phone}
                             onChange={handleChange}
-                        />
+                        >
+                            {(inputProps) => (
+                                <input
+                                    {...inputProps}
+                                    className={`${s['form-input']} ${errors.phone ? s['error'] : ''}`}
+                                    placeholder="Телефон"
+                                    name="phone"
+                                />
+                            )}
+                        </InputMask>
                         <input
                             className={s['form-input']}
                             placeholder="Email"
