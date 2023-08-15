@@ -10,7 +10,6 @@ const inter = Inter({
 export default function CoBlockServices() {
     return (
         <div className={inter.className}>
-            <MoBlockLine text="Другие услуги" />
             <div className={s['block-services']}>
                 <div className={s['service']} id={s['margin-left']}>
                     <img src="/services/avto-service.png" />

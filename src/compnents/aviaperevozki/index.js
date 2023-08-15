@@ -54,6 +54,7 @@ export default function AviaperevozkiIntro() {
                         <img src="/aviaperevozki/aviaperevozki-about-3.png" />
                     </div>
                 </div>
+                <MoBlockLine text="Другие услуги" />
                 <CoBlockServices />
             </div>
 

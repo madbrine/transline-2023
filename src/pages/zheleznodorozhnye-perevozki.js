@@ -2,9 +2,8 @@ import CoFooter from "@/compnents/footer";
 import CoHeader from "@/compnents/header";
 import CoSubmitApplication from "@/compnents/submit-application";
 import Head from "next/head";
-import AvtoperevozkiIntro from "@/compnents/avtoperevozki";
 
-function AvtomobilnyeGruzoperevozki() {
+export default function ZheleznodorozhnyePerevozki() {
     return (
         <>
             <Head>
@@ -15,11 +14,10 @@ function AvtomobilnyeGruzoperevozki() {
             </Head>
             <main>
                 <CoHeader />
-                <AvtoperevozkiIntro />
+                
                 <CoSubmitApplication />
                 <CoFooter />
             </main>
         </>
     )
 }
-export default AvtomobilnyeGruzoperevozki;

@@ -146,6 +146,16 @@
     width: 370px;
 }
 
+.special-p p {
+    width: 100%; 
+    margin-top: 22px;
+}
+
+#margin-p {
+    margin-top: 64px;
+    margin-bottom: 18px;
+}
+
 .about-last {
     display: flex;
     flex-direction: column;
