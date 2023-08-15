@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     height: 646px;
-    margin-left: 60px;
     overflow-x: auto;
 }
 
@@ -58,6 +57,10 @@
     color: white;
     border-radius: 10px;
     cursor: pointer;
+}
+
+#margin-left {
+    margin-left: 60px;
 }
 
 #margin-right {

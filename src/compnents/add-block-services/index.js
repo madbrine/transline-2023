@@ -12,7 +12,7 @@ export default function CoBlockServices() {
         <div className={inter.className}>
             <MoBlockLine text="Другие услуги" />
             <div className={s['block-services']}>
-                <div className={s['service']}>
+                <div className={s['service']} id={s['margin-left']}>
                     <img src="/services/avto-service.png" />
                     <div className={s['text']}>
                         <div>
