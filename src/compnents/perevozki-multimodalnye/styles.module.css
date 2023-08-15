@@ -15,8 +15,7 @@
 .intro {
     width: auto;
     height: 544px;
-    background-image: url('/zheleznodorozhnye-perevozki/zheleznodorozhnye-intro.png'),
-        linear-gradient(0deg, rgba(0, 0, 0, 0.36) 0%, rgba(0, 0, 0, 0.36) 100%);
+    background-image: url('/multimodalnye-perevozki/multimodalnye-intro.png');
     background-position: center;
     background-size: cover;
     border-radius: 21px;
@@ -55,7 +54,7 @@
 }
 
 .about {
-    height: 832px;
+    height: 807px;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -78,12 +77,12 @@
 }
 
 .about-special {
-    height: auto;
+    height: 524px;
     width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 112px;
 }
 
@@ -119,7 +118,7 @@
 }
 
 .margin-top {
-    margin-top: 64px;
+    margin-top: 52px;
 }
 
 .margin-top div {
@@ -135,14 +134,15 @@
     position: relative;
     padding-left: 14px;
     margin-top: 12px;
+    width: 580px;
 }
 
 .text-img li:before {
     content: '';
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    transform: translateY(130%);
     width: 6px;
     height: 6px;
     background-color: #161616;
@@ -161,7 +161,7 @@
     padding-right: 14px;
 }
 
-.text-img p {
+.short-p {
     color: #161616;
     font-size: 17px;
     font-weight: 400;
@@ -171,9 +171,14 @@
     width: 370px;
 }
 
-.special-p p {
-    width: 100%;
-    margin-top: 0;
+.long-p {
+    color: #161616;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+    margin: 0;
+    margin-top: 12px;
+    width: 580px;
 }
 
 #margin-p {

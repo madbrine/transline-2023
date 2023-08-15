@@ -15,8 +15,7 @@
 .intro {
     width: auto;
     height: 544px;
-    background-image: url('/zheleznodorozhnye-perevozki/zheleznodorozhnye-intro.png'),
-        linear-gradient(0deg, rgba(0, 0, 0, 0.36) 0%, rgba(0, 0, 0, 0.36) 100%);
+    background-image: url('/zheleznodorozhnye-perevozki/zheleznodorozhnye-intro.png');
     background-position: center;
     background-size: cover;
     border-radius: 21px;
