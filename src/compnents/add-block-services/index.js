@@ -61,7 +61,7 @@ export default function CoBlockServices() {
                         <a>Узнать больше</a>
                     </div>
                 </div>
-                <div className={s['service']}>
+                <div className={s['service']} id={s['margin-right']}>
                     <img src="/services/arenda-service.jpeg" />
                     <div className={s['text']}>
                         <div>
