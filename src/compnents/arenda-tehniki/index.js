@@ -10,7 +10,7 @@ const inter = Inter({
     weights: '400'
 })
 
-export default function NegabaritnyeIntro() {
+export default function ArendaTehnikiIntro() {
     return (
         <div className={inter.className}>
             <div className={s['margin-block']}>
