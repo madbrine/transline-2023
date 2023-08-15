@@ -22,9 +22,9 @@ function CoHeader() {
                 <div>
                     <MoHeaderLink text={'Услуги'} href='/vidy-perevozok' />
                 </div>
-                {/* <div>
-                    <MoHeaderLink text={'Сервисы'} href='/s' />
-                </div> */}
+                <div>
+                    <MoHeaderLink text={'Сертификаты'} href='/sertifikaty' />
+                </div>
                 <div>
                     <MoHeaderLink text={'Авто парк'} href='/avtopark' />
                 </div>

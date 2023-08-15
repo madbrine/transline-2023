@@ -7,9 +7,9 @@ import Image from "next/image";
 import { useRef } from "react";
 import s from './styles.module.css';
 import photoAbout1 from '../../assets/about1.webp';
-import photoAbout2 from '../../assets/about2.webp';
-import photoAbout3 from '../../assets/about3.webp';
-import photoAbout4 from '../../assets/about4.webp';
+import photoAbout2 from '../../assets/truck-1.webp';
+import photoAbout3 from '../../assets/about2.webp';
+import photoAbout4 from '../../assets/truck-2.webp';
 
 const inter = Inter({
     subsets: [
@@ -65,7 +65,7 @@ function CoAboutCompany() {
     const rightY = useSpring(a.scrollYProgress, { stiffness: 100, damping: 20 });
 
     return (
-        <div>
+        <div className={inter.className}>
             <motion.div
                 ref={refMoBlockLine}
                 style={{ opacity: scrollMoBlockLine.scrollYProgress }}
@@ -95,35 +95,35 @@ function CoAboutCompany() {
                             }}
                         />
                         <div className={s['image']}>
-                            <Image 
+                            <Image
                                 src={photoAbout1}
                                 objectFit="cover"
                                 layout="fill"
-                                style={{borderRadius: 18}}
+                                style={{ borderRadius: 18 }}
                             />
                         </div>
                         <div className={s['image']}>
-                            <Image 
+                            <Image
                                 src={photoAbout2}
                                 objectFit="cover"
                                 layout="fill"
-                                style={{borderRadius: 18}}
+                                style={{ borderRadius: 18 }}
                             />
                         </div>
                         <div className={s['image']}>
-                            <Image 
+                            <Image
                                 src={photoAbout3}
                                 objectFit="cover"
                                 layout="fill"
-                                style={{borderRadius: 18}}
+                                style={{ borderRadius: 18 }}
                             />
                         </div>
                         <div className={s['image']}>
-                            <Image 
+                            <Image
                                 src={photoAbout4}
                                 objectFit="cover"
                                 layout="fill"
-                                style={{borderRadius: 18}}
+                                style={{ borderRadius: 18 }}
                             />
                         </div>
                         <motion.div
@@ -132,6 +132,41 @@ function CoAboutCompany() {
                                 flex: rightY,
                             }}
                         />
+                    </div>
+
+                    <div className={s['photos-position-mobile']}>
+                        <div className={s['image']}>
+                            <Image
+                                src={photoAbout1}
+                                objectFit="cover"
+                                layout="fill"
+                                style={{ borderRadius: 18 }}
+                            />
+                        </div>
+                        <div className={s['image']}>
+                            <Image
+                                src={photoAbout2}
+                                objectFit="cover"
+                                layout="fill"
+                                style={{ borderRadius: 18 }}
+                            />
+                        </div>
+                        <div className={s['image']}>
+                            <Image
+                                src={photoAbout3}
+                                objectFit="cover"
+                                layout="fill"
+                                style={{ borderRadius: 18 }}
+                            />
+                        </div>
+                        <div className={s['image']}>
+                            <Image
+                                src={photoAbout4}
+                                objectFit="cover"
+                                layout="fill"
+                                style={{ borderRadius: 18 }}
+                            />
+                        </div>
                     </div>
                 </motion.div>
                 <div style={{ display: 'flex' }}>
@@ -150,10 +185,8 @@ function CoAboutCompany() {
                     </div>
                 </div>
                 <div className={s['reason-container']}>
-                    <motion.div className={inter.className}
+                    <motion.div className={s['reason-header']}
                         style={{
-                            fontSize: '23px',
-                            width: '660px',
                             opacity: scrollDesc.scrollYProgress,
                         }} >
                         Преимущества
@@ -189,7 +222,7 @@ function CoAboutCompany() {
                                     justifyContent: 'space-between',
                                     marginBottom: '140px'
                                 }}>
-                                    <div style={{ width: '290px', marginRight: '90px' }}>
+                                    <div className={s['reason-box-1']}>
                                         <div className={s['reason-value']}>350+</div>
                                         <div className={s['reason-line']} />
                                         <a className={s['reason-desc']}>Единиц собственного транспорта</a>
