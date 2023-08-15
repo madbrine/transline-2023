@@ -71,7 +71,7 @@ export default function CoBlockServices() {
                         <a>Узнать больше</a>
                     </div>
                 </div>
-                <div className={s['service']}>
+                {/* <div className={s['service']}>
                     <img src="/services/tamoj-service.jpeg" />
                     <div className={s['text']}>
                         <div>
@@ -90,7 +90,7 @@ export default function CoBlockServices() {
                         </div>
                         <a>Узнать больше</a>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

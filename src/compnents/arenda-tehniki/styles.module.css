@@ -11,7 +11,7 @@
 .intro {
     width: auto;
     height: 544px;
-    background-image: url('/negabarit-perevozki/negabarit-intro.png');
+    background-image: url('/arenda-tehniki/arenda-intro.png');
     background-position: center;
     background-size: cover;
     border-radius: 21px;
@@ -26,9 +26,16 @@
 .intro p {
     color: white;
     font-size: 17px;
-    width: 477px;
-    height: 115px;
     line-height: 23px;
+    margin: 0;
+}
+
+.intro-text {
+    width: 610px;
+    height: 178px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .intro a {
@@ -41,7 +48,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin-top: 47px;
+    margin-top: 60px;
 }
 
 .container-body {
@@ -49,8 +56,8 @@
     margin-right: 136px;
 }
 
-.about {
-    height: 526px;
+.about-1 {
+    height: 391px;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -59,7 +66,27 @@
     margin-bottom: 112px;
 }
 
-.about a {
+.about-2 {
+    height: 605px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 112px;
+}
+
+.about-3 {
+    height: 807px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 112px;
+}
+
+.about-3 a {
     color: white;
     background-color: #00ACCD;
     border-radius: 10px;
