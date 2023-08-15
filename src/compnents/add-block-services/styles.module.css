@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     height: 646px;
-    overflow-x: auto;
+    overflow-x: scroll;
 }
 
 .service {
@@ -65,4 +65,49 @@
 
 #margin-right {
     margin-right: 60px;
+}
+
+@media (max-width: 1200px) {
+    .block-services {
+        height: 514px;
+    }
+
+    .service {
+        width: 400px;
+        padding: 16px 14px;
+        margin-right: 8px;
+    }
+
+    .service img {
+        height: 183px;
+    }
+
+    .text {
+        height: 261px;
+    }
+
+    .text h2 {
+        font-size: 20px;
+        line-height: 22px;
+        width: 322px;
+    }
+
+    .text p {
+        width: 288px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .text a {
+        width: 100%;
+        height: 48px;
+    }
+
+    #margin-left {
+        margin-left: 20px;
+    }
+
+    #margin-right {
+        margin-right: 20px;
+    }
 }

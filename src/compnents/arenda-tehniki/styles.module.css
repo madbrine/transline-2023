@@ -11,7 +11,7 @@
 .intro {
     width: auto;
     height: 544px;
-    background-image: url('../../assets/aviaperevozki-intro.png');
+    background-image: url('/arenda-tehniki/arenda-intro.png');
     background-position: center;
     background-size: cover;
     border-radius: 21px;
@@ -26,9 +26,16 @@
 .intro p {
     color: white;
     font-size: 17px;
-    width: 477px;
-    height: 115px;
     line-height: 23px;
+    margin: 0;
+}
+
+.intro-text {
+    width: 610px;
+    height: 178px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .intro a {
@@ -41,7 +48,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin-top: 47px;
+    margin-top: 60px;
 }
 
 .container-body {
@@ -49,8 +56,8 @@
     margin-right: 136px;
 }
 
-.about {
-    height: 548px;
+.about-1 {
+    height: 391px;
     width: auto;
     display: flex;
     flex-direction: row;
@@ -59,8 +66,41 @@
     margin-bottom: 112px;
 }
 
-#height-about {
-    height: 584px;
+.about-2 {
+    height: 605px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 112px;
+}
+
+.about-3 {
+    height: 807px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 112px;
+}
+
+.about-3 a {
+    color: white;
+    background-color: #00ACCD;
+    border-radius: 10px;
+    width: 234px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 64px;
+}
+
+.margin-top-about-1 {
+    margin-top: 52px;
 }
 
 .about-img {
@@ -78,6 +118,10 @@
     justify-content: space-between;
 }
 
+.text-margin {
+    margin-top: 87px;
+}
+
 .margin-block h1 {
     color: #161616;
     font-size: 64px;
@@ -86,8 +130,12 @@
     margin: 0;
 }
 
-.text-img div {
+.margin-top {
     margin-top: 52px;
+}
+
+.margin-top div {
+    margin-top: 30px;
 }
 
 .text-img li {
@@ -126,31 +174,14 @@
     padding-right: 14px;
 }
 
-.text-img p {
+.long-p {
     color: #161616;
     font-size: 17px;
     font-weight: 400;
     line-height: 23px;
     margin: 0;
     margin-top: 12px;
-    width: 370px;
-}
-
-.about-last {
-    display: flex;
-    flex-direction: column;
-}
-
-.about-last img {
-    margin-top: 57px;
-    height: 588px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.services {
-    margin: 0 60px;
+    width: 580px;
 }
 
 @media (max-width: 1200px) {
@@ -169,20 +200,22 @@
         padding-bottom: 25px;
         padding-right: 25px;
         margin-bottom: 0;
-        background-image: url('/aviaperevozki/aviaperevozki-intro-mobile.png');
     }
 
     .intro p {
-        width: 100%;
-        height: 114px;
         font-size: 13px;
         line-height: 19px;
+    }
+
+    .intro-text {
+        width: 250px;
+        height: 279px;
     }
 
     .intro a {
         width: 100%;
         height: 44px;
-        margin-top: 24px;
+        margin-top: 33px;
         font-size: 17px;
         line-height: 20px;
     }
@@ -192,13 +225,39 @@
         margin-right: 20px;
     }
 
-    .about {
+    .about-1 {
         height: auto;
-        width: 100%;
-        display: flex;
         flex-direction: column-reverse;
         align-items: flex-start;
         margin-bottom: 68px;
+    }
+
+    .about-2 {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 68px;
+    }
+
+    .about-3 {
+        height: auto;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .about-3 a {
+        width: 100%;
+        height: 44px;
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+
+    .margin-top-about-1 {
+        margin-top: 52px;
     }
 
     .about-img {
@@ -210,9 +269,22 @@
         width: 100%;
     }
 
+    .text-margin {
+        margin-top: 87px;
+    }
+
     .margin-block h1 {
         font-size: 32px;
         line-height: 32px;
+    }
+
+    .margin-top {
+        margin-top: 18px;
+        margin-bottom: 32px;
+    }
+
+    .margin-top div {
+        margin-top: 0;
     }
 
     .text-img li {
@@ -240,30 +312,10 @@
         padding-right: 0;
     }
 
-    #height-about {
-        height: auto;
-        flex-direction: column;
-    }
-
-    .text-img div {
-        margin-top: 20px;
-        margin-bottom: 32px;
-    }
-
-    .text-img p {
+    .long-p {
         width: 100%;
         font-size: 13px;
         line-height: 19px;
-    }
-
-    .about-last {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .about-last img {
-        margin-top: 32px;
-        height: 330px;
-        object-fit: cover;
+        margin-bottom: 20px;
     }
 }
