@@ -161,3 +161,51 @@
     margin-left: 36px;
     margin-right: 36px;
 }
+@media (max-width: 1200px) {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .header {
+        font-size: 40px;
+        width: auto;
+    }
+    .box-first {
+        flex-direction: column;
+    }
+    .about-header {
+        font-size: 40px;
+    }
+    .reasons-desc {
+        width: auto;
+    }
+    .reasons-left-header {
+        margin-left:20px;
+        margin-bottom: 40px;
+    }
+    .reasons-desc {
+        margin: 0;
+    }
+    .reason-value-big {
+        font-size: 71px;
+    }
+    .reason-value {
+        font-size: 46px;
+    }
+    .reason-desc {
+        font-size: 14px;
+    }
+    .box {
+        flex-direction: column;
+    }
+    .about-desc {
+        width: 100%;
+    }
+    .last-photos-container {
+        flex-direction: column;
+    }
+    .last-photos-container div {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}

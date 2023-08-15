@@ -9,11 +9,12 @@ import CoNews from '../news';
 import CoSubmitApplication from '../submit-application';
 import CoWhyWe from '../why-we';
 import s from './styles.module.css';
-import headerPhoto from './header-photo.webp'
+import headerPhoto from '../../assets/multimodal-cargo-header.webp'
 import aboutPhoto from './about-photo.webp'
 import bottom1Photo from './bottom1.webp'
 import bottom2Photo from './bottom2.webp'
 import bottom3Photo from './bottom3.webp'
+import NewsIntro from '../news-intro';
 
 
 const inter = Inter({
@@ -113,25 +114,25 @@ function CoAboutCompanyScreen() {
                     </div>
                 </div>
             </div>
-            <MoBlockLine text="История компании" />
+            {/* <MoBlockLine text="История компании" />
             <div className={s['container']}>
                 <div className={s['box']}>
                     <div className={s['left']}>
                         <div className={s['social-media-box']}>
                             <div>
-                                <a>Twitter</a>
+                                <a href="https://twitter.com/TranslinKz">Twitter</a>
                                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path id="Vector" opacity="0.8" d="M1.24188 1.25812L9.72792 1.25736L9.72716 9.7434M1.24193 9.74166L9.60908 1.3762" stroke="#00ACCD" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
                             <div>
-                                <a>Facebook</a>
+                                <a href="https://facebook.com/translin.kz">Facebook</a>
                                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path id="Vector" opacity="0.8" d="M1.24188 1.25812L9.72792 1.25736L9.72716 9.7434M1.24193 9.74166L9.60908 1.3762" stroke="#00ACCD" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
                             <div>
-                                <a>Instagram</a>
+                                <a href="https://instagram.com/transline.kz">Instagram</a>
                                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path id="Vector" opacity="0.8" d="M1.24188 1.25812L9.72792 1.25736L9.72716 9.7434M1.24193 9.74166L9.60908 1.3762" stroke="#00ACCD" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
@@ -180,8 +181,8 @@ function CoAboutCompanyScreen() {
                         />
                     </div>
                 </div>
-            </div>
-            <CoNews/>
+            </div> */}
+            <NewsIntro/>
             <CoSubmitApplication/>
         </div>
     )

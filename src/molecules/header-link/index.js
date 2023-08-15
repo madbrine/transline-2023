@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import Image from "next/image";
+import s from './styles.module.css';
 const inter = Inter({
     subsets: ['latin'],
     weight: '400'
@@ -7,7 +8,7 @@ const inter = Inter({
 function MoHeaderLink(props) {
     return (
         <div style={styles.container}>
-            <div>
+            <div className={s['container']}>
                 <a
                     style={styles.link}
                     className={inter.className}
