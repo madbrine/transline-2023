@@ -9,7 +9,7 @@ import headerPhoto from '../assets/multimodal-cargo-header.webp';
 import photo1 from '../assets/multimodal-cargo-1.webp';
 import photo2 from '../assets/multimodal-cargo-2.webp';
 import photo3 from '../assets/multimodal-cargo-3.webp';
-import AviaperevozkiIntro from "@/compnents/aviaperevozki";
+import AviaperevozkiIntro from "@/compnents/perevozki-avia";
 
 function Aviaperevozki() {
     return (

@@ -2,7 +2,7 @@ import CoFooter from "@/compnents/footer";
 import CoHeader from "@/compnents/header";
 import CoSubmitApplication from "@/compnents/submit-application";
 import Head from "next/head";
-import AvtoperevozkiIntro from "@/compnents/avtoperevozki";
+import AvtoperevozkiIntro from "@/compnents/perevozki-avto";
 
 function AvtomobilnyeGruzoperevozki() {
     return (
