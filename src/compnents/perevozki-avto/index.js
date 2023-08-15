@@ -14,7 +14,10 @@ export default function AvtoperevozkiIntro() {
     return (
         <div className={inter.className}>
             <div className={s['margin-block']}>
-                <MoBlockHeader text='Авиа перевозки' />
+                <MoBlockHeader text='Автомобильные' />
+                <div className={s['head-service']}>
+                    <MoBlockHeader text='перевозки' />
+                </div>
                 <MoNavLinker
                     text2="Автомобильные перевозки"
                     link2="/avtomobilnye-gruzoperevozki"
@@ -48,7 +51,7 @@ export default function AvtoperevozkiIntro() {
                             </div>
                         </div>
                     </div>
-                    <div className={s['about']}>
+                    <div className={s['about']} id={s['column-reverse']}>
                         <div className={s['text-img']} id={s['padding-p']}>
                             <h1>Типы автомобильных грузов</h1>
                             <div className={s['margin-top']}>
@@ -93,13 +96,13 @@ export default function AvtoperevozkiIntro() {
                             </div>
                         </div>
                     </div>
-                    <div className={s['about']}>
+                    <div className={s['about']} id={s['column-reverse']}>
                         <div className={s['text-img']} id={s['padding-p']}>
                             <h1>Почему выбирают нас?</h1>
                             <div className={s['special-p']}>
                                 <p id={s['margin-p']}>Мы перевозили грузы практически любого размера, конфигурации и типа – расскажите нам о своих требованиях, и мы будем работать с вами, чтобы удовлетворить ваши потребности.</p>
                             </div>
-                            <div id={s['margin-list']}>
+                            <div id={s['margin-list']} className={s['margin-bottom-img']}>
                                 <li>Выделенный парк линейных перевозок, а также парк пикапов и служб доставки</li>
                                 <li>Отмеченные наградами стандарты безопасности и соответствия</li>
                                 <li>GPS-отслеживание транспортных средств</li>
