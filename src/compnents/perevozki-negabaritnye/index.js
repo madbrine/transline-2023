@@ -45,7 +45,7 @@ export default function NegabaritnyeIntro() {
                             </div>
                         </div>
                     </div>
-                    <div className={s['about']}>
+                    <div className={s['about']} id={s['column-reverse']}>
                         <div className={s['text-img']} id={s['padding-p']}>
                             <h1>Перевозка негабаритных грузов осуществляется</h1>
                             <div className={s['margin-top']}>
@@ -68,7 +68,7 @@ export default function NegabaritnyeIntro() {
                                     <li>Разработка маршрута с учетом всех возможных препятствий на пути следования груза</li>
                                     <li>Подготовка документов</li>
                                     <li>Согласование маршрута с контролирующими органами. Отсутствие такового повлечет штрафные санкции</li>
-                                    <li>огрузка и перевозка</li>
+                                    <li>Погрузка и перевозка</li>
                                     <li>Разгрузка</li>
                                 </div>
                             </div>
