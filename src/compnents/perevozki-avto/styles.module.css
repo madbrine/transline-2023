@@ -8,6 +8,10 @@
     margin-right: 60px;
 }
 
+.head-service {
+    margin-top: 32px;
+}
+
 .intro {
     width: auto;
     height: 544px;
@@ -110,14 +114,15 @@
     position: relative;
     padding-left: 14px;
     margin-top: 12px;
+    width: 580px;
 }
 
 .text-img li:before {
     content: '';
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    transform: translateY(130%);
     width: 6px;
     height: 6px;
     background-color: #161616;
@@ -147,7 +152,7 @@
 }
 
 .special-p p {
-    width: 100%; 
+    width: 100%;
     margin-top: 22px;
 }
 
@@ -156,22 +161,134 @@
     margin-bottom: 18px;
 }
 
-.about-last {
-    display: flex;
-    flex-direction: column;
-}
+@media (max-width: 1200px) {
+    .margin-block {
+        margin-top: 114px;
+    }
 
-.about-last img {
-    margin-top: 57px;
-}
+    .container {
+        margin-top: 34px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
-.services {
-    margin: 0 60px;
-}
+    .head-service {
+        margin-top: 6px;
+    }
 
-.text-img span {
-    color: #161616;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 23px;
+    .intro {
+        padding-left: 25px;
+        padding-bottom: 25px;
+        padding-right: 25px;
+        margin-bottom: 0;
+        background-image: url('/avtoperevozki/avto-intro-mobile.png');
+    }
+
+    .intro p {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .intro-text {
+        width: 261px;
+        height: 133px;
+    }
+
+    .intro a {
+        width: 100%;
+        height: 44px;
+        margin-top: 33px;
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .container-body {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .about {
+        height: auto;
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-bottom: 68px;
+    }
+
+    .margin-top-about-1 {
+        margin-top: 20px;
+        margin-bottom: 32px;
+    }
+
+    .about-img {
+        width: 100%;
+        height: 330px;
+    }
+
+    .text-img {
+        width: 100%;
+    }
+
+    .margin-block h1 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    #column-reverse {
+        flex-direction: column;
+    }
+
+    .margin-top {
+        margin-top: 18px;
+        margin-bottom: 32px;
+    }
+
+    .margin-top div {
+        margin-top: 20px;
+    }
+
+    .text-img li {
+        padding-left: 12px;
+        width: calc(100% - 14px);
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .text-img li:before {
+        width: 5px;
+        height: 5px;
+        transform: translateY(130%);
+    }
+
+    #margin-list {
+        margin-left: 6px;
+    }
+
+    #padding-list {
+        padding-left: 0;
+    }
+
+    #padding-p {
+        padding-right: 0;
+    }
+
+    .text-img p {        
+        width: 100%;
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .special-p p {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    #margin-p {
+        margin-top: 32px;
+        margin-bottom: 8px;
+    }
+
+    .margin-bottom-img {
+        margin-bottom: 32px;
+    }
 }
