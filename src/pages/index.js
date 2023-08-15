@@ -16,6 +16,7 @@ import CoFooter from '@/compnents/footer'
 import CoBlockServices from '@/compnents/add-block-services'
 import MoBlockHeader from '@/molecules/block-header'
 import MoBlockLine from '@/molecules/block-line'
+import NewsIntro from '@/compnents/news-intro'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -35,7 +36,7 @@ export default function Home() {
         <MoBlockLine text="Наши решения"/>
         <CoBlockServices/>
         <CoAboutCompany/>
-        <CoNews/>
+        <NewsIntro mini/>
         <CoSubmitApplication/>
         <CoFooter/>
       </main>
