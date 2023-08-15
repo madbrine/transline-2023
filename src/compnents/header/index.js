@@ -54,19 +54,23 @@ function CoHeader() {
                                     <div className={s['mobile-info-header']}>
                                         Соц.сети
                                     </div>
-                                    <a>Twitter</a>
-                                    <a>Facebook</a>
-                                    <a>Instagram</a>
+                                    <a href="https://twitter.com/TranslineKz/">Twitter</a>
+                                    <a href="https://facebook.com/transline.kz/">Facebook</a>
+                                    <a href="https://instagram.com/transline.kz/">Instagram</a>
                                 </div>
                                 <div>
                                     <div className={s['mobile-info-header']}>
                                         Контакты
                                     </div>
-                                    <a>info@transline.kz</a>
+                                    <a href="mailto:info@transline.kz">
+                                        info@transline.kz
+                                    </a>
                                     <a href="tel:+77073671104">
-                                        +7 (707)-367-11-04</a>
+                                        +7 (707)-367-11-04
+                                    </a>
                                     <a href="tel:+77273671104">
-                                        +7 (727)-367-11-04</a>
+                                        +7 (727)-367-11-04
+                                    </a>
                                 </div>
                             </div>
                         </div>
