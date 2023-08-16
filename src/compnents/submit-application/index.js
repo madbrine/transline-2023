@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import MoBlockLine from "@/molecules/block-line";
 import { Inter } from "next/font/google";
@@ -17,6 +17,18 @@ const inter = Inter({
 })
 
 function CoSubmitApplication(props) {
+    const [offerData, setOfferData] = useState(false)
+
+    useEffect(() => {
+        setOfferData({
+            from: sessionStorage.getItem('offerDataFrom'),
+            to: sessionStorage.getItem('offerDataTo'),
+            volume: sessionStorage.getItem('offerDataVolume'),
+            weight: sessionStorage.getItem('offerDataWeight'),
+            desc: sessionStorage.getItem('offerDataDesc'),
+        })
+        console.log(`state = ${offerData}`)
+    }, [])
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
@@ -116,23 +128,25 @@ function CoSubmitApplication(props) {
                 <div className={s['contacts-and-form-finish']}>
                     <div className={s['form-input-container']}>
                         {
-                            props.formData &&
-                            props.formData.from &&
-                            props.formData.to &&
-                            props.formData.volume &&
-                            props.formData.weight &&
+                            offerData.from &&
+                            offerData.to &&
+                            offerData.volume &&
+                            offerData.weight &&
                             <div className={inter.className}>
                                 <div className={s['form-input']}>
-                                    {props.formData.from}
+                                    <a>Откуда: </a>{offerData.from}
                                 </div>
                                 <div className={s['form-input']}>
-                                    {props.formData.to}
+                                    <a>Куда: </a>{offerData.to}
                                 </div>
                                 <div className={s['form-input']}>
-                                    {props.formData.volume}
+                                    <a>Объём: </a>{offerData.volume}
                                 </div>
                                 <div className={s['form-input']}>
-                                    {props.formData.weight}
+                                    <a>Вес: </a>{offerData.weight}
+                                </div>
+                                <div className={s['form-input']}>
+                                    <a>Описание груза: </a>{offerData.desc}
                                 </div>
                             </div>
                         }

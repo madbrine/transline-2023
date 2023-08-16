@@ -39,11 +39,21 @@ function CoIntro() {
     const updateWeight = e => setWeight(e.target.value);
     const updateDescription = e => setDescription(e.target.value);
 
+    const offerData = [
+        isFrom, 
+        isTo, 
+        isVolume, 
+        isWeight, 
+        isDescription
+]
+
     function storageLoader() {
-        sessionStorage.setItem('offerData', [isFrom, isTo, isVolume, isWeight, isDescription])
-    }
-    function localGet() {
-        console.log( sessionStorage.getItem('offerData'))
+        sessionStorage.setItem('offerDataTo', isFrom)
+        sessionStorage.setItem('offerDataFrom', isTo)
+        sessionStorage.setItem('offerDataVolume', isVolume)
+        sessionStorage.setItem('offerDataWeight', isWeight)
+        sessionStorage.setItem('offerDataDesc', isDescription)
+        console.log(`from intro ${sessionStorage.getItem('offerDataTo')} to ${sessionStorage.getItem('offerDataFrom')}`)
     }
 
     return (
@@ -67,7 +77,6 @@ function CoIntro() {
                         </motion.h1>
                     </div>
                 </div>
-                        <button onClick={localGet}>sdsd</button>
                 <motion.div className={s['form-container']}
                     ref={refForm}
                     style={{ opacity: ScrollForm.scrollYProgress }}
@@ -92,7 +101,7 @@ function CoIntro() {
                                 <span className={s['input-addon']}>тонн</span>
                             </div>
                             <input className={s['input-bottom-border']} onChange={updateDescription} type="text" name="name" placeholder="Описание груза" />
-                            <a href="/sertifikat">
+                            <a href="/oformit-zayavku">
                                 <button onClick={storageLoader} className={inter.className}>Рассчитать</button>
                             </a>
                         </div>
