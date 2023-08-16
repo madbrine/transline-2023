@@ -80,7 +80,7 @@ export default function ZheleznodorozhnyeIntro() {
                     <div className={s['about']}>
                         <img className={s['about-img']} src='/zheleznodorozhnye-perevozki/zheleznodorozhnye-about-3.jpeg' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
-                            <h1>Почему выбирают?</h1>
+                            <h1>Почему выбирают нас?</h1>
                             <div className={s['margin-top']}>
                                 <span className={s['special-p']}>
                                     <p>У нас есть множество услуг, чтобы предоставить нашим клиентам наилучшее решение. Перевозя грузы с нами, вы можете рассчитывать:</p>
@@ -92,7 +92,7 @@ export default function ZheleznodorozhnyeIntro() {
                                     <li>Услуги по подбору и упаковке</li>
                                     <li>Мультимодальные транспортные услуги, включая автомобильные, воздушные и морские</li>
                                 </div>
-                                <div className={s['special-p']}>
+                                <div className={s['special-p']} id={s['margin-special-p']}>
                                     <p>Мы перевозили грузы практически любого размера, конфигурации и типа – расскажите нам о своих требованиях, и мы будем работать с вами, чтобы удовлетворить ваши потребности.</p>
                                 </div>
                             </div>

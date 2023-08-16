@@ -86,10 +86,6 @@
     margin-bottom: 112px;
 }
 
-.margin-top-about-1 {
-    margin-top: 52px;
-}
-
 .about-img {
     width: 40.5vw;
     height: 100%;
@@ -134,14 +130,15 @@
     position: relative;
     padding-left: 14px;
     margin-top: 12px;
+    width: 580px;
 }
 
 .text-img li:before {
     content: '';
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    transform: translateY(130%);
     width: 6px;
     height: 6px;
     background-color: #161616;
@@ -175,27 +172,143 @@
     margin-top: 0;
 }
 
-#margin-p {
-    margin-top: 64px;
-    margin-bottom: 18px;
-}
-
-.about-last {
-    display: flex;
-    flex-direction: column;
-}
-
-.about-last img {
-    margin-top: 57px;
-}
-
-.services {
-    margin: 0 60px;
-}
-
 .text-img span {
     color: #161616;
     font-size: 17px;
     font-weight: 400;
     line-height: 23px;
+}
+
+@media (max-width: 1200px) {
+    .margin-block {
+        margin-top: 114px;
+    }
+
+    .container {
+        margin-top: 34px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .intro {
+        padding-left: 25px;
+        padding-bottom: 25px;
+        padding-right: 25px;
+        margin-bottom: 0;
+        background-image: url('/zheleznodorozhnye-perevozki/zheleznodorozhnye-intro-mobile.png');
+    }
+
+    .intro p {
+        font-size: 13px;
+        line-height: 19px;
+        width: 100%;
+        height: 114px;
+    }
+
+    .intro a {
+        width: 100%;
+        height: 44px;
+        margin-top: 24px;
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .container-body {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .about {
+        height: auto;
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-bottom: 68px;
+    }
+
+    .about-img {
+        width: 100%;
+        height: 330px;
+    }
+
+    .text-img {
+        width: 100%;
+    }
+
+    .margin-block h1 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .margin-top {
+        margin-top: 20px;
+        margin-bottom: 32px;
+    }
+
+    .margin-top div {
+        margin-top: 0;
+    }
+
+    .text-img li {
+        padding-left: 12px;
+        width: calc(100% - 14px);
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .text-img li:before {
+        width: 5px;
+        height: 5px;
+        transform: translateY(130%);
+    }
+
+    #margin-list {
+        margin-left: 6px;
+    }
+
+    #padding-list {
+        padding-left: 0;
+    }
+
+    #padding-p {
+        padding-right: 0;
+    }
+
+    .head-service {
+        margin-top: 32px;
+    }
+
+    .about a {
+        width: 100%;
+        height: 44px;
+        margin-top: -20px;
+        margin-bottom: 32px;
+    }
+
+    .about-special {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 68px;
+    }
+
+    .text-margin {
+        margin-top: 0;
+    }
+
+    .text-img p {
+        width: 100%;
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .special-p p {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    #margin-special-p {
+        margin-top: 20px;
+    }
 }
