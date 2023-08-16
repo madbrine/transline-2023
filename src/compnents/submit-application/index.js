@@ -37,22 +37,21 @@ function CoSubmitApplication(props) {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Проверяем валидность данных перед отправкой
         const validationErrors = validateForm(formData);
         if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors);
-            return;
+            return console.log(validationErrors);
         }
 
         try {
             // Отправка данных формы на сервер
-            await axios.post('http://localhost:4444/submit-form-multimodal', formData);
+            await axios.post('http://localhost:4444/submit-form', formData);
 
             // Успешное оповещение о отправке заявки
             alert('Заявка успешно отправлена');
         } catch (error) {
             console.error('Ошибка при отправке заявки:', error);
-            console.log('Содержимое ошибки:', error.response.data);
+            // console.log('Содержимое ошибки:', error.response.data);
 
             // Оповещение об ошибке при отправке заявки
             alert('Произошла ошибка при отправке заявки');
@@ -66,7 +65,7 @@ function CoSubmitApplication(props) {
             errors.name = 'Введите имя';
         }
 
-        if (!validator.isMobilePhone(data.phone, 'any', { strictMode: false })) {
+        if (validator.isEmpty(data.phone)) {
             errors.phone = 'Введите корректный номер телефона';
         }
 
