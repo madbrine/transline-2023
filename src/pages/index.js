@@ -17,6 +17,7 @@ import CoBlockServices from '@/compnents/add-block-services'
 import MoBlockHeader from '@/molecules/block-header'
 import MoBlockLine from '@/molecules/block-line'
 import NewsIntro from '@/compnents/news-intro'
+import VanishDiv from '@/molecules/vanish-div'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,16 +30,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <CoHeader/>
-        <CoIntro/>
-        <MoBlockHeader text="Решения для любого бизнеса"/>
-        <MoBlockLine text="Наши решения"/>
-        <CoBlockServices/>
-        <CoAboutCompany/>
-        <NewsIntro mini/>
-        <CoSubmitApplication/>
-        <CoFooter/>
+      <main style={{ overflowX: 'hidden' }}>
+        <CoHeader />
+        <CoIntro />
+        <VanishDiv>
+          <MoBlockHeader text="Решения для любого бизнеса" />
+        </VanishDiv>
+        <VanishDiv>
+          <MoBlockLine text="Наши решения" />
+        </VanishDiv>
+        <CoBlockServices />
+        <CoAboutCompany />
+        <NewsIntro mini />
+        <CoSubmitApplication />
+        <CoFooter />
       </main>
     </>
   )

@@ -109,7 +109,7 @@ function CoHeader() {
                     </div>
                 </div>
                 <button className={s['contact-us-button']}>
-                    <a className={s['contact-us-text']}>Связаться</a>
+                    <a href='/oformit-zayavku' className={s['contact-us-text']}>Связаться</a>
                 </button>
                 <button className={s['mobile-menu']}
                     onClick={handleMobileMenu}

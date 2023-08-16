@@ -97,9 +97,11 @@ function CoSubmitApplication(props) {
             <div className={s['block-pos']}>
                 <div className={s['container']}>
                     <div className={s['container-width']}>
-                        <h1 className={inter.className}>
-                            Получить консультацию
-                        </h1>
+                        <VanishDiv>
+                            <h1 className={inter.className}>
+                                Получить консультацию
+                            </h1>
+                        </VanishDiv>
                     </div>
                     <div className={s['contacts-container']}>
                         <div className={inter.className} style={{
@@ -128,6 +130,7 @@ function CoSubmitApplication(props) {
                 <div className={s['contacts-and-form-finish']}>
                     <div className={s['form-input-container']}>
                         {
+                            props.firstForm &&
                             offerData.from &&
                             offerData.to &&
                             offerData.volume &&
@@ -197,7 +200,7 @@ function CoSubmitApplication(props) {
                     </div>
                 </div>
             </div>
-            <div className={s['line-gray']} />
+            {/* <div className={s['line-gray']} /> */}
         </div>
     )
 }

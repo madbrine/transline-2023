@@ -46,6 +46,7 @@ export default function OformitZayavku() {
             <main>
                 <CoHeader />
                 <CoSubmitApplication
+                    firstForm
                 />
                 <div style={{marginTop: 300}}>
                     <CoOurServices withoutHeader />

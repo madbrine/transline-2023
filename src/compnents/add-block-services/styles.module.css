@@ -23,7 +23,12 @@
     object-fit: cover;
     width: 100%;
 }
-
+.service-image {
+    border-radius: 20px;
+    height: 278px;
+    width: 100%;
+    position: relative;
+}
 .text {
     display: flex;
     flex-direction: column;
@@ -79,6 +84,9 @@
     }
 
     .service img {
+        height: 183px;
+    }
+    .service-image {
         height: 183px;
     }
 
