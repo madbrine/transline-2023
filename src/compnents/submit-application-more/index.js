@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MoBlockLine from "@/molecules/block-line";
 import { Inter } from "next/font/google";
@@ -16,7 +16,19 @@ const inter = Inter({
     weight: '400'
 })
 
-function CoSubmitApplication(props) {
+function CoSubmitApplicationMore(props) {
+    const [offerData, setOfferData] = useState(false)
+
+    useEffect(() => {
+        setOfferData({
+            from: sessionStorage.getItem('offerDataFrom'),
+            to: sessionStorage.getItem('offerDataTo'),
+            volume: sessionStorage.getItem('offerDataVolume'),
+            weight: sessionStorage.getItem('offerDataWeight'),
+            desc: sessionStorage.getItem('offerDataDesc'),
+        })
+        console.log(`state = ${offerData}`)
+    }, [])
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
@@ -44,14 +56,19 @@ function CoSubmitApplication(props) {
         }
 
         try {
+            const allData = {
+                ...formData,
+                ...offerData,
+            };
+
             // Отправка данных формы на сервер
-            await axios.post('http://localhost:4444/submit-form', formData);
+            await axios.post('http://localhost:4444/submit-form-more', allData);
 
             // Успешное оповещение о отправке заявки
             alert('Заявка успешно отправлена');
         } catch (error) {
             console.error('Ошибка при отправке заявки:', error);
-            console.log('Содержимое ошибки:', error.response.data);
+            // console.log('Содержимое ошибки:', error.response.data);
 
             // Оповещение об ошибке при отправке заявки
             alert('Произошла ошибка при отправке заявки');
@@ -84,9 +101,11 @@ function CoSubmitApplication(props) {
             <div className={s['block-pos']}>
                 <div className={s['container']}>
                     <div className={s['container-width']}>
-                        <h1 className={inter.className}>
-                            Получить консультацию
-                        </h1>
+                        <VanishDiv>
+                            <h1 className={inter.className}>
+                                Получить консультацию
+                            </h1>
+                        </VanishDiv>
                     </div>
                     <div className={s['contacts-container']}>
                         <div className={inter.className} style={{
@@ -114,6 +133,30 @@ function CoSubmitApplication(props) {
                 </div>
                 <div className={s['contacts-and-form-finish']}>
                     <div className={s['form-input-container']}>
+                        {
+                            props.firstForm &&
+                            offerData.from &&
+                            offerData.to &&
+                            offerData.volume &&
+                            offerData.weight &&
+                            <div className={inter.className}>
+                                <div className={s['form-input']}>
+                                    <a>Откуда: </a>{offerData.from}
+                                </div>
+                                <div className={s['form-input']}>
+                                    <a>Куда: </a>{offerData.to}
+                                </div>
+                                <div className={s['form-input']}>
+                                    <a>Объём: </a>{offerData.volume}
+                                </div>
+                                <div className={s['form-input']}>
+                                    <a>Вес: </a>{offerData.weight}
+                                </div>
+                                <div className={s['form-input']}>
+                                    <a>Описание груза: </a>{offerData.desc}
+                                </div>
+                            </div>
+                        }
                         <input
                             className={s['form-input']}
                             placeholder="Имя"
@@ -161,8 +204,8 @@ function CoSubmitApplication(props) {
                     </div>
                 </div>
             </div>
-            <div className={s['line-gray']} />
+            {/* <div className={s['line-gray']} /> */}
         </div>
     )
 }
-export default CoSubmitApplication;
+export default CoSubmitApplicationMore;

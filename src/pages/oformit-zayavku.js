@@ -14,6 +14,9 @@ import CoNews from '@/compnents/news'
 import CoSubmitApplication from '@/compnents/submit-application'
 import CoFooter from '@/compnents/footer'
 import { useEffect, useState } from 'react'
+import CoBlockServices from '@/compnents/add-block-services'
+import MoBlockLine from '@/molecules/block-line'
+import CoSubmitApplicationMore from '@/compnents/submit-application-more'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -45,12 +48,11 @@ export default function OformitZayavku() {
             </Head>
             <main>
                 <CoHeader />
-                <CoSubmitApplication
+                <CoSubmitApplicationMore
                     firstForm
                 />
-                <div style={{marginTop: 300}}>
-                    <CoOurServices withoutHeader />
-                </div>
+                <MoBlockLine text="Другие услуги" />
+                <CoBlockServices />
                 <CoFooter />
             </main>
         </>
