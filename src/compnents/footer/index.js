@@ -21,32 +21,38 @@ function CoFooter() {
                         <div className={s['navigate-column-1']}>
                             <div className={s['nav-head']}>Информация:</div>
                             <div>
-                                <a className={s['nav-link']}>
+                                <a style={{textDecoration:'none'}} href="/vidy-perevozok" 
+                                className={s['nav-link']} >
                                     Услуги
                                 </a>
                             </div>
                             <div>
-                                <a className={s['nav-link']}>
+                                <a style={{textDecoration:'none'}} href="/o-kompanii" 
+                                className={s['nav-link']}>
                                     О компании
                                 </a>
                             </div>
                             <div>
-                                <a className={s['nav-link']}>
+                                <a style={{textDecoration:'none'}} href="/sertifikaty" 
+                                className={s['nav-link']}>
                                     Сертификаты
                                 </a>
                             </div>
                             <div>
-                                <a className={s['nav-link']}>
+                                <a style={{textDecoration:'none'}} href="/avtopark" 
+                                className={s['nav-link']}>
                                     Автопарк
                                 </a>
                             </div>
                             <div>
-                                <a className={s['nav-link']}>
+                                <a style={{textDecoration:'none'}} href="/news" 
+                                className={s['nav-link']}>
                                     Новости
                                 </a>
                             </div>
                             <div>
-                                <a className={s['nav-link']}>
+                                <a style={{textDecoration:'none'}} href="/kontakty" 
+                                className={s['nav-link']}>
                                     Контакты
                                 </a>
                             </div>
@@ -54,12 +60,20 @@ function CoFooter() {
                         <div className={s['navigate-column-2']}>
                             <div className={s['nav-head']}>Соц. сети:</div>
                             <div>
-                                <a className={s['nav-link']}>
+                                <a style={{textDecoration:'none'}} href="https://facebook.com/transline.kz" 
+                                className={s['nav-link']}>
                                     Facebook
                                 </a>
                             </div>
                             <div>
-                                <a className={s['nav-link']}>
+                                <a style={{textDecoration:'none'}} href="https://instagram.com/transline.kz" 
+                                className={s['nav-link']}>
+                                    Instagram
+                                </a>
+                            </div>
+                            <div>
+                                <a style={{textDecoration:'none'}} href="https://twitter.com/TranslineKz" 
+                                className={s['nav-link']}>
                                     Twitter
                                 </a>
                             </div>
@@ -68,13 +82,15 @@ function CoFooter() {
                     <div className={s['nav-pos']} id={s['nav-margin']}>
                         <div className={s['navigate-column-3']}>
                             <div className={s['nav-head']}>Контакты:</div>
-                            <div>
-                                <a className={s['nav-link']}>
+                            <div style={{textDecoration:'none'}}>
+                                <a style={{textDecoration:'none'}} href="tel:+77273671104"
+                                className={s['nav-link']}>
                                     +7 (727)-367-11-04
                                 </a>
                             </div>
                             <div>
-                                <a className={s['nav-link']}>
+                                <a style={{textDecoration:'none'}} href="tel:+77273671104"
+                                className={s['nav-link']}>
                                     info@transline.kz
                                 </a>
                             </div>
