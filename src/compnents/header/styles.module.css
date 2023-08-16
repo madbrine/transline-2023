@@ -35,7 +35,10 @@
     border-radius: 10px 10px;
     color: #fff;
 }
-
+.contact-us-text {
+    color: #fff;
+    text-decoration: none;
+}
 .contacts-info {
     flex: 1; 
     display: flex;

@@ -53,6 +53,9 @@
     display: flex; 
     justify-content: center;
 }
+.reason-header {
+    margin-right: 64px;
+}
 .reasons-box {
     margin-left: 16px;
     width: 654px;

@@ -1,11 +1,11 @@
 .container {
-    padding-top: calc(100vh - 800px);
+    padding-top: 350px;
     text-align: center;
     flex-shrink: 0;
     background-image: linear-gradient(to bottom, rgba(242, 242, 242, 0.5), rgba(242, 242, 242, 1)), url('../../assets/index-background.webp');
     background-size: cover;
-    background-position: center top;
-    padding-bottom: 580px;
+    background-position: center 0px;
+    padding-bottom: 400px;
 }
 
 .container h1 {
@@ -18,7 +18,7 @@
 }
 
 .form-container {
-    margin-top: 67px;
+    margin-top: 270px;
     display: flex;
     justify-content: center;
 }
