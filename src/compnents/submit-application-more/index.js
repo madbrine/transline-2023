@@ -65,7 +65,7 @@ function CoSubmitApplicationMore(props) {
             };
 
             // Отправка данных формы на сервер
-            await axios.post('/api/submit-form-more', allData);
+            await axios.post('http://localhost:4444/submit-form-more', allData);
 
             router.push('/spasibo');
         } catch (error) {
