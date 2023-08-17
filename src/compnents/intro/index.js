@@ -69,7 +69,7 @@ function CoIntro() {
                         </motion.h1>
                     </div>
                 </div>
-                <motion.div className={s['form-container']}
+                <div className={s['form-container']}
                     ref={refForm}
                     style={{ opacity: ScrollForm.scrollYProgress }}
                 >
@@ -82,30 +82,44 @@ function CoIntro() {
                     <div className={s['form-inputs-container']}
                         style={{ marginBottom: -50, }}>
                         <div className={s['form-input']}>
-                            <input className={s['input-top-border']} onChange={updateFrom} type="text" name="name" placeholder="Откуда" />
-                            <input onChange={updateTo} type="text" name="name" placeholder="Куда" />
-                            <div className={s['input-container']}>
-                                <input className={s['input-field']} onChange={updateVolume} type="number" name="name" placeholder="Объем" />
-                                <span className={s['input-addon']}>м³</span>
-                            </div>
-                            <div className={s['input-container']}>
-                                <input className={s['input-field']} onChange={updateWeight} type="number" name="name" placeholder="Вес" />
-                                <span className={s['input-addon']}>тонн</span>
-                            </div>
-                            <input className={s['input-bottom-border']} onChange={updateDescription} type="text" name="name" placeholder="Описание груза" />
-                            <a href="/oformit-zayavku">
-                                <button onClick={storageLoader} className={inter.className}>Рассчитать</button>
-                            </a>
+                            <VanishDiv>
+                                <input className={s['input-top-border']} onChange={updateFrom} type="text" name="name" placeholder="Откуда" />
+                            </VanishDiv>
+                            <VanishDiv>
+                                <input onChange={updateTo} type="text" name="name" placeholder="Куда" />
+                            </VanishDiv>
+                            <VanishDiv>
+                                <div className={s['input-container']}>
+                                    <input className={s['input-field']} onChange={updateVolume} type="number" name="name" placeholder="Объем" />
+                                    <span className={s['input-addon']}>м³</span>
+                                </div>
+                            </VanishDiv>
+                            <VanishDiv>
+                                <div className={s['input-container']}>
+                                    <input className={s['input-field']} onChange={updateWeight} type="number" name="name" placeholder="Вес" />
+                                    <span className={s['input-addon']}>тонн</span>
+                                </div>
+                            </VanishDiv>
+                            <VanishDiv>
+                                <input className={s['input-bottom-border']} onChange={updateDescription} type="text" name="name" placeholder="Описание груза" />
+                            </VanishDiv>
+                            <VanishDiv>
+                                <a href="/oformit-zayavku">
+                                    <button onClick={storageLoader} className={inter.className}>Рассчитать</button>
+                                </a>
+                            </VanishDiv>
                         </div>
-                        <div className={s['insurance-container']}>
-                            <label className={s['insurance-box']}>
-                                <input className={s['insurance-checkbox']} type='checkbox' />
-                                <span className={s['checkmark']}></span>
-                                <div className={inter.className} id={s['text-insurance']}> Требуется страхование</div>
-                            </label>
-                        </div>
+                        <VanishDiv>
+                            <div className={s['insurance-container']}>
+                                <label className={s['insurance-box']}>
+                                    <input className={s['insurance-checkbox']} type='checkbox' />
+                                    <span className={s['checkmark']}></span>
+                                    <div className={inter.className} id={s['text-insurance']}> Требуется страхование</div>
+                                </label>
+                            </div>
+                        </VanishDiv>
                     </div>
-                </motion.div>
+                </div>
             </div>
         </div >
     );
