@@ -18,6 +18,7 @@ import MoBlockHeader from '@/molecules/block-header'
 import MoBlockLine from '@/molecules/block-line'
 import NewsIntro from '@/compnents/news-intro'
 import VanishDiv from '@/molecules/vanish-div'
+import NewsItem from '@/compnents/news-item'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -41,7 +42,6 @@ export default function Home() {
         </VanishDiv>
         <CoBlockServices />
         <CoAboutCompany />
-        <NewsIntro mini />
         <CoSubmitApplication />
         <CoFooter />
       </main>

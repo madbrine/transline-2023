@@ -139,7 +139,8 @@
 
 @media (max-width: 1200px) {
     .container {
-        margin-top: 112px;
+        margin-top: -240px;
+        margin-bottom: -150px;
     }
 
     .container h1 {
@@ -159,6 +160,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        width: calc(100vw - 20px);
     }
 
     .form-input input {
@@ -177,11 +179,16 @@
     }
 
     .form-input a {
-        width: calc(100% - 40px)
+        width: 100%;
     }
 
     .form-input button {
         margin-top: 8px;
+        margin-left: 0;
+        width: calc(100% - 20px);
+    }
+
+    .input-container {
         width: 100%;
     }
 
@@ -192,6 +199,10 @@
     .insurance-box {
         justify-content: flex-start;
         margin-top: 24px;
-        width: calc(100% - 48px);
+        width: calc(100% - 14px);
+    }
+
+    .input-addon {
+        right: 30px;
     }
 }
