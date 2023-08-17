@@ -28,7 +28,8 @@
 }
 .photos-position-mobile {
     opacity: 0;
-
+    width: 0px;
+    height: 0px;
 }
 .image-flex {
     flex: 1;
@@ -125,6 +126,7 @@
     }
     .photos-position-mobile {
         width: calc(100vw - 20px);
+        height: auto;
         display: flex;
         overflow-x: auto;
         overflow-y: hidden;
