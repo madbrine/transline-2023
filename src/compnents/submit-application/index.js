@@ -48,7 +48,7 @@ function CoSubmitApplication(props) {
 
         try {
             // Отправка данных формы на сервер
-            await axios.post('http://localhost:4444/submit-form', formData);
+            await axios.post('http://185.234.114.179:4444/submit-form', formData);
 
             router.push('/spasibo');
         } catch (error) {
