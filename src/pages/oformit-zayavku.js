@@ -48,9 +48,7 @@ export default function OformitZayavku() {
             </Head>
             <main>
                 <CoHeader />
-                <CoSubmitApplicationMore
-                    firstForm
-                />
+                <CoSubmitApplicationMore />
                 <MoBlockLine text="Другие услуги" />
                 <CoBlockServices />
                 <CoFooter />

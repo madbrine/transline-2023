@@ -43,7 +43,7 @@ function CoSubmitApplication(props) {
         const validationErrors = validateForm(formData);
         if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors);
-            return console.log(validationErrors);
+            return;
         }
 
         try {
@@ -79,7 +79,7 @@ function CoSubmitApplication(props) {
     };
 
     return (
-        <div>
+        <div className={inter.className}>
             <VanishDiv>
                 <MoBlockLine text="Оставить заявку" />
             </VanishDiv>
@@ -123,6 +123,7 @@ function CoSubmitApplication(props) {
                             value={formData.name}
                             onChange={handleChange}
                         />
+                        {errors.name && <div className={s['error-message']}>{errors.name}</div>}
                         <InputMask
                             mask="+7 (999) 999-99-99"
                             value={formData.phone}
@@ -137,6 +138,7 @@ function CoSubmitApplication(props) {
                                 />
                             )}
                         </InputMask>
+                        {errors.phone && <div className={s['error-message']}>{errors.phone}</div>}
                         <input
                             className={s['form-input']}
                             placeholder="Email"
@@ -144,6 +146,7 @@ function CoSubmitApplication(props) {
                             value={formData.email}
                             onChange={handleChange}
                         />
+                        {errors.email && <div className={s['error-message']}>{errors.email}</div>}
                         <input
                             className={s['form-input']}
                             placeholder="Коментарии (не обязательно)"

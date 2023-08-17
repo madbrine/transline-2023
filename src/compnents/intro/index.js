@@ -39,14 +39,6 @@ function CoIntro() {
     const updateWeight = e => setWeight(e.target.value);
     const updateDescription = e => setDescription(e.target.value);
 
-    const offerData = [
-        isFrom, 
-        isTo, 
-        isVolume, 
-        isWeight, 
-        isDescription
-]
-
     function storageLoader() {
         sessionStorage.setItem('offerDataTo', isFrom)
         sessionStorage.setItem('offerDataFrom', isTo)
@@ -107,7 +99,7 @@ function CoIntro() {
                         </div>
                         <div className={s['insurance-container']}>
                             <div className={s['insurance-box']}>
-                                <input className={s['insurance-checkbox']} type='checkbox'/>
+                                <input className={s['insurance-checkbox']} type='checkbox' />
                                 <div className={inter.className} id={s['text-insurance']}> Требуется страхование</div>
                             </div>
                         </div>

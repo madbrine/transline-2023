@@ -55,7 +55,7 @@ function CoSubmitApplicationMore(props) {
         const validationErrors = validateForm(formData);
         if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors);
-            return console.log(validationErrors);
+            return;
         }
 
         try {
@@ -96,7 +96,7 @@ function CoSubmitApplicationMore(props) {
     };
 
     return (
-        <div>
+        <div className={inter.className}>
             <VanishDiv>
                 <MoBlockLine text="Оставить заявку" />
             </VanishDiv>
@@ -135,30 +135,41 @@ function CoSubmitApplicationMore(props) {
                 </div>
                 <div className={s['contacts-and-form-finish']}>
                     <div className={s['form-input-container']}>
-                        {
-                            props.firstForm &&
-                            offerData.from &&
-                            offerData.to &&
-                            offerData.volume &&
-                            offerData.weight &&
-                            <div className={inter.className}>
-                                <div className={s['form-input']}>
-                                    <a>Откуда: </a>{offerData.from}
-                                </div>
-                                <div className={s['form-input']}>
-                                    <a>Куда: </a>{offerData.to}
-                                </div>
-                                <div className={s['form-input']}>
-                                    <a>Объём: </a>{offerData.volume}
-                                </div>
-                                <div className={s['form-input']}>
-                                    <a>Вес: </a>{offerData.weight}
-                                </div>
-                                <div className={s['form-input']}>
-                                    <a>Описание груза: </a>{offerData.desc}
-                                </div>
-                            </div>
-                        }
+                        <input
+                            className={s['form-input']}
+                            placeholder="Откуда"
+                            name="from"
+                            defaultValue={offerData.from}
+                            onChange={handleChange}
+                        />
+                        <input
+                            className={s['form-input']}
+                            placeholder="Куда"
+                            name="to"
+                            defaultValue={offerData.to}
+                            onChange={handleChange}
+                        />
+                        <input
+                            className={s['form-input']}
+                            placeholder="Объём"
+                            name="volume"
+                            defaultValue={offerData.volume}
+                            onChange={handleChange}
+                        />
+                        <input
+                            className={s['form-input']}
+                            placeholder="Вес"
+                            name="weight"
+                            defaultValue={offerData.weight}
+                            onChange={handleChange}
+                        />
+                        <input
+                            className={s['form-input']}
+                            placeholder="Описание груза"
+                            name="desc"
+                            defaultValue={offerData.desc}
+                            onChange={handleChange}
+                        />
                         <input
                             className={s['form-input']}
                             placeholder="Имя"
@@ -166,6 +177,7 @@ function CoSubmitApplicationMore(props) {
                             value={formData.name}
                             onChange={handleChange}
                         />
+                        {errors.name && <div className={s['error-message']}>{errors.name}</div>}
                         <InputMask
                             mask="+7 (999) 999-99-99"
                             value={formData.phone}
@@ -180,6 +192,7 @@ function CoSubmitApplicationMore(props) {
                                 />
                             )}
                         </InputMask>
+                        {errors.phone && <div className={s['error-message']}>{errors.phone}</div>}
                         <input
                             className={s['form-input']}
                             placeholder="Email"
@@ -187,6 +200,7 @@ function CoSubmitApplicationMore(props) {
                             value={formData.email}
                             onChange={handleChange}
                         />
+                        {errors.email && <div className={s['error-message']}>{errors.email}</div>}
                         <input
                             className={s['form-input']}
                             placeholder="Коментарии (не обязательно)"
@@ -206,7 +220,6 @@ function CoSubmitApplicationMore(props) {
                     </div>
                 </div>
             </div>
-            {/* <div className={s['line-gray']} /> */}
         </div>
     )
 }
