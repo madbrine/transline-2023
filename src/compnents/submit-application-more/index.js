@@ -6,6 +6,7 @@ import s from './styles.module.css'
 import VanishDiv from '@/molecules/vanish-div';
 import validator from 'validator';
 import InputMask from 'react-input-mask';
+import { useRouter } from 'next/router';
 
 const interM = Inter({
     subsets: ["latin"],
@@ -46,6 +47,8 @@ function CoSubmitApplicationMore(props) {
         }));
     };
 
+    const router = useRouter();
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -64,8 +67,7 @@ function CoSubmitApplicationMore(props) {
             // Отправка данных формы на сервер
             await axios.post('http://localhost:4444/submit-form-more', allData);
 
-            // Успешное оповещение о отправке заявки
-            alert('Заявка успешно отправлена');
+            router.push('/spasibo');
         } catch (error) {
             console.error('Ошибка при отправке заявки:', error);
             // console.log('Содержимое ошибки:', error.response.data);
