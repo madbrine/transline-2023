@@ -79,9 +79,10 @@
 }
 
 .nav-link {
+    display: block;
     font-size: 17px;
     color: #161616;
-    margin-bottom: 6px;
+    margin-bottom: 12px;
     line-height: 135%;
     /* 20.25px */
 }

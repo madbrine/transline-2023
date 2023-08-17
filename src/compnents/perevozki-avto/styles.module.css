@@ -77,9 +77,12 @@
 .about-img {
     width: 40.5vw;
     height: 100%;
-    object-fit: cover;
     border-radius: 20px;
+    position: relative;
+    object-fit: cover;
 }
+
+
 
 .text-img {
     width: 740px;

@@ -33,8 +33,12 @@
     .container {
         margin: 0 20px;
     }
+    
+    .container h1 {
+        width: 72vw;
+    }
 
     #h1_style {
-        font-size: 40px;
+        font-size: 32px;
     }
 }
