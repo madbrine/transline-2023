@@ -4,6 +4,9 @@ import MoBlockHeader from "@/molecules/block-header";
 import MoNavLinker from "@/molecules/nav-linker";
 import MoBlockLine from "@/molecules/block-line";
 import CoBlockServices from "../add-block-services";
+import Image from "next/image";
+import photo2 from '../../assets/truck-1.webp';
+import photo3 from "../../assets/avto-about-2.webp";
 
 const inter = Inter({
     subsets: ['latin'],
@@ -72,10 +75,24 @@ export default function AvtoperevozkiIntro() {
                                 </div>
                             </div>
                         </div>
-                        <img className={s['about-img']} src="/avtoperevozki/avto-about-2.jpeg" />
+                        <div className={s['about-img']}>
+                            <Image src={photo2} alt='photo auto'
+                                objectFit="cover"
+                                layout="fill"
+                                style={{borderRadius: '20px'}}
+                            />
+                        </div>
                     </div>
                     <div className={s['about']}>
-                        <img className={s['about-img']} src='/avtoperevozki/avto-about-3.jpeg' alt="Изображение" />
+                        <div className={s['about-img']} >
+                            <Image  
+                                src={photo3}
+                                alt="Изображение"
+                                layout='fill'
+                                objectFit="cover"
+                                style={{borderRadius: '20px'}}
+                            />
+                        </div>
                         <div className={s['text-img']} id={s['padding-list']}>
                             <h1>Размеры автомобильных грузов</h1>
                             <div className={s['margin-top']}>
@@ -91,7 +108,7 @@ export default function AvtoperevozkiIntro() {
                                     <li>Груз, загруженный поло</li>
                                 </div>
                                 <div className={s['special-p']}>
-                                    <p>Мы перевозили грузы практически любого размера, конфигурации и типа – расскажите нам о своих требованиях, и мы будем работать с вами, чтобы удовлетворить ваши потребности.</p>
+                                    <p>Мы перевозим грузы практически любого размера, конфигурации и типа – расскажите нам о своих требованиях, и мы будем работать с вами, чтобы удовлетворить ваши потребности.</p>
                                 </div>
                             </div>
                         </div>

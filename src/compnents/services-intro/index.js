@@ -3,7 +3,12 @@ import MoNavLinker from "@/molecules/nav-linker";
 import { Inter } from "next/font/google";
 import s from './styles.module.css'
 import CoSubmitApplication from "../submit-application";
-
+import Image from "next/image";
+import photo1 from '../../assets/services/truck-cargo.webp'
+import photo2 from '../../assets/multimodal-cargo.webp'
+import photo3 from '../../assets/services/negabarit-cargo.webp'
+import photo4 from '../../assets/services/avia-cargo.webp'
+import photo5 from '../../assets/services/spec-tekhnika.webp'
 const inter = Inter({
     subsets: ['latin'],
     weights: '400'
@@ -34,7 +39,12 @@ function ServicesIntro() {
                             <a href="/avtomobilnye-gruzoperevozki">Подробнее</a>
                         </div>
                         <div className={s['pos-count']}>
-                            <img className="img" src="/services/auto-service.jpeg" alt="Автомобильные перевозки" />
+                            <div className={s['image']}>
+                                <Image
+                                    src={photo1}
+                                    alt="Автомобильные перевозки" 
+                                />
+                            </div>
                             <span>01</span>
                         </div>
                     </div>
@@ -48,7 +58,12 @@ function ServicesIntro() {
                             <a href="/multimodalnye-gruzoperevozki">Подробнее</a>
                         </div>
                         <div className={s['pos-count']}>
-                            <img className="img" src="/services/multimodal-service.jpeg" alt="Мультимодальные перевозки" />
+                            <div className={s['image']}>
+                                <Image
+                                    src={photo2}
+                                    alt="Автомобильные перевозки" 
+                                />
+                            </div>
                             <span>02</span>
                         </div>
                     </div>
@@ -62,7 +77,12 @@ function ServicesIntro() {
                             <a href="/perevozka-negabaritnyh-gruzov">Подробнее</a>
                         </div>
                         <div className={s['pos-count']}>
-                            <img className="img" src="/services/negabarit-service.png" alt="Негабаритные перевозки" />
+                            <div className={s['image']}>
+                                <Image
+                                    src={photo3}
+                                    alt="Автомобильные перевозки" 
+                                />
+                            </div>
                             <span>03</span>
                         </div>
                     </div>
@@ -76,7 +96,12 @@ function ServicesIntro() {
                             <a href="/aviaperevozki">Подробнее</a>
                         </div>
                         <div className={s['pos-count']}>
-                            <img className="img" src="/services/avia-service.png" alt="Авиаперевозки" />
+                            <div className={s['image']}>
+                                <Image
+                                    src={photo4}
+                                    alt="Автомобильные перевозки" 
+                                />
+                            </div>
                             <span>04</span>
                         </div>
                     </div>
@@ -90,7 +115,12 @@ function ServicesIntro() {
                             <a href="/arenda-specztehniki">Подробнее</a>
                         </div>
                         <div className={s['pos-count']}>
-                            <img className="img" src="/services/arenda-service.jpeg" alt="Аренда спец. техники" />
+                            <div className={s['image']}>
+                                <Image
+                                    src={photo5}
+                                    alt="Автомобильные перевозки" 
+                                />
+                            </div>
                             <span>05</span>
                         </div>
                     </div>
@@ -104,7 +134,8 @@ function ServicesIntro() {
                             <a href="/zheleznodorozhnye-perevozki">Подробнее</a>
                         </div>
                         <div className={s['pos-count']}>
-                            <img className="img" src="/services/train-service.jpeg" alt="Железнодорожные перевозки" />
+                            <div className={s['image']}>
+                            </div>
                             <span>06</span>
                         </div>
                     </div>
