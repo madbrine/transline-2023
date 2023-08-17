@@ -85,11 +85,11 @@ function CoIntro() {
                             <input className={s['input-top-border']} onChange={updateFrom} type="text" name="name" placeholder="Откуда" />
                             <input onChange={updateTo} type="text" name="name" placeholder="Куда" />
                             <div className={s['input-container']}>
-                                <input className={s['input-field']} onChange={updateVolume} type="text" name="name" placeholder="Объем" />
+                                <input className={s['input-field']} onChange={updateVolume} type="number" name="name" placeholder="Объем" />
                                 <span className={s['input-addon']}>м³</span>
                             </div>
                             <div className={s['input-container']}>
-                                <input className={s['input-field']} onChange={updateWeight} type="text" name="name" placeholder="Вес" />
+                                <input className={s['input-field']} onChange={updateWeight} type="number" name="name" placeholder="Вес" />
                                 <span className={s['input-addon']}>тонн</span>
                             </div>
                             <input className={s['input-bottom-border']} onChange={updateDescription} type="text" name="name" placeholder="Описание груза" />
@@ -98,10 +98,11 @@ function CoIntro() {
                             </a>
                         </div>
                         <div className={s['insurance-container']}>
-                            <div className={s['insurance-box']}>
+                            <label className={s['insurance-box']}>
                                 <input className={s['insurance-checkbox']} type='checkbox' />
+                                <span className={s['checkmark']}></span>
                                 <div className={inter.className} id={s['text-insurance']}> Требуется страхование</div>
-                            </div>
+                            </label>
                         </div>
                     </div>
                 </motion.div>
