@@ -1,7 +1,7 @@
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 
-function VanishDiv({ children, big }) {
+function VanishDiv({ children, big, className, style }) {
 
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -14,11 +14,20 @@ function VanishDiv({ children, big }) {
         target: bigRef,
         offset: ["110vh 100vh", "100vh end"]
     })
+    let baseStyleA = {
+        opacity: scrollYProgress
+    }
+    let baseStyleB = {
+        opacity: a.scrollYProgress
+    }
+    let combinedStylesA = Object.assign({}, baseStyleA, style);
+    let combinedStylesB = Object.assign({}, baseStyleB, style);
     return (
         <>
             {!big ? 
                 <motion.div
-                    style={{ opacity: scrollYProgress }}
+                    className={className}
+                    style={combinedStylesA}
                     ref={ref}
                 >
                     {children}
@@ -26,7 +35,8 @@ function VanishDiv({ children, big }) {
             
                 :
                 <motion.div
-                    style={{ opacity: a.scrollYProgress }}
+                    className={className}
+                    style={combinedStylesB}
                     ref={bigRef}
                 >
                     {children}
