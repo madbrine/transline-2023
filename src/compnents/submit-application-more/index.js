@@ -27,6 +27,7 @@ function CoSubmitApplicationMore(props) {
             volume: sessionStorage.getItem('offerDataVolume'),
             weight: sessionStorage.getItem('offerDataWeight'),
             desc: sessionStorage.getItem('offerDataDesc'),
+            checked: sessionStorage.getItem('offerDataChecked'),
         })
         console.log(`state = ${offerData}`)
     }, [])

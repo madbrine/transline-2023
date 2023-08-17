@@ -33,6 +33,11 @@ function CoIntro() {
     const [isWeight, setWeight] = useState('');
     const [isDescription, setDescription] = useState('');
 
+    const [isInsuranceChecked, setIsInsuranceChecked] = useState(false);
+
+    const handleInsuranceChange = (e) => {
+        setIsInsuranceChecked(e.target.checked);
+    };
 
     const updateFrom = e => setFrom(e.target.value);
     const updateTo = e => setTo(e.target.value);
@@ -46,6 +51,7 @@ function CoIntro() {
         sessionStorage.setItem('offerDataVolume', isVolume)
         sessionStorage.setItem('offerDataWeight', isWeight)
         sessionStorage.setItem('offerDataDesc', isDescription)
+        sessionStorage.setItem('offerDataChecked', isInsuranceChecked ? 'да' : 'нет');
         console.log(`from intro ${sessionStorage.getItem('offerDataTo')} to ${sessionStorage.getItem('offerDataFrom')}`)
     }
 
@@ -106,7 +112,12 @@ function CoIntro() {
                         </div>
                         <div className={s['insurance-container']}>
                             <label className={s['insurance-box']}>
-                                <input className={s['insurance-checkbox']} type='checkbox' />
+                                <input
+                                    className={s['insurance-checkbox']}
+                                    type='checkbox'
+                                    checked={isInsuranceChecked}
+                                    onChange={handleInsuranceChange}
+                                />
                                 <span className={s['checkmark']}></span>
                                 <div className={inter.className} id={s['text-insurance']}> Требуется страхование</div>
                             </label>
