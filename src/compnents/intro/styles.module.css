@@ -1,5 +1,4 @@
 .container {
-    border: solid 1px red;
     height: 100vh;
     text-align: center;
     flex-shrink: 0;
