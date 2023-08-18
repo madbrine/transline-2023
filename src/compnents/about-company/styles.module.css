@@ -49,6 +49,8 @@
     margin-top: 47px;
     border-radius: 10px;
     width: 130px;
+    text-decoration: none;
+    color: #161616;
 }
 .reason-container {
     display: flex; 

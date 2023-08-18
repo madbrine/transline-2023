@@ -1,3 +1,4 @@
+import VanishDiv from '@/molecules/vanish-div';
 import { Inter } from 'next/font/google';
 import MoLogo from '../logo';
 import s from './styles.module.css';
@@ -11,7 +12,9 @@ function CoFooter() {
         <div className={s['container']}>
             <div className={s['box']}>
                 <div>
-                    <MoLogo />
+                    <VanishDiv>
+                        <MoLogo />
+                    </VanishDiv>
                     <div className={s['logo-desc']}>
                         <a className={inter.className}>Направляя свою заявку и иные персональные данные по указанным на сайте электронным адресам и телефонам, я даю своё согласие на обработку </a>
                     </div>
@@ -108,7 +111,7 @@ function CoFooter() {
                     <a>Политика конфиденциальности</a>
                 </div>
                 <a id={s['font-style']}>
-                    ООО “Transline” 2012 — 2023 ©
+                    ТОО “Transline” 2012 — 2023 ©
                 </a>
             </div>
         </div>

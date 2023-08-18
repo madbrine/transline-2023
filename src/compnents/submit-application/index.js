@@ -90,7 +90,7 @@ function CoSubmitApplication(props) {
                             Получить консультацию
                         </h1>
                     </div>
-                    <div className={s['contacts-container']}>
+                    {/* <div className={s['contacts-container']}>
                         <div className={inter.className} style={{
                             width: '138px',
                             marginRight: '44px'
@@ -112,7 +112,7 @@ function CoSubmitApplication(props) {
                                 <a>info@transline.kz</a>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className={s['contacts-and-form-finish']}>
                     <div className={s['form-input-container']}>
