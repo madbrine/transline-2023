@@ -9,6 +9,8 @@ import photo2 from '../../assets/multimodal-cargo.webp'
 import photo3 from '../../assets/services/negabarit-cargo.webp'
 import photo4 from '../../assets/services/avia-cargo.webp'
 import photo5 from '../../assets/services/spec-tekhnika.webp'
+import photo6 from '../../../public/services/train-service.webp'
+
 const inter = Inter({
     subsets: ['latin'],
     weights: '400'
@@ -135,6 +137,10 @@ function ServicesIntro() {
                         </div>
                         <div className={s['pos-count']}>
                             <div className={s['image']}>
+                            <Image
+                                    src={photo6}
+                                    alt="Автомобильные перевозки" 
+                                />
                             </div>
                             <span>06</span>
                         </div>
