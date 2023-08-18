@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google';
 import s from './styles.module.css'
 import { motion, useScroll } from 'framer-motion'
 import { useRef, useState } from 'react';
+import VanishDiv from '@/molecules/vanish-div';
 
 const inter = Inter({
     subsets: ['latin-ext'],
@@ -75,9 +76,7 @@ function CoIntro() {
                         </motion.h1>
                     </div>
                 </div>
-                <motion.div className={s['form-container']}
-                    ref={refForm}
-                    style={{ opacity: ScrollForm.scrollYProgress }}
+                <div className={s['form-container']}
                 >
                     {/* 
                     <div className={s['form-switches']}>
@@ -88,20 +87,28 @@ function CoIntro() {
                     <div className={s['form-inputs-container']}
                         style={{ marginBottom: -50, }}>
                         <div className={s['form-input']}>
-                            <input className={s['input-top-border']} onChange={updateFrom} type="text" name="name" placeholder="Откуда" />
-                            <input onChange={updateTo} type="text" name="name" placeholder="Куда" />
-                            <div className={s['input-container']}>
+                            <VanishDiv className={s['input-container']}>
+                                <input className={s['input-top-border']} onChange={updateFrom} type="text" name="name" placeholder="Откуда" />
+                            </VanishDiv>
+                            <VanishDiv className={s['input-container']}>
+                                <input onChange={updateTo} type="text" name="name" placeholder="Куда" />
+                            </VanishDiv>
+                            <VanishDiv className={s['input-container']}>
                                 <input className={s['input-field']} onChange={updateVolume} type="number" name="name" placeholder="Объем" />
                                 <span className={s['input-addon']}>м³</span>
-                            </div>
-                            <div className={s['input-container']}>
+                            </VanishDiv>
+                            <VanishDiv className={s['input-container']}>
                                 <input className={s['input-field']} onChange={updateWeight} type="number" name="name" placeholder="Вес" />
                                 <span className={s['input-addon']}>тонн</span>
-                            </div>
-                            <input className={s['input-bottom-border']} onChange={updateDescription} type="text" name="name" placeholder="Описание груза" />
-                            <a href="/oformit-zayavku">
-                                <button onClick={storageLoader} className={inter.className}>Рассчитать</button>
-                            </a>
+                            </VanishDiv>
+                            <VanishDiv className={s['input-container']}>
+                                <input className={s['input-bottom-border']} onChange={updateDescription} type="text" name="name" placeholder="Описание груза" />
+                            </VanishDiv>
+                            <VanishDiv className={s['input-container']}>
+                                <a href="/oformit-zayavku">
+                                    <button onClick={storageLoader} className={inter.className}>Рассчитать</button>
+                                </a>
+                            </VanishDiv>
                         </div>
                         <div className={s['insurance-container']}>
                             <label className={s['insurance-box']}>
@@ -116,7 +123,7 @@ function CoIntro() {
                             </label>
                         </div>
                     </div>
-                </motion.div>
+                </div>
             </div>
         </div >
     );

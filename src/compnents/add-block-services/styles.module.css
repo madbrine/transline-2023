@@ -82,6 +82,7 @@
         width: 400px;
         padding: 16px 14px;
         margin-right: 8px;
+        text-decoration: none;
     }
 
     .service img {

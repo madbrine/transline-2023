@@ -178,7 +178,7 @@ function CoAboutCompany() {
                             marginBottom: '100px',
                         }}>
                         <VanishDiv>
-                            <a className={s['link-read-more']}>
+                            <a className={s['link-read-more']} href="/o-kompanii">
                                 Читать больше
                             </a>
                         </VanishDiv>
