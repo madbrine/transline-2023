@@ -31,7 +31,7 @@ export default function ArendaTehnikiIntro() {
                 <MoBlockLine text="Об услуге" />
                 <div className={s['container-body']}>
                     <div className={s['about-1']}>
-                        <img className={s['about-img']} src='/arenda-tehniki/arenda-about-1.jpeg' alt="Изображение" />
+                        <img className={s['about-img']} src='/arenda-tehniki/arenda-about-1.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
                             <h1>Типы услуг</h1>
                             <div className={s['margin-top']}>
@@ -60,10 +60,10 @@ export default function ArendaTehnikiIntro() {
                                 </div>
                             </div>
                         </div>
-                        <img className={s['about-img']} src="/arenda-tehniki/arenda-about-2.jpeg" />
+                        <img className={s['about-img']} src="/arenda-tehniki/arenda-about-2.webp" />
                     </div>
                     <div className={s['about-3']}>
-                        <img className={s['about-img']} src='/arenda-tehniki/arenda-about-3.jpeg' alt="Изображение" />
+                        <img className={s['about-img']} src='/arenda-tehniki/arenda-about-3.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
                             <h1>Почему выбирают нас?</h1>
                             <div className={s['margin-top']}>

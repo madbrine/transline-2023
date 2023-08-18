@@ -31,7 +31,7 @@ export default function MultimodalnyeIntro() {
                 <MoBlockLine text="Об услуге" />
                 <div className={s['container-body']}>
                     <div className={s['about']}>
-                        <img className={s['about-img']} src='/multimodalnye-perevozki/multimodalnye-about-1.jpeg' alt="Изображение" />
+                        <img className={s['about-img']} src='/multimodalnye-perevozki/multimodalnye-about-1.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
                             <h1>Наши услуги по мультимодальным перевозкам</h1>
                             <div className={s['margin-top']}>
@@ -50,10 +50,10 @@ export default function MultimodalnyeIntro() {
                                 <p className={s['short-p']}>Мы можем разработать мультимодальное решение в соответствии с вашими потребностями.</p>
                             </div>
                         </div>
-                        <img className={s['about-img']} src="/multimodalnye-perevozki/multimodalnye-about-2.jpeg" />
+                        <img className={s['about-img']} src="/multimodalnye-perevozki/multimodalnye-about-2.webp" />
                     </div>
                     <div className={s['about']}>
-                        <img className={s['about-img']} src='/multimodalnye-perevozki/multimodalnye-about-3.jpeg' alt="Изображение" />
+                        <img className={s['about-img']} src='/multimodalnye-perevozki/multimodalnye-about-3.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
                             <h1>Почему выбирают нас?</h1>
                             <div className={s['margin-top']}>

@@ -31,7 +31,7 @@ export default function ZheleznodorozhnyeIntro() {
                 <MoBlockLine text="Об услуге" />
                 <div className={s['container-body']}>
                     <div className={s['about']}>
-                        <img className={s['about-img']} src='/zheleznodorozhnye-perevozki/zheleznodorozhnye-about-1.jpeg' alt="Изображение" />
+                        <img className={s['about-img']} src='/zheleznodorozhnye-perevozki/zheleznodorozhnye-about-1.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
                             <h1>Наши услуги по железнодорожным перевозкам</h1>
                             <div className={s['margin-top']}>
@@ -75,10 +75,10 @@ export default function ZheleznodorozhnyeIntro() {
                                 </div>
                             </div>
                         </div>
-                        <img className={s['about-img']} src="/zheleznodorozhnye-perevozki/zheleznodorozhnye-about-2.jpeg" />
+                        <img className={s['about-img']} src="/zheleznodorozhnye-perevozki/zheleznodorozhnye-about-2.webp" />
                     </div>
                     <div className={s['about']}>
-                        <img className={s['about-img']} src='/zheleznodorozhnye-perevozki/zheleznodorozhnye-about-3.jpeg' alt="Изображение" />
+                        <img className={s['about-img']} src='/zheleznodorozhnye-perevozki/zheleznodorozhnye-about-3.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
                             <h1>Почему выбирают нас?</h1>
                             <div className={s['margin-top']}>

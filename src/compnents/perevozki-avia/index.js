@@ -28,7 +28,7 @@ export default function AviaperevozkiIntro() {
                 <MoBlockLine text="Об услуге" />
                 <div className={s['container-body']}>
                     <div className={s['about']}>
-                        <img className={s['about-img']} src='/aviaperevozki/aviaperevozki-about-1.png' alt="Изображение" />
+                        <img className={s['about-img']} src='/aviaperevozki/aviaperevozki-about-1.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
                             <h1>Наши услуги по авиаперевозкам</h1>
                             <div id={s['margin-list']}>
@@ -47,11 +47,11 @@ export default function AviaperevozkiIntro() {
                                 <p>Протяни руку, и давайте начнем разговор. Поговори с одним из наших экспертов по решениям.</p>
                             </div>
                         </div>
-                        <img className={s['about-img']} src="/aviaperevozki/aviaperevozki-about-2.png" />
+                        <img className={s['about-img']} src="/aviaperevozki/aviaperevozki-about-2.webp" />
                     </div>
                     <div className={s['about-last']}>
                         <h1>Воздушный чартер с оплатой</h1>
-                        <img src="/aviaperevozki/aviaperevozki-about-3.png" />
+                        <img src="/aviaperevozki/aviaperevozki-about-3.webp" />
                     </div>
                 </div>
                 <MoBlockLine text="Другие услуги" />

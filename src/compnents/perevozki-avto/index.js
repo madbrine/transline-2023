@@ -37,7 +37,7 @@ export default function AvtoperevozkiIntro() {
                 <MoBlockLine text="Об услуге" />
                 <div className={s['container-body']}>
                     <div className={s['about']}>
-                        <img className={s['about-img']} src='/avtoperevozki/avto-about-1.png' alt="Изображение" />
+                        <img className={s['about-img']} src='/avtoperevozki/avto-about-1.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
                             <h1>Наши услуги по автомобильным перевозкам</h1>
                             <div className={s['margin-top-about-1']} id={s['margin-list']}>
@@ -135,7 +135,7 @@ export default function AvtoperevozkiIntro() {
                                 <li>Мультимодальные транспортные услуги, включая воздушные, железнодорожные, автомобильные и морские</li>
                             </div>
                         </div>
-                        <img className={s['about-img']} src="/news-img/news-item-3.jpeg" />
+                        <img className={s['about-img']} src="/news-img/news-item-3.webp" />
                     </div>
                 </div>
                 <MoBlockLine text="Другие услуги" />

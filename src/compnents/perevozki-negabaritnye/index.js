@@ -28,7 +28,7 @@ export default function NegabaritnyeIntro() {
                 <MoBlockLine text="Об услуге" />
                 <div className={s['container-body']}>
                     <div className={s['about']}>
-                        <img className={s['about-img']} src='/negabarit-perevozki/negabarit-about-1.jpeg' alt="Изображение" />
+                        <img className={s['about-img']} src='/negabarit-perevozki/negabarit-about-1.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
                             <h1>Типы перевозимых грузов</h1>
                             <div className={s['margin-top']}>
@@ -56,10 +56,10 @@ export default function NegabaritnyeIntro() {
                                 </div>
                             </div>
                         </div>
-                        <img className={s['about-img']} src="/multimodalnye-perevozki/multimodalnye-about-2.jpeg" />
+                        <img className={s['about-img']} src="/multimodalnye-perevozki/multimodalnye-about-2.webp" />
                     </div>
                     <div className={s['about']}>
-                        <img className={s['about-img']} src='/negabarit-perevozki/negabarit-about-2.png' alt="Изображение" />
+                        <img className={s['about-img']} src='/negabarit-perevozki/negabarit-about-2.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
                             <h1>Этапы доставки негабаритных грузов</h1>
                             <div className={s['margin-top']}>

@@ -15,7 +15,7 @@
 .intro {
     width: auto;
     height: 544px;
-    background-image: url('/avtoperevozki/avto-intro.png');
+    background-image: url('/avtoperevozki/avto-intro.webp');
     background-position: center;
     background-size: cover;
     border-radius: 21px;
@@ -184,7 +184,7 @@
         padding-bottom: 25px;
         padding-right: 25px;
         margin-bottom: 0;
-        background-image: url('/avtoperevozki/avto-intro-mobile.png');
+        background-image: url('/avtoperevozki/avto-intro-mobile.webp');
     }
 
     .intro p {
