@@ -6,6 +6,7 @@
 .news-item-wrapper {
     margin-right: 36px;
     margin-bottom: 36px;
+    flex: 1;
 }
 
 .news-item-wrapper:nth-child(2n) {

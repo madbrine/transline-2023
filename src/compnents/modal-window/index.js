@@ -121,7 +121,6 @@ const ModalWindow = ({ isOpen, onClose, news, allNewsData }) => {
                                                     text6={item.text6}
                                                     img_text2={item.img_text2}
                                                     text7={item.text7}
-
                                                 />
                                             </div>
                                         ))}
