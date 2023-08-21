@@ -14,10 +14,13 @@ export default function ArendaTehnikiIntro() {
     return (
         <div className={inter.className}>
             <div className={s['margin-block']}>
-                <MoBlockHeader text='Аренда спец. техники' />
+                <MoBlockHeader text='Аренда спец.' />
+                <div className={s['head-service']}>
+                    <MoBlockHeader text='техники' />
+                </div>
                 <MoNavLinker
-                    text2="Аренда спец. техники"
-                    link2="/arenda-specztehniki"
+                    text3="Аренда спец. техники"
+                    link3="/arenda-specztehniki"
                 />
                 <div className={s['container']}>
                     <div className={s['intro']}>

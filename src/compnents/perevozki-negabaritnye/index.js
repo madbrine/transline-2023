@@ -16,8 +16,8 @@ export default function NegabaritnyeIntro() {
             <div className={s['margin-block']}>
                 <MoBlockHeader text='Негабаритные перевозки' />
                 <MoNavLinker
-                    text2="Негабаритные перевозки"
-                    link2="/perevozka-negabaritnyh-gruzov"
+                    text3="Негабаритные перевозки"
+                    link3="/perevozka-negabaritnyh-gruzov"
                 />
                 <div className={s['container']}>
                     <div className={s['intro']}>

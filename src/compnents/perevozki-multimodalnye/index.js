@@ -19,8 +19,8 @@ export default function MultimodalnyeIntro() {
                     <MoBlockHeader text='перевозки' />
                 </div>
                 <MoNavLinker
-                    text2="Железнодорожные перевозки"
-                    link2="/zheleznodorozhnye-perevozki"
+                    text3="Железнодорожные перевозки"
+                    link3="/zheleznodorozhnye-perevozki"
                 />
                 <div className={s['container']}>
                     <div className={s['intro']}>
