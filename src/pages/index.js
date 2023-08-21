@@ -107,6 +107,7 @@ export default function Home() {
         </VanishDiv>
         <CoBlockServices />
         <CoAboutCompany />
+        <CoNews />
         <CoSubmitApplication />
         <CoFooter />
       </main>

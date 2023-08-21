@@ -21,29 +21,21 @@ function CoNews() {
     ];
 
     const secondLineNews = [
-        { img: '/news-img/news-item-3.jpeg', content: 'Не следует, однако, забывать, что дальнейшее развитие различных форм деятельности прекрасно подходит для', date: "10.10.2023", tag: "Новости, Награды" },
+        { img: '/news-img/news-item-3.webp', content: 'Не следует, однако, забывать, что дальнейшее развитие различных форм деятельности прекрасно подходит для', date: "10.10.2023", tag: "Новости, Награды" },
         { img: '/news-img/news-item-4.jpeg', content: 'Не следует, однако, забывать, что дальнейшее развитие различных форм деятельности прекрасно подходит для', date: "10.10.2023", tag: "Новости, Награды" },
     ];
 
     return (
         <div>
-            <VanishDiv>
-                <MoBlockLine text="Новости" />
-            </VanishDiv>
+            <MoBlockLine text="Новости" />
             <div>
                 <div className={s['container']}>
-                    <VanishDiv>
-                        <h1 className={inter.className}>
-                            Новости
-                        </h1>
-                    </VanishDiv>
+                    <h1 className={inter.className}>
+                        Новости
+                    </h1>
                     <div className={s['news-container']}>
-                        <VanishDiv big>
-                            <NewsLine news={firstLineNews} />
-                        </VanishDiv>
-                        <VanishDiv big>
-                            <NewsLine news={secondLineNews} />
-                        </VanishDiv>
+                        <NewsLine news={firstLineNews} />
+                        <NewsLine news={secondLineNews} />
                     </div>
                 </div>
             </div>
