@@ -59,7 +59,7 @@ const NewsPage = () => {
     return (
         <div className={inter.className}>
             {currentNews.map((line, index) => (
-                <NewsLine key={index} news={line} />
+                <NewsLine key={index} news={line} allNewsData={newsData} />
             ))}
             <div className={s['pos-button']}>
                 <button

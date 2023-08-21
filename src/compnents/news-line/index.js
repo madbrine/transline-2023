@@ -3,7 +3,7 @@ import s from './styles.module.css';
 import NewsItem from '../news-item';
 import ModalWindow from '../modal-window';
 
-const NewsLine = ({ news }) => {
+const NewsLine = ({ news, allNewsData }) => {
     const [selectedNews, setSelectedNews] = useState(null);
 
     const handleNewsClick = (index) => {
@@ -44,6 +44,7 @@ const NewsLine = ({ news }) => {
                 isOpen={selectedNews !== null}
                 onClose={handleCloseModal}
                 news={selectedNews}
+                allNewsData={allNewsData}
             />
         </div>
     );
