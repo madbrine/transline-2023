@@ -42,7 +42,7 @@ export default function Home() {
         </VanishDiv>
         <CoBlockServices />
         <CoAboutCompany />
-        {/* <CoNews /> */}
+        <CoNews />
         <CoSubmitApplication />
         <CoFooter />
       </main>
