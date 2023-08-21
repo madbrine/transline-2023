@@ -10,8 +10,20 @@ const inter = Inter({
     weights: '400'
 })
 
-const ModalWindow = ({ isOpen, onClose, news }) => {
+const ModalWindow = ({ isOpen, onClose, news, allNewsData }) => {
     const [isClosing, setIsClosing] = useState(false);
+
+    const [selectedNews, setSelectedNews] = useState(null); // Инициализация выбранной новостью
+
+    // Функция для обновления выбранной новости
+    const handleNewsClick = (selectedNews) => {
+        setSelectedNews(selectedNews);
+
+        var myDiv = document.getElementById('newsScrollTop');
+        myDiv.scrollTop = 0;
+    }
+
+    const modalNews = selectedNews || news;
 
     useEffect(() => {
         if (isOpen) {
@@ -25,6 +37,7 @@ const ModalWindow = ({ isOpen, onClose, news }) => {
 
     const handleModalClose = () => {
         setIsClosing(true);
+        setSelectedNews(null);
         setTimeout(() => {
             setIsClosing(false);
             onClose();
@@ -45,6 +58,7 @@ const ModalWindow = ({ isOpen, onClose, news }) => {
                     transition={{ duration: 0.3, ease: "easeOut" }}
                 >
                     <motion.div
+                        id='newsScrollTop'
                         className={s['modalContent']}
                         onClick={(e) => e.stopPropagation()}
                         initial={{ x: "100%" }}
@@ -54,7 +68,7 @@ const ModalWindow = ({ isOpen, onClose, news }) => {
                     >
                         <div className={inter.className}>
                             <button onClick={handleModalClose}>Закрыть</button>
-                            <img className={s['preview-img']} src={news.img} alt="Изображение новости" />
+                            <img className={s['preview-img']} src={modalNews.img} alt="Изображение новости" />
                             <div className={s['container']}>
                                 <div className={s['title']}>
                                     {/* <div className={s['arrows-pos']}>
@@ -69,42 +83,50 @@ const ModalWindow = ({ isOpen, onClose, news }) => {
                                             </svg>
                                         </div>
                                     </div> */}
-                                    <p className={s['text-title']}>{news.title}</p>
+                                    <p className={s['text-title']}>{modalNews.title}</p>
                                 </div>
                                 <div className={s['line']} id={s['margin-line']} />
                                 <div className={s['text-date']}>
-                                    <p className={s['date']}>{news.date}</p>
-                                    <p className={s['text']}>{news.text1}</p>
+                                    <p className={s['date']}>{modalNews.date}</p>
+                                    <p className={s['text']}>{modalNews.text1}</p>
                                 </div>
-                                <p className={s['text']}>{news.text2}</p>
-                                <img className={s['img-text']} src={news.img_text1} />
-                                <p className={s['text']}>{news.text3}</p>
-                                <p className={s['text']}>{news.text4}</p>
-                                <p className={s['text']}>{news.text5}</p>
-                                <p className={s['text']}>{news.text6}</p>
-                                <img className={s['img-text']} src={news.img_text2} />
-                                <p className={s['text']}>{news.text7}</p>
+                                <p className={s['text']}>{modalNews.text2}</p>
+                                <img className={s['img-text']} src={modalNews.img_text1} />
+                                <p className={s['text']}>{modalNews.text3}</p>
+                                <p className={s['text']}>{modalNews.text4}</p>
+                                <p className={s['text']}>{modalNews.text5}</p>
+                                <p className={s['text']}>{modalNews.text6}</p>
+                                <img className={s['img-text']} src={modalNews.img_text2} />
+                                <p className={s['text']}>{modalNews.text7}</p>
                             </div>
                             <MoBlockLine text='Еще новости' />
                             <div className={s['horizontal-container']}>
-                                <div className={s['element']}>
-                                    <NewsItem 
-                                    img='/news-img/news-item-1.jpeg'
-                                    content='Не следует, однако, забывать, что дальнейшее развитие различных форм деятельности прекрасно подходит для'
-                                    date="10.10.2023"
-                                    tag="Новости, Награды"
-                                    title='Лаборатория ИЦ Диапазон приняла участие в седьмой международной научно-технической конференции «Оптотех-2022», прошедшей с 5 по 10 декабря 2022г'
-                                    text1='Лаборатория «Архилайт» является аккредитованным испытательным центром в области сертификационных испытаний светотехнических устройств, осветительных приборов и источников света в системе ГОСТ Р - аккредитована Федеральным Агентством по Техническому регулированию и Метрологии на компетентность и независимость и право проведения таких испытаний.'
-                                    text2='Лаборатория "Архилайт" имеет следующие аттестаты и сертификаты:'
-                                    img_text1='/news-img/news-item-2.jpeg'
-                                    text3='Господа, разбавленное изрядной долей эмпатии, рациональное мышление способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач. Современные технологии достигли такого уровня, что новая модель организационной деятельности предопределяет высокую востребованность переосмысления внешнеэкономических политик.'
-                                    text4='Господа, разбавленное изрядной долей эмпатии, рациональное мышление способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач. Современные технологии достигли такого уровня, что новая модель организационной деятельности предопределяет высокую востребованность переосмысления внешнеэкономических политик.'
-                                    text5='Следует отметить, что постоянный количественный рост и сфера нашей активности позволяет оценить значение глубокомысленных рассуждений. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: семантический разбор внешних противодействий представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Противоположная точка зрения подразумевает, что интерактивные прототипы формируют глобальную экономическую сеть и при этом — обнародованы. Принимая во внимание показатели успешности, высокотехнологичная концепция общественного уклада требует определения и уточнения экономической целесообразности принимаемых решений. Приятно, граждане, наблюдать, как некоторые особенности внутренней политики формируют глобальную экономическую сеть и при этом — преданы социально-демократической анафеме. Прежде всего, синтетическое тестирование влечет за собой процесс внедрения и модернизации экспериментов, поражающих по своей масштабности и грандиозности.'
-                                    text6='Учитывая ключевые сценарии поведения, экономическая повестка сегодняшнего дня требует определения и уточнения поэтапного и последовательного развития общества. В своём стремлении улучшить пользовательский опыт мы упускаем, что базовые сценарии поведения пользователей лишь добавляют фракционных разногласий и призваны к ответу! Внезапно, некоторые особенности внутренней политики набирают популярность среди определенных слоев населения, а значит, должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.'
-                                    img_text2='/news-img/news-item-3.jpeg'
-                                    text7='Господа, разбавленное изрядной долей эмпатии, рациональное мышление способствует подготовке и реализации позиций, занимаемых участниками в отношении поставленных задач. Современные технологии достигли такого уровня, что новая модель организационной деятельности предопределяет высокую востребованность переосмысления внешнеэкономических политик.'
-                                />
-                                </div>
+                                {allNewsData.map((newsGroup, groupIndex) => (
+                                    <div className={s['pos-elements']} key={groupIndex}>
+                                        {newsGroup.map((item, itemIndex) => (
+                                            <div className={s['element']} onClick={() => handleNewsClick(item)}>
+                                                <NewsItem
+                                                    key={itemIndex}
+                                                    img={item.img}
+                                                    content={item.content}
+                                                    date={item.date}
+                                                    tag={item.tag}
+                                                    title={item.title}
+                                                    text1={item.text1}
+                                                    text2={item.text2}
+                                                    img_text1={item.img_text1}
+                                                    text3={item.text3}
+                                                    text4={item.text4}
+                                                    text5={item.text5}
+                                                    text6={item.text6}
+                                                    img_text2={item.img_text2}
+                                                    text7={item.text7}
+
+                                                />
+                                            </div>
+                                        ))}
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </motion.div>
