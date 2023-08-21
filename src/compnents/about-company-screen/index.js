@@ -182,7 +182,6 @@ function CoAboutCompanyScreen() {
                     </div>
                 </div>
             </div> */}
-            <NewsIntro/>
             <CoSubmitApplication/>
         </div>
     )
