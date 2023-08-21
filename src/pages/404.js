@@ -67,15 +67,20 @@ function MultimodalnyeGruzoperevozki() {
 
                 {/* Гугл Тэг (gtag.js) */}
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HPJ82XBPM0"></script>
-                <script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){
-                        dataLayer.push(arguments)
-                    }
-                    gtag('js', new Date());
+                <script
+                    type="text/javascript"
+                    dangerouslySetInnerHTML={{
+                        __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-                    gtag('config', 'G-HPJ82XBPM0');
-                </script>
+            gtag('config', 'G-HPJ82XBPM0');
+        `,
+                    }}
+                />
                 {/* Конец Гугл Тэга */}
             </Head>
             <main className={inter.className}>
@@ -83,14 +88,14 @@ function MultimodalnyeGruzoperevozki() {
                 {/* global.css */}
                 <div className="not-found-container">
                     <h1 style={{
-                    fontSize: '128px',
-                    marginRight: 64,
+                        fontSize: '128px',
+                        marginRight: 64,
                     }}>
-                        404 
+                        404
                     </h1>
                     <h1>Страница не найдена</h1>
                 </div>
-                <CoOurServices withoutHeader/>
+                <CoOurServices withoutHeader />
                 <CoSubmitApplication />
                 <CoFooter />
             </main>

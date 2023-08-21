@@ -61,15 +61,20 @@ function News() {
 
                 {/* Гугл Тэг (gtag.js) */}
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HPJ82XBPM0"></script>
-                <script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){
-                        dataLayer.push(arguments)
-                    }
-                    gtag('js', new Date());
+                <script
+                    type="text/javascript"
+                    dangerouslySetInnerHTML={{
+                        __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-                    gtag('config', 'G-HPJ82XBPM0');
-                </script>
+            gtag('config', 'G-HPJ82XBPM0');
+        `,
+                    }}
+                />
                 {/* Конец Гугл Тэга */}
             </Head>
             <main>
