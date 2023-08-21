@@ -16,8 +16,8 @@ export default function AviaperevozkiIntro() {
             <div className={s['margin-block']}>
                 <MoBlockHeader text='Авиа перевозки' />
                 <MoNavLinker
-                    text2="Авиа перевозки"
-                    link2="/aviaperevozki"
+                    text3="Авиа перевозки"
+                    link3="/aviaperevozki"
                 />
                 <div className={s['container']}>
                     <div className={s['intro']}>

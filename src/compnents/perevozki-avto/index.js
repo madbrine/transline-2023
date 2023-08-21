@@ -22,8 +22,8 @@ export default function AvtoperevozkiIntro() {
                     <MoBlockHeader text='перевозки' />
                 </div>
                 <MoNavLinker
-                    text2="Автомобильные перевозки"
-                    link2="/avtomobilnye-gruzoperevozki"
+                    text3="Автомобильные перевозки"
+                    link3="/avtomobilnye-gruzoperevozki"
                 />
                 <div className={s['container']}>
                     <div className={s['intro']}>
