@@ -1,5 +1,5 @@
 .container {
-    padding-top: 38px;
+    padding-top: 24px;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 30px;
@@ -24,6 +24,7 @@
 .navigation-bar {
     margin-left: 60px;
     display: flex;
+    align-items: center;
 }
 .navigation-bar div {
     margin-right: 24px;
