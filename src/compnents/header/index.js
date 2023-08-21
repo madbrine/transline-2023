@@ -28,7 +28,7 @@ function CoHeader() {
                         initial={{ y: '-100vh' }}
                         animate={{ y: 0 }}
                         exit={{ y: '-100vh' }}
-                        transition={{ ease: 'easeOut', duration: 0.15 }}
+                        transition={{ ease: [0.17, 0.82, 0.1, 1], duration: 1.2 }}
                         className={s['mobile-menu-position']}
                     >
                         <div className={s['mobile-menu-container']}>
