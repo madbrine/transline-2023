@@ -1,4 +1,9 @@
-@media (max-width: 1200px) {.container a {
+.container {
+    display: block;
+}
+
+@media (max-width: 1200px) {
+    .container a {
     color: var(--black-black-60, #666);
     font-size: 40px;
     font-style: normal;
