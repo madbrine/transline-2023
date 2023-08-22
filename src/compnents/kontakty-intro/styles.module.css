@@ -8,6 +8,11 @@
     margin-right: 60px;
 }
 
+.map-pos {
+    overflow: hidden;
+    margin-left: 3000px;
+}
+
 #block-pos {
     display: flex;
     flex-direction: column;
@@ -140,6 +145,11 @@
     .map {
         width: 100%;
         height: 542px;
+    }
+
+    .map-pos {
+        overflow: hidden;
+        margin-left: 0;
     }
 
 }
