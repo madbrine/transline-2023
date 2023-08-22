@@ -4,12 +4,12 @@
     justify-content: space-between;
     align-items: flex-end;
 }
-.container h1 {
+.container div {
     width: calc( 100vw - 120px - 200px)
 }
 
 #h1_style {
-    font-size: 112px;
+    font-size: 64px;
     margin: 0;
 }
 

@@ -104,7 +104,8 @@ function CoHeader() {
                     <div style={{ marginBottom: 8 }}>
                         <MoHeaderLink text={'info@transline.kz'} underLine />
                     </div>
-                    <div>
+                    <div style={{
+                    }}>
                         <MoHeaderLink text={'+7 (707) 367-11-04'} />
                     </div>
                 </div>

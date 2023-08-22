@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>http://transline.kz/</loc>
+  <lastmod>2023-08-22T08:24:48+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://transline.kz/o-kompanii</loc>
+  <lastmod>2023-08-22T08:24:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://transline.kz/vidy-perevozok</loc>
+  <lastmod>2023-08-22T08:24:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://transline.kz/sertifikaty</loc>
+  <lastmod>2023-08-22T08:24:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://transline.kz/avtopark</loc>
+  <lastmod>2023-08-22T08:24:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://transline.kz/kontakty</loc>
+  <lastmod>2023-08-22T08:24:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://transline.kz/oformit-zayavku</loc>
+  <lastmod>2023-08-22T08:24:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://transline.kz/avtomobilnye-gruzoperevozki</loc>
+  <lastmod>2023-08-22T08:24:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://transline.kz/multimodalnye-gruzoperevozki</loc>
+  <lastmod>2023-08-22T08:24:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://transline.kz/aviaperevozki</loc>
+  <lastmod>2023-08-22T08:24:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://transline.kz/zheleznodorozhnye-perevozki</loc>
+  <lastmod>2023-08-22T08:24:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://transline.kz/perevozka-negabaritnyh-gruzov</loc>
+  <lastmod>2023-08-22T08:24:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://transline.kz/arenda-specztehniki</loc>
+  <lastmod>2023-08-22T08:24:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://transline.kz/news</loc>
+  <lastmod>2023-08-22T08:24:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://transline.kz/pdf/certificate_of_conformity_ISO_9001_14001_45001.pdf</loc>
+  <lastmod>2023-08-17T04:51:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://transline.kz/pdf/certificate_of_conformity_ISO_27001.pdf</loc>
+  <lastmod>2023-08-17T04:51:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

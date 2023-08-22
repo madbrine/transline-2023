@@ -13,12 +13,12 @@ const inter = Inter({
 function MoBlockHeader(props) {
     return (
         <div className={s['container']}>
-            <h1
+            <div
                 className={inter.className}
                 id={s['h1_style']}
             >
                 {props.text}
-            </h1>
+            </div>
             {props.getFormButton &&
                 <div className={s['border_style']}>
                     <div className={interM.className}

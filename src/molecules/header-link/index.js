@@ -8,7 +8,7 @@ const inter = Inter({
 function MoHeaderLink(props) {
     return (
         <div style={styles.container}>
-            <div className={s['container']}>
+            <div className={s['container']} >
                 <a
                     style={styles.link}
                     className={inter.className}
