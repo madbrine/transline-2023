@@ -8,8 +8,8 @@ function AvtomobilnyeGruzoperevozki() {
     return (
         <>
             <Head>
-                <title>Автомобильные грузоперевозки по Казахстану и СНГ. Грузоперевозки Казахстан Россия</title>
-                <meta name="description" content="Автомобильные грузоперевозки по Казахстану и СНГ. Грузоперевозки Казахстан Россия" />
+                <title>Автомобильные грузоперевозки по Казахстану и СНГ</title>
+                <meta name="description" content="Автомобильные грузоперевозки по Казахстану и СНГ. У нас самый большой автопарк в Центральной Азии. Мы так же осуществляем авто перевозки с Пакистана Ирана и Афганистана" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

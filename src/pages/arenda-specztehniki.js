@@ -10,7 +10,7 @@ function ArendaSpecztehniki() {
         <>
             <Head>
                 <title>Аренда спецтехники по всему Казахстану. Самосвалы, краны.</title>
-                <meta name="description" content="Аренда спецтехники в Казахстане. Аренда самосвала в Казахстане." />
+                <meta name="description" content="Ваш надежный партнер по аренде спецтехники в Казахстане. Предоставляем самосвалы и краны для разнообразных задач. Гарантируем надежность, гибкость и качество услуг по всей территории страны." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
