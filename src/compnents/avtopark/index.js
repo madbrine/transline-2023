@@ -1,10 +1,9 @@
 import Image from 'next/image';
 import s from './styles.module.css';
 import headerPhoto from '../../assets/auto-cargo-header.webp'
-import MoBlockHeader from '@/molecules/block-header';
-import MoBlockLine from '@/molecules/block-line';
 import MoNavLinker from '@/molecules/nav-linker';
 import { Inter } from 'next/font/google';
+import MoBlockHeaderH1 from '@/molecules/block-header-h1';
 
 const inter = Inter({
     subsets: ['latin'],
@@ -14,9 +13,8 @@ function CoAvtopark() {
     return (
         <div className={inter.className}>
             <div className={s['margin']}>
-                <MoBlockHeader
+                <MoBlockHeaderH1
                     text="Автопарк"
-
                 />
                 <MoNavLinker
                     text2="Автопарк"

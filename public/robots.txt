@@ -16,5 +16,5 @@ Disallow: /package-lock.json
 Disallow: /next.config.js
 Disallow: /jsconfig.json
 Allow: /public/favicon.ico
-Allow: /sitemap.xml
-Allow: /robots.txt
+Allow: /public/sitemap.xml
+Allow: /public/robots.txt

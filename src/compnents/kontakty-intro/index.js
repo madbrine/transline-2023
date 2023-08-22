@@ -1,8 +1,8 @@
 import { Inter } from 'next/font/google';
 import s from './styles.module.css';
 import MoNavLinker from "@/molecules/nav-linker";
-import MoBlockHeader from "@/molecules/block-header";
 import VanishDiv from '@/molecules/vanish-div';
+import MoBlockHeaderH1 from '@/molecules/block-header-h1';
 
 const inter = Inter({
     subsets: ['latin'],
@@ -13,7 +13,7 @@ function KontaktyIntro() {
     return (
         <div className={s['margin-block']}>
             <VanishDiv>
-                <MoBlockHeader text="Контакты" />
+                <MoBlockHeaderH1 text="Контакты" />
             </VanishDiv>
             <VanishDiv>
                 <MoNavLinker text2="Контакты" />

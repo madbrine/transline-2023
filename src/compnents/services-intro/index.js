@@ -1,4 +1,3 @@
-import MoBlockHeader from "@/molecules/block-header";
 import MoNavLinker from "@/molecules/nav-linker";
 import { Inter } from "next/font/google";
 import s from './styles.module.css'
@@ -10,6 +9,7 @@ import photo3 from '../../assets/services/negabarit-cargo.webp'
 import photo4 from '../../assets/services/avia-cargo.webp'
 import photo5 from '../../assets/services/spec-tekhnika.webp'
 import photo6 from '../../../public/services/train-service.webp'
+import MoBlockHeaderH1 from "@/molecules/block-header-h1";
 
 const inter = Inter({
     subsets: ['latin'],
@@ -20,7 +20,7 @@ function ServicesIntro() {
     return (
         <div className={inter.className}>
             <div className={s['margin-block']}>
-                <MoBlockHeader text="Услуги" />
+                <MoBlockHeaderH1 text="Услуги" />
                 <MoNavLinker
                     text2="Услуги"
                     link2="/vidy-perevozok"
@@ -35,7 +35,7 @@ function ServicesIntro() {
                     <div className={s['service']}>
                         <div className={s['desc']}>
                             <div>
-                                <h1>Автомобильные перевозки</h1>
+                                <div className={s['h1']}>Автомобильные перевозки</div>
                                 <p>Максимальное качество транспортно-экспедиционных услуг при минимальных затратах.</p>
                             </div>
                             <a href="/avtomobilnye-gruzoperevozki">Подробнее</a>
@@ -54,7 +54,7 @@ function ServicesIntro() {
                     <div className={s['service']}>
                         <div className={s['desc']}>
                             <div>
-                                <h1>Мультимодальные перевозки</h1>
+                                <div className={s['h1']}>Мультимодальные перевозки</div>
                                 <p>Максимальное качество транспортно-экспедиционных услуг при минимальных затратах.</p>
                             </div>
                             <a href="/multimodalnye-gruzoperevozki">Подробнее</a>
@@ -73,7 +73,7 @@ function ServicesIntro() {
                     <div className={s['service']}>
                         <div className={s['desc']}>
                             <div>
-                                <h1>Негабаритные перевозки</h1>
+                                <div className={s['h1']}>Негабаритные перевозки</div>
                                 <p>Максимальное качество транспортно-экспедиционных услуг при минимальных затратах.</p>
                             </div>
                             <a href="/perevozka-negabaritnyh-gruzov">Подробнее</a>
@@ -92,7 +92,7 @@ function ServicesIntro() {
                     <div className={s['service']}>
                         <div className={s['desc']}>
                             <div>
-                                <h1>Авиа перезвозки</h1>
+                                <div className={s['h1']}>Авиа перезвозки</div>
                                 <p>Максимальное качество транспортно-экспедиционных услуг при минимальных затратах.</p>
                             </div>
                             <a href="/aviaperevozki">Подробнее</a>
@@ -111,7 +111,7 @@ function ServicesIntro() {
                     <div className={s['service']}>
                         <div className={s['desc']}>
                             <div>
-                                <h1>Аренда спец. техники</h1>
+                                <div className={s['h1']}>Аренда спец. техники</div>
                                 <p>Максимальное качество транспортно-экспедиционных услуг при минимальных затратах.</p>
                             </div>
                             <a href="/arenda-specztehniki">Подробнее</a>
@@ -130,7 +130,7 @@ function ServicesIntro() {
                     <div className={s['service']}>
                         <div className={s['desc']}>
                             <div>
-                                <h1>Железнодорожные перевозки</h1>
+                                <div className={s['h1']}>Железнодорожные перевозки</div>
                                 <p>Максимальное качество транспортно-экспедиционных услуг при минимальных затратах.</p>
                             </div>
                             <a href="/zheleznodorozhnye-perevozki">Подробнее</a>

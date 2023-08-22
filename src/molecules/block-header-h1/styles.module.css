@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    margin: 0 60px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.container div {
+    width: calc( 100vw - 120px - 200px)
+}
+
+#h1_style {
+    font-size: 64px;
+    margin: 0;
+}
+
+.border_style {
+    border: solid 1px #999;
+    border-width: 1px;
+    border-color: #999;
+    border-radius: 10px;
+    height: 48px;
+}
+
+#a_style {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    display: inline-block;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        margin: 0 20px;
+    }
+    
+    .container h1 {
+        width: 72vw;
+    }
+
+    #h1_style {
+        font-size: 32px;
+    }
+}
