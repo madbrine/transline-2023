@@ -7,6 +7,7 @@ import CoBlockServices from "../add-block-services";
 import Image from "next/image";
 import photo2 from '../../assets/truck-1.webp';
 import photo3 from "../../assets/avto-about-2.webp";
+import MoBlockHeaderH1 from "@/molecules/block-header-h1";
 
 const inter = Inter({
     subsets: ['latin'],
@@ -17,10 +18,7 @@ export default function AvtoperevozkiIntro() {
     return (
         <div className={inter.className}>
             <div className={s['margin-block']}>
-                <MoBlockHeader text='Автомобильные' />
-                <div className={s['head-service']}>
-                    <MoBlockHeader text='перевозки' />
-                </div>
+                <MoBlockHeaderH1 text='Автомобильные перевозки' />
                 <MoNavLinker
                     text3="Автомобильные перевозки"
                     link3="/avtomobilnye-gruzoperevozki"
@@ -39,7 +37,7 @@ export default function AvtoperevozkiIntro() {
                     <div className={s['about']}>
                         <img className={s['about-img']} src='/avtoperevozki/avto-about-1.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
-                            <h1>Наши услуги по автомобильным перевозкам</h1>
+                            <div className={s['h1']}>Наши услуги по автомобильным перевозкам</div>
                             <div className={s['margin-top-about-1']} id={s['margin-list']}>
                                 <li>Внутренние и трансграничные грузоперевозки</li>
                                 <li>Услуги по перетяжке линий через нашу глобальную сеть</li>
@@ -56,7 +54,7 @@ export default function AvtoperevozkiIntro() {
                     </div>
                     <div className={s['about']} id={s['column-reverse']}>
                         <div className={s['text-img']} id={s['padding-p']}>
-                            <h1>Типы автомобильных грузов</h1>
+                            <div className={s['h1']}>Типы автомобильных грузов</div>
                             <div className={s['margin-top']}>
                                 <p>Помимо генеральных грузов, мы перевозим широкий спектр специализированных грузов, включая:</p>
                                 <div id={s['margin-list']}>
@@ -94,7 +92,7 @@ export default function AvtoperevozkiIntro() {
                             />
                         </div>
                         <div className={s['text-img']} id={s['padding-list']}>
-                            <h1>Размеры автомобильных грузов</h1>
+                            <div className={s['h1']}>Размеры автомобильных грузов</div>
                             <div className={s['margin-top']}>
                                 <p>Мы можем перевозить грузы различных размеров, в том числе:</p>
                                 <div id={s['margin-list']}>
@@ -115,7 +113,7 @@ export default function AvtoperevozkiIntro() {
                     </div>
                     <div className={s['about']} id={s['column-reverse']}>
                         <div className={s['text-img']} id={s['padding-p']}>
-                            <h1>Почему выбирают нас?</h1>
+                            <div className={s['h1']}>Почему выбирают нас?</div>
                             <div className={s['special-p']}>
                                 <p id={s['margin-p']}>Мы перевозили грузы практически любого размера, конфигурации и типа – расскажите нам о своих требованиях, и мы будем работать с вами, чтобы удовлетворить ваши потребности.</p>
                             </div>

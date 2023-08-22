@@ -4,6 +4,7 @@ import MoBlockHeader from "@/molecules/block-header";
 import MoNavLinker from "@/molecules/nav-linker";
 import MoBlockLine from "@/molecules/block-line";
 import CoBlockServices from "../add-block-services";
+import MoBlockHeaderH1 from "@/molecules/block-header-h1";
 
 const inter = Inter({
     subsets: ['latin'],
@@ -14,7 +15,7 @@ export default function NegabaritnyeIntro() {
     return (
         <div className={inter.className}>
             <div className={s['margin-block']}>
-                <MoBlockHeader text='Негабаритные перевозки' />
+                <MoBlockHeaderH1 text='Негабаритные перевозки' />
                 <MoNavLinker
                     text3="Негабаритные перевозки"
                     link3="/perevozka-negabaritnyh-gruzov"
@@ -30,7 +31,7 @@ export default function NegabaritnyeIntro() {
                     <div className={s['about']}>
                         <img className={s['about-img']} src='/negabarit-perevozki/negabarit-about-1.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
-                            <h1>Типы перевозимых грузов</h1>
+                            <div className={s['h1']}>Типы перевозимых грузов</div>
                             <div className={s['margin-top']}>
                                 <div id={s['margin-list']}>
                                     <li>Объекты строительства</li>
@@ -47,7 +48,7 @@ export default function NegabaritnyeIntro() {
                     </div>
                     <div className={s['about']} id={s['column-reverse']}>
                         <div className={s['text-img']} id={s['padding-p']}>
-                            <h1>Перевозка негабаритных грузов осуществляется</h1>
+                            <div className={s['h1']}>Перевозка негабаритных грузов осуществляется</div>
                             <div className={s['margin-top']}>
                                 <div id={s['margin-list']}>
                                     <li>Водным транспортом</li>
@@ -61,7 +62,7 @@ export default function NegabaritnyeIntro() {
                     <div className={s['about']}>
                         <img className={s['about-img']} src='/negabarit-perevozki/negabarit-about-2.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
-                            <h1>Этапы доставки негабаритных грузов</h1>
+                            <div className={s['h1']}>Этапы доставки негабаритных грузов</div>
                             <div className={s['margin-top']}>
                                 <div id={s['margin-list']}>
                                     <li>Подборка ТС для перевозки</li>

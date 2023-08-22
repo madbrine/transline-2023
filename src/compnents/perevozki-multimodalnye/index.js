@@ -4,6 +4,7 @@ import MoBlockHeader from "@/molecules/block-header";
 import MoNavLinker from "@/molecules/nav-linker";
 import MoBlockLine from "@/molecules/block-line";
 import CoBlockServices from "../add-block-services";
+import MoBlockHeaderH1 from "@/molecules/block-header-h1";
 
 const inter = Inter({
     subsets: ['latin'],
@@ -14,10 +15,7 @@ export default function MultimodalnyeIntro() {
     return (
         <div className={inter.className}>
             <div className={s['margin-block']}>
-                <MoBlockHeader text='Мультимодальные' />
-                <div className={s['head-service']}>
-                    <MoBlockHeader text='перевозки' />
-                </div>
+                <MoBlockHeaderH1 text='Мультимодальные перевозки' />
                 <MoNavLinker
                     text3="Железнодорожные перевозки"
                     link3="/zheleznodorozhnye-perevozki"
@@ -33,7 +31,7 @@ export default function MultimodalnyeIntro() {
                     <div className={s['about']}>
                         <img className={s['about-img']} src='/multimodalnye-perevozki/multimodalnye-about-1.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
-                            <h1>Наши услуги по мультимодальным перевозкам</h1>
+                            <div className={s['h1']}>Наши услуги по мультимодальным перевозкам</div>
                             <div className={s['margin-top']}>
                                 <p className={s['long-p']}>Самолеты, поезда, грузовики и корабли. Иногда для удовлетворения ваших потребностей требуется их комбинация.</p>
                                 <p className={s['long-p']}>Наличие различных видов транспорта позволяет нам адаптировать логистическое решение в соответствии с вашим бюджетом и графиком.</p>
@@ -44,7 +42,7 @@ export default function MultimodalnyeIntro() {
                     </div>
                     <div className={s['about-special']}>
                         <div className={s['text-img']} id={s['padding-p']}>
-                            <h1>Типы и размеры грузов</h1>
+                            <div className={s['h1']}>Типы и размеры грузов</div>
                             <div className={s['margin-top']}>
                                 <p className={s['short-p']}>Объединение нескольких видов транспорта означает, что, как правило, могут быть отправлены грузы практически любого размера, конфигурации и типа. При использовании воздушного транспорта в ваших решениях для модальных перевозок будут существовать некоторые ограничения.</p>
                                 <p className={s['short-p']}>Мы можем разработать мультимодальное решение в соответствии с вашими потребностями.</p>
@@ -55,7 +53,7 @@ export default function MultimodalnyeIntro() {
                     <div className={s['about']}>
                         <img className={s['about-img']} src='/multimodalnye-perevozki/multimodalnye-about-3.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
-                            <h1>Почему выбирают нас?</h1>
+                            <div className={s['h1']}>Почему выбирают нас?</div>
                             <div className={s['margin-top']}>
                                 <p className={s['long-p']}>У нас есть множество услуг, чтобы предложить нашим клиентам наилучшее решение. Помимо мультимодального транспортного маршрута, адаптированного к вашим потребностям, вы можете рассчитывать:</p>
                                 <div id={s['margin-list']}>

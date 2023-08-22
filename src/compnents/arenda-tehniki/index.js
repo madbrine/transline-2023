@@ -4,6 +4,7 @@ import MoBlockHeader from "@/molecules/block-header";
 import MoNavLinker from "@/molecules/nav-linker";
 import MoBlockLine from "@/molecules/block-line";
 import CoBlockServices from "../add-block-services";
+import MoBlockHeaderH1 from "@/molecules/block-header-h1";
 
 const inter = Inter({
     subsets: ['latin'],
@@ -14,10 +15,7 @@ export default function ArendaTehnikiIntro() {
     return (
         <div className={inter.className}>
             <div className={s['margin-block']}>
-                <MoBlockHeader text='Аренда спец.' />
-                <div className={s['head-service']}>
-                    <MoBlockHeader text='техники' />
-                </div>
+                <MoBlockHeaderH1 text='Аренда спец. техники' />
                 <MoNavLinker
                     text3="Аренда спец. техники"
                     link3="/arenda-specztehniki"
@@ -36,7 +34,7 @@ export default function ArendaTehnikiIntro() {
                     <div className={s['about-1']}>
                         <img className={s['about-img']} src='/arenda-tehniki/arenda-about-1.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
-                            <h1>Типы услуг</h1>
+                            <div className={s['h1']}>Типы услуг</div>
                             <div className={s['margin-top']}>
                                 <div id={s['margin-list']}>
                                     <li>Предоставление в аренду других видов спец техники</li>
@@ -47,7 +45,7 @@ export default function ArendaTehnikiIntro() {
                     </div>
                     <div className={s['about-2']}>
                         <div className={s['text-img']} id={s['padding-p']}>
-                            <h1>Отраслевые решения</h1>
+                            <div className={s['h1']}>Отраслевые решения</div>
                             <div className={s['margin-top']}>
                                 <p className={s['long-p']}>Да, мы можем. Перевозка буровой установки из Канады в Европу или доставка циркового оборудования в Казань - развитая инфаструктура, опыт и штат высококлассных специалистов позволяют нам с успехом реализовывать поставленные задачи</p>
                                 <div id={s['margin-list']}>
@@ -68,7 +66,7 @@ export default function ArendaTehnikiIntro() {
                     <div className={s['about-3']}>
                         <img className={s['about-img']} src='/arenda-tehniki/arenda-about-3.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
-                            <h1>Почему выбирают нас?</h1>
+                            <div className={s['h1']}>Почему выбирают нас?</div>
                             <div className={s['margin-top']}>
                                 <div id={s['margin-list']}>
                                     <li>Наша техника расположена по всему Казахстану, что позволяет нам решать ваши задачи в максимально короткие сроки</li>
