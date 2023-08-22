@@ -15,6 +15,7 @@ import bottom1Photo from './bottom1.webp'
 import bottom2Photo from './bottom2.webp'
 import bottom3Photo from './bottom3.webp'
 import NewsIntro from '../news-intro';
+import MoBlockHeaderH1 from '@/molecules/block-header-h1';
 
 
 const inter = Inter({
@@ -25,12 +26,12 @@ const inter = Inter({
 function CoAboutCompanyScreen() {
     return (
         <div className={inter.className} style={{ marginTop: '180px' }}>
-            <MoBlockHeader text={"О компании"} />
+            <MoBlockHeaderH1 text={"О компании"} />
             <MoNavLinker text2={"О компании"} />
             <div className={s['container']}>
-                <h1 className={s['header']}>
+                <div className={s['header']}>
                     Крупнейшая логистическая компания Центральной Азии
-                </h1>
+                </div>
                 <div className={s['header-photo']}>
                     <Image 
                         src={headerPhoto} 

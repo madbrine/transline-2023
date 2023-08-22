@@ -86,9 +86,9 @@ function CoSubmitApplication(props) {
             <div className={s['block-pos']}>
                 <div className={s['container']}>
                     <div className={s['container-width']}>
-                        <h1 className={inter.className}>
+                        <div className={inter.className}>
                             Получить консультацию
-                        </h1>
+                        </div>
                     </div>
                     {/* <div className={s['contacts-container']}>
                         <div className={inter.className} style={{

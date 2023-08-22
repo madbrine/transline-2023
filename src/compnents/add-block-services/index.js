@@ -29,7 +29,7 @@ export default function CoBlockServices() {
                     </div>
                     <div className={s['text']}>
                         <div>
-                            <h2>Автомобильные перевозки</h2>
+                            <div className={s['h2']}>Автомобильные перевозки</div>
                             <p>Наша глобальная сеть обеспечивает доставку грузов наших клиентов по всему миру</p>
                         </div>
                         <a>Узнать больше</a>
@@ -45,7 +45,7 @@ export default function CoBlockServices() {
                         </div>
                         <div className={s['text']}>
                             <div>
-                                <h2>Мультимодальные перевозки</h2>
+                                <div className={s['h2']}>Мультимодальные перевозки</div>
                                 <p>Позвольте нам помочь вам донести ваши продукты и идеи до всего мира</p>
                             </div>
                             <a>Узнать больше</a>
@@ -61,7 +61,7 @@ export default function CoBlockServices() {
                     </div>
                     <div className={s['text']}>
                         <div>
-                            <h2>Авиа перевозки</h2>
+                            <div className={s['h2']}>Авиа перевозки</div>
                             <p>Мы обладаем знаниями, необходимыми для обслуживания широкого спектра отраслей</p>
                         </div>
                         <a>Узнать больше</a>
@@ -77,7 +77,7 @@ export default function CoBlockServices() {
                     </div>
                     <div className={s['text']}>
                         <div>
-                            <h2 style={{textDecoration: 'none'}}>Железнодорожные перевозки</h2>
+                            <div className={s['h2']}>Железнодорожные перевозки</div>
                             <p>Воспользуйтесь нашей железнодорожной сетью, чтобы соединить вашу цепочку поставок с основными экономическими регионами по всему миру.</p>
                         </div>
                         <a>Узнать больше</a>
@@ -93,7 +93,7 @@ export default function CoBlockServices() {
                     </div>
                     <div className={s['text']}>
                         <div>
-                            <h2>Негабаритные перевозки</h2>
+                            <div className={s['h2']}>Негабаритные перевозки</div>
                             <p>Мы осуществляем перевозки негабаритных грузов морским, железнодорожным и автомобильным транспортом. </p>
                         </div>
                         <a>Узнать больше</a>
@@ -109,7 +109,7 @@ export default function CoBlockServices() {
                     </div>
                     <div className={s['text']}>
                         <div>
-                            <h2>Аренда спец. техники</h2>
+                            <div className={s['h2']}>Аренда спец. техники</div>
                             <p>У нас вы найдете самосвалы различных марок, моделей и грузоподъемности. </p>
                         </div>
                         <a>Узнать больше</a>

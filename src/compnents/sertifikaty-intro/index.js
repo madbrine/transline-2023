@@ -1,12 +1,10 @@
-import MoBlockHeader from "@/molecules/block-header";
-import MoBlockLine from "@/molecules/block-line";
 import MoButton from "@/molecules/button";
-import MoHeaderLink from "@/molecules/header-link";
 import MoNavLinker from "@/molecules/nav-linker";
 import VanishDiv from "@/molecules/vanish-div";
 import { Inter } from "next/font/google";
 import CoSubmitApplication from "../submit-application";
 import s from './styles.module.css';
+import MoBlockHeaderH1 from "@/molecules/block-header-h1";
 
 const inter = Inter({
     subsets: ['latin'],
@@ -17,7 +15,7 @@ function SertifikatyIntro() {
         <div className={inter.className}>
             <div className={s['margin-block']}>
                 <VanishDiv>
-                    <MoBlockHeader text="Сертификаты" />
+                    <MoBlockHeaderH1 text="Сертификаты" />
                 </VanishDiv>
                 <VanishDiv>
                     <MoNavLinker
