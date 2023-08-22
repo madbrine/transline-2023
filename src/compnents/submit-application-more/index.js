@@ -66,7 +66,7 @@ function CoSubmitApplicationMore(props) {
             };
 
             // Отправка данных формы на сервер
-            await axios.post('http://185.234.114.179:4444/submit-form-more', allData);
+            await axios.post('https://185.234.114.179:4444/submit-form-more', allData);
 
             router.push('/spasibo');
         } catch (error) {
