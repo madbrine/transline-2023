@@ -35,7 +35,7 @@ export default function Home() {
         <CoHeader />
         <CoIntro />
         <VanishDiv>
-          <MoBlockHeader text="Решения для любого бизнеса" />
+          <MoBlockHeader text="Решения для Вашего бизнеса" />
         </VanishDiv>
         <VanishDiv>
           <MoBlockLine text="Наши решения" />
