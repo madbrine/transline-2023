@@ -28,6 +28,17 @@ function CoAvtopark() {
                             objectFit='cover'
                             style={{ borderRadius: 21 }}
                         />
+                        <div style={{ position: 'relative' }}>
+                            <div className={s['intro']}>
+                                <div className={s['intro-text']}>
+                                    <p>
+                                        Собственный автопарк включает 350 тягачей марок
+                                        Volvo, MAN, Iveco, Mercedes, Freightliner, Isuzu.
+                                    </p>
+                                </div>
+                                <a>Получить консультацию</a>
+                            </div>
+                        </div>
                     </div>
                     <div className={s['desc']}>
                         <a>
