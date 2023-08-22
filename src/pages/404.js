@@ -23,14 +23,14 @@ function MultimodalnyeGruzoperevozki() {
                 {/* global.css */}
                 <div className="not-found-container">
                     <h1 style={{
-                    fontSize: '128px',
-                    marginRight: 64,
+                        fontSize: '128px',
+                        marginRight: 64,
                     }}>
-                        404 
+                        404
                     </h1>
-                    <h1>Страница не найдена</h1>
+                    <div style={{ fontSize: '36px' }}>Страница не найдена</div>
                 </div>
-                <CoOurServices withoutHeader/>
+                <CoOurServices withoutHeader />
                 <CoSubmitApplication />
                 <CoFooter />
             </main>

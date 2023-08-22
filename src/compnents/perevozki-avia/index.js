@@ -4,6 +4,7 @@ import s from './styles.module.css';
 import MoNavLinker from "@/molecules/nav-linker";
 import MoBlockLine from "@/molecules/block-line";
 import CoBlockServices from "../add-block-services";
+import MoBlockHeaderH1 from "@/molecules/block-header-h1";
 
 const inter = Inter({
     subsets: ['latin'],
@@ -14,7 +15,7 @@ export default function AviaperevozkiIntro() {
     return (
         <div className={inter.className}>
             <div className={s['margin-block']}>
-                <MoBlockHeader text='Авиа перевозки' />
+                <MoBlockHeaderH1 text='Авиа перевозки' />
                 <MoNavLinker
                     text3="Авиа перевозки"
                     link3="/aviaperevozki"
@@ -30,7 +31,7 @@ export default function AviaperevozkiIntro() {
                     <div className={s['about']}>
                         <img className={s['about-img']} src='/aviaperevozki/aviaperevozki-about-1.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
-                            <h1>Наши услуги по авиаперевозкам</h1>
+                            <div className={s['h1']}>Наши услуги по авиаперевозкам</div>
                             <div id={s['margin-list']}>
                                 <li>Доставка от двери до двери</li>
                                 <li>Полный и частичный воздушный чартер</li>
@@ -40,7 +41,7 @@ export default function AviaperevozkiIntro() {
                     </div>
                     <div className={s['about']} id={s['height-about']}>
                         <div className={s['text-img']} id={s['padding-p']}>
-                            <h1>Размеры авиаперевозок</h1>
+                            <div className={s['h1']}>Размеры авиаперевозок</div>
                             <div>
                                 <p>Хотя у нас есть планы и опыт по обработке грузов различных форм и размеров, по-прежнему действуют ограничения по весу и габаритам.</p>
                                 <p>Свяжитесь с нами, чтобы обсудить ваши требования, и мы будем работать с вами, чтобы удовлетворить ваши потребности.</p>
@@ -50,7 +51,7 @@ export default function AviaperevozkiIntro() {
                         <img className={s['about-img']} src="/aviaperevozki/aviaperevozki-about-2.webp" />
                     </div>
                     <div className={s['about-last']}>
-                        <h1>Воздушный чартер с оплатой</h1>
+                        <div className={s['h1']}>Воздушный чартер с оплатой</div>
                         <img src="/aviaperevozki/aviaperevozki-about-3.webp" />
                     </div>
                 </div>

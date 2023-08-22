@@ -4,6 +4,7 @@ import MoBlockHeader from "@/molecules/block-header";
 import MoNavLinker from "@/molecules/nav-linker";
 import MoBlockLine from "@/molecules/block-line";
 import CoBlockServices from "../add-block-services";
+import MoBlockHeaderH1 from "@/molecules/block-header-h1";
 
 const inter = Inter({
     subsets: ['latin'],
@@ -14,10 +15,7 @@ export default function ZheleznodorozhnyeIntro() {
     return (
         <div className={inter.className}>
             <div className={s['margin-block']}>
-                <MoBlockHeader text='Железнодорожные' />
-                <div className={s['head-service']}>
-                    <MoBlockHeader text='перевозки' />
-                </div>
+                <MoBlockHeaderH1 text='Железнодорожные перевозки' />
                 <MoNavLinker
                     text3="Железнодорожные перевозки"
                     link3="/zheleznodorozhnye-perevozki"
@@ -33,7 +31,7 @@ export default function ZheleznodorozhnyeIntro() {
                     <div className={s['about']}>
                         <img className={s['about-img']} src='/zheleznodorozhnye-perevozki/zheleznodorozhnye-about-1.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
-                            <h1>Наши услуги по железнодорожным перевозкам</h1>
+                            <div className={s['h1']}>Наши услуги по железнодорожным перевозкам</div>
                             <div className={s['margin-top']}>
                                 <div className={s['special-p']}>
                                     <p>Мы перевозим грузы практически любого размера, конфигурации и типа – расскажите нам о своих требованиях, и мы будем работать с вами, чтобы удовлетворить ваши потребности.</p>
@@ -53,7 +51,7 @@ export default function ZheleznodorozhnyeIntro() {
                     </div>
                     <div className={s['about-special']}>
                         <div className={s['text-img']} id={s['padding-p']}>
-                            <h1>Типы железнодорожных перевозок</h1>
+                            <div className={s['h1']}>Типы железнодорожных перевозок</div>
                             <div className={s['margin-top']}>
                                 <p>Помимо генеральных грузов, мы перевозим широкий спектр специализированных грузов, включая:</p>
                                 <div id={s['margin-list']}>
@@ -64,7 +62,7 @@ export default function ZheleznodorozhnyeIntro() {
                                 </div>
                             </div>
                             <div className={s['text-margin']}>
-                                <h1>Размеры железнодорожных грузов</h1>
+                                <div className={s['h1']}>Размеры железнодорожных грузов</div>
                                 <div className={s['margin-top']}>
                                     <p>Мы можем перевозить грузы различных размеров, включая:</p>
                                     <div id={s['margin-list']}>
@@ -80,7 +78,7 @@ export default function ZheleznodorozhnyeIntro() {
                     <div className={s['about']}>
                         <img className={s['about-img']} src='/zheleznodorozhnye-perevozki/zheleznodorozhnye-about-3.webp' alt="Изображение" />
                         <div className={s['text-img']} id={s['padding-list']}>
-                            <h1>Почему выбирают нас?</h1>
+                            <div className={s['h1']}>Почему выбирают нас?</div>
                             <div className={s['margin-top']}>
                                 <span className={s['special-p']}>
                                     <p>У нас есть множество услуг, чтобы предоставить нашим клиентам наилучшее решение. Перевозя грузы с нами, вы можете рассчитывать:</p>
