@@ -9,7 +9,7 @@ export default function OformitZayavku() {
     return (
         <>
             <Head>
-                <title>Оформить заявку Transline</title>
+                <title>Перевозка груза по Казахстану и СНГ</title>
                 <meta name="description" content="Транспортная компания" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />

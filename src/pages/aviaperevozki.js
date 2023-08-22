@@ -8,7 +8,7 @@ function Aviaperevozki() {
     return (
         <>
             <Head>
-                <title>Transline</title>
+                <title>Международные Авиа Перевозки до Казахстана и по всемум миру</title>
                 <meta name="description" content="Международные Авиа Перевозки до Казахстана и по всемум миру" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />

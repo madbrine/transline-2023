@@ -9,7 +9,7 @@ function MultimodalnyeGruzoperevozki() {
     return (
         <>
             <Head>
-                <title>Transline</title>
+                <title>Мультимодальные перевозки Китай Индия Япония Корея Юговосточная Азия</title>
                 <meta name="description" content="Мультимодальные перевозки Китай Индия Япония Корея Юговосточная Азия" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />

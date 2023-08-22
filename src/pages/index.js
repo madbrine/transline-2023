@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Transline</title>
-        <meta name="description" content="Крупнейшая логистическая компания в Центральной Азии" />
+        <title>Крупнейшая логистическая компания в Центральной Азии</title>
+        <meta name="description" content="Крупнейшая логистическая компания в Центральной Азии. Надежные автоперевозки по Казахстану, СНГ и миру. Оптимизируем грузоперевозки для бизнеса любого масштаба. Быстрая и безопасная доставка с гарантированным качеством." />
         <meta name="viewport" content="width=device-width, minimum-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

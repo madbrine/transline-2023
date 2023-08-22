@@ -8,7 +8,7 @@ function AvtomobilnyeGruzoperevozki() {
     return (
         <>
             <Head>
-                <title>Transline</title>
+                <title>Автомобильные грузоперевозки по Казахстану и СНГ. Грузоперевозки Казахстан Россия</title>
                 <meta name="description" content="Автомобильные грузоперевозки по Казахстану и СНГ. Грузоперевозки Казахстан Россия" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
