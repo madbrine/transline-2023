@@ -23,6 +23,10 @@ export default function TplPage(props) {
                 <p>{props.text8}</p>
                 <p>{props.text9}</p>
                 <p>{props.text10}</p>
+                <p>{props.text11}</p>
+                <p>{props.text12}</p>
+                <p>{props.text13}</p>
+                <p>{props.text14}</p>
             </div>
             <MoBlockLine text="Другие услуги" />
             <CoBlockServices />
