@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import MoBlockLine from "@/molecules/block-line";
 import s from './styles.module.css';
 import Image from "next/image";
-import photo1 from '../../assets/auto-cargo.webp';
+import photo1 from '../../assets/auto-cargo-new.webp';
 import photo2 from '../../assets/multimodal-cargo.webp';
 import photo3 from '../../assets/services/avia-cargo.webp';
 import photo4 from '../../assets/services/train-cargo.webp';

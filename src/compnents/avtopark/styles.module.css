@@ -9,7 +9,7 @@
 .intro {
     width: auto;
     height: 544px;
-    background-image: url('/avtoperevozki/avto-intro.webp');
+    background-image: url('../../assets/avtopark.webp');
     background-position: center;
     background-size: cover;
     border-radius: 21px;
