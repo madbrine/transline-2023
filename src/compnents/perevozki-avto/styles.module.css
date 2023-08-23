@@ -92,7 +92,7 @@
     justify-content: space-between;
 }
 
-.margin-block .h1 {
+.margin-block h1 {
     color: #161616;
     font-size: 64px;
     font-weight: 400;
@@ -151,8 +151,7 @@
     line-height: 23px;
     margin: 0;
     margin-top: 12px;
-    width: 270px;
-    border: 1px solid #fff;
+    width: 370px;
 }
 
 .special-p p {

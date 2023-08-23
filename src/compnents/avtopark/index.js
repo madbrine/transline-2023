@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import s from './styles.module.css';
-import headerPhoto from '../../assets/auto-cargo-header.webp'
 import MoNavLinker from '@/molecules/nav-linker';
 import { Inter } from 'next/font/google';
 import MoBlockHeaderH1 from '@/molecules/block-header-h1';
@@ -22,12 +21,6 @@ function CoAvtopark() {
                 />
                 <div className={s['container']}>
                     <div className={s['header-photo']}>
-                        <Image
-                            src={headerPhoto}
-                            layout="fill"
-                            objectFit='cover'
-                            style={{ borderRadius: 21 }}
-                        />
                         <div style={{ position: 'relative' }}>
                             <div className={s['intro']}>
                                 <div className={s['intro-text']}>
