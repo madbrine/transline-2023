@@ -9,7 +9,7 @@ function MultimodalnyeGruzoperevozki() {
     return (
         <>
             <Head>
-                <title>Мультимодальные перевозки Китай Индия Юговосточная Азия</title>
+                <title>Мультимодальные перевозки. Китай, Индия, Юговосточная Азия</title>
                 <meta name="description" content="Мы осуществляем междунородные мультимодальные перевозки по Восточной Азии, Индии, Пакистану, Ирану и Афганистану. Так же у нас доступны перевозки с Юговосточной Азии, Индонезии, Малайзии, Филлипинов, Австралии и Новой Зеландии " />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
