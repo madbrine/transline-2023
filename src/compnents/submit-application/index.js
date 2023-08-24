@@ -27,12 +27,22 @@ function CoSubmitApplication(props) {
 
     const [errors, setErrors] = useState({});
 
+    const [isFormValid, setIsFormValid] = useState(false);
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevFormData) => ({
             ...prevFormData,
             [name]: value,
         }));
+
+        const validationErrors = validateForm({
+            ...formData,
+            [name]: value,
+        });
+
+        const hasErrors = Object.values(validationErrors).some((error) => error !== '');
+        setIsFormValid(!hasErrors);
     };
 
     const router = useRouter();
@@ -114,7 +124,7 @@ function CoSubmitApplication(props) {
                         </div>
                     </div> */}
                 </div>
-                <div className={s['contacts-and-form-finish']}>
+                <form className={s['contacts-and-form-finish']}>
                     <div className={s['form-input-container']}>
                         <input
                             className={s['form-input']}
@@ -157,14 +167,14 @@ function CoSubmitApplication(props) {
                     </div>
                     <div className={s['form-input-finish-container']}>
                         <div className={s['form-input-button-container']}>
-                            <button onClick={handleSubmit}>Отправить</button>
+                            <button type="submit" onClick={handleSubmit} disabled={!isFormValid}>Отправить</button>
                             <div className={s['form-input-button-desc']}>
                                 <a className={inter.className} style={{ color: '#666' }}>Нажимая "Отправить" вы </a>
                                 <a className={inter.className}>соглашаетесь с обработкой персональных данных</a>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
             <div className={s['line-gray']} />
         </div>
