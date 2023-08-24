@@ -10,6 +10,7 @@ Disallow: /src/styles/
 Disallow: /pages/api/
 Disallow: /pages/_app.js
 Disallow: /pages/_document.js
+Disallow: /pages/spasibo.js
 Disallow: /README.md
 Disallow: /package.json
 Disallow: /package-lock.json
