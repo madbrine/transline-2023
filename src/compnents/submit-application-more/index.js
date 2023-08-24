@@ -116,7 +116,7 @@ function CoSubmitApplicationMore(props) {
                     <div className={s['container-width']}>
                         <VanishDiv>
                             <h1 className={inter.className}>
-                                Получить консультацию
+                                Как нам с вами связаться?
                             </h1>
                         </VanishDiv>
                     </div>
