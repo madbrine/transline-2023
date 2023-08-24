@@ -21,6 +21,62 @@ export default function Home() {
       </Head>
       <main style={{ overflowX: 'hidden', width: '100vw' }}>
         <CoHeader />
+        <div style={{ display: 'none' }}>
+          <a href='/arenda-avtokrana-v-kazahstane'></a>
+          <a href='/arenda-avtovyshki-v-kazahstane'></a>
+          <a href='/arenda-manipulyatora-v-kazahstane'></a>
+          <a href='/arenda-samosvalov'></a>
+          <a href='/bortovye-perevozki'></a>
+          <a href='/gruzoperevozki-furami'></a>
+          <a href='/gruzoperevozki-iz-indii'></a>
+          <a href='/gruzoperevozki-medikamentov'></a>
+          <a href='/gruzoperevozki-po-gorodu'></a>
+          <a href='/gruzoperevozki-po-kazahstanu'></a>
+          <a href='/gruzoperevozki-v-afganistan'></a>
+          <a href='/gruzoperevozki-v-iran'></a>
+          <a href='/gruzoperevozki-v-tadzhikistan'></a>
+          <a href='/gruzoperevozki-v-uzbekistan'></a>
+          <a href='/izotermicheskie-perevozki'></a>
+          <a href='/kontejnernye-perevozki-iz-avstralii-v-kazahstan'></a>
+          <a href='/kontejnernye-perevozki-iz-indii-v-kazahstan'></a>
+          <a href='/kontejnernye-perevozki-iz-indonezii-v-kazahstan'></a>
+          <a href='/kontejnernye-perevozki-iz-malajzii-v-kazahstan'></a>
+          <a href='/kontejnernye-perevozki-iz-novoj-zelandii-v-kazahstan'></a>
+          <a href='/kontejnernye-perevozki-iz-o.a.e.-v-kazahstan'></a>
+          <a href='/kontejnernye-perevozki-iz-pakistana-v-kazahstan'></a>
+          <a href='/kontejnernye-perevozki-iz-shri-lanka-v-kazahstan'></a>
+          <a href='/kontejnernye-perevozki-iz-singapura-v-kazahstan'></a>
+          <a href='/kontejnernye-perevozki-iz-tajlanda-v-kazahstan'></a>
+          <a href='/kontejnernye-perevozki-iz-tajvanya-v-kazahstan'></a>
+          <a href='/kontejnernye-perevozki-iz-v-kazahstan'></a>
+          <a href='/kontejnernye-perevozki-iz-vetnama-v-kazahstan'></a>
+          <a href='/kontejnernye-perevozki-iz-yaponii-v-kazahstan'></a>
+          <a href='/kontejnernye-perevozki-v-kazahstan'></a>
+          <a href='/mezhdunarodnye-perevozki'></a>
+          <a href='/nizkoramnye-traly'></a>
+          <a href='/perevozka-dorozhnoj-tehniki'></a>
+          <a href='/perevozka-emkostej'></a>
+          <a href='/perevozka-nestandartnyh-gruzov'></a>
+          <a href='/perevozka-selskohozyajstvennoj-tehniki'></a>
+          <a href='/perevozka-specztehniki'></a>
+          <a href='/perevozka-stankov'></a>
+          <a href='/perevozka-stroitelnoj-tehniki'></a>
+          <a href='/perevozka-voennoj-tehniki'></a>
+          <a href='/refrizheratornye-perevozki'></a>
+          <a href='/skladskie-uslugi'></a>
+          <a href='/tamozhennoe-oformlenie-gruzov'></a>
+          <a href='/tentovye-perevozki'></a>
+          <a href='/astana-kyzylorda'></a>
+          <a href='/gruzoperevozki-almaty-oskemen-ust-kamenogorsk'></a>
+          <a href='/gruzoperevozki-almaty-shymkent'></a>
+          <a href='/gruzoperevozki-astana-aktobe'></a>
+          <a href='/gruzoperevozki-astana-atyrau'></a>
+          <a href='/gruzoperevozki-astana-kostanaj'></a>
+          <a href='/gruzoperevozki-astana-pavlodar'></a>
+          <a href='/gruzoperevozki-astana-petropavlovsk'></a>
+          <a href='/gruzoperevozki-astana-semej'></a>
+          <a href='/gruzoperevozki-astana-taldykorgan'></a>
+        </div>
         <CoIntro />
         <VanishDiv>
           <MoBlockHeader text="Решения для Вашего бизнеса" />
