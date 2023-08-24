@@ -94,7 +94,7 @@ function CoIntro() {
                                 <input onChange={updateTo} type="text" name="name" placeholder="Куда" />
                             </VanishDiv>
                             <VanishDiv className={s['input-container']}>
-                                <input className={s['input-field']} onChange={updateVolume} type="number" name="name" placeholder="Объем" />
+                                <input className={s['input-field']} onChange={updateVolume} name="name" placeholder="Объем" />
                                 <span className={s['input-addon']}>м³</span>
                             </VanishDiv>
                             <VanishDiv className={s['input-container']}>
