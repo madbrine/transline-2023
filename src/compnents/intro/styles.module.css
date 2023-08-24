@@ -9,7 +9,7 @@
 }
 @media (max-height: 738px) {
     .container {
-        padding-bottom: 20vh;
+        padding-bottom: calc(800px - 100vh);
     }
 }
 
