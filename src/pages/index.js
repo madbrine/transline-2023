@@ -106,6 +106,17 @@ export default function Home() {
           <a href='/gruzoperevozki-karaganda-astana'></a>
           <a href='/gruzoperevozki-karaganda-atyrau'></a>
           <a href='/gruzoperevozki-karaganda-kokshetau'></a>
+          <a href='/gruzoperevozki-almaty-astana'></a>
+          <a href='/gruzoperevozki-karaganda-kostanaj'></a>
+          <a href='/gruzoperevozki-karaganda-kyzylorda'></a>
+          <a href='/gruzoperevozki-karaganda-oskemen'></a>
+          <a href='/gruzoperevozki-karaganda-pavlodar'></a>
+          <a href='/gruzoperevozki-karaganda-petropavlovsk'></a>
+          <a href='/gruzoperevozki-karaganda-semej'></a>
+          <a href='/gruzoperevozki-karaganda-shymkent'></a>
+          <a href='/gruzoperevozki-karaganda-taldykorgan'></a>
+          <a href='/gruzoperevozki-karaganda-taraz'></a>
+          <a href='/gruzoperevozki-karaganda-uralsk'></a>
         </div>
         <CoIntro />
         <VanishDiv>
