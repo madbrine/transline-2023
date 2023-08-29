@@ -77,7 +77,7 @@ function CoAboutCompanyScreen() {
                                 marginBottom: '140px'
                             }}>
                                 <div style={{ width: '290px', marginRight: '90px' }}>
-                                    <div className={s['reason-value']}>300+</div>
+                                    <div className={s['reason-value']}>350+</div>
                                     <div className={s['reason-line']} />
                                     <a className={s['reason-desc']}>Единиц собственного транспорта</a>
                                 </div>
