@@ -58,7 +58,7 @@ function CoSubmitApplication(props) {
 
         try {
             // Отправка данных формы на сервер
-            await axios.post('https://transline.kz:4444/submit-form', formData);
+            await axios.post('https://transline.kz:4444/api/submit-form', formData);
 
             router.push('/spasibo');
         } catch (error) {
