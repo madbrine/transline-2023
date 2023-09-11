@@ -9,7 +9,7 @@ function Kontakty() {
         <>
             <Head>
                 <title>Контакты Transline</title>
-                <meta name="description" content="Контакты компании" />
+                <meta name="description" content="Контакты логистической компании компании" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
