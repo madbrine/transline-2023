@@ -26,6 +26,7 @@ function KontaktyIntro() {
                                 <div className={s['column']}>
                                     <a>Контакты:</a>
                                     <div id={s['margin-top']}>+7 (727)-367-11-04</div>
+                                    <div id={s['margin-top']}>+7 (707)-367-11-04</div>
                                     <div>info@transline.kz</div>
                                 </div>
                                 <div className={s['column']}>
