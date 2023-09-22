@@ -48,6 +48,7 @@ function CoSubmitApplication(props) {
     const router = useRouter();
 
     const handleSubmit = async (e) => {
+        ym(22331872,'reachGoal','konsult')
         e.preventDefault();
 
         const validationErrors = validateForm(formData);
@@ -59,7 +60,6 @@ function CoSubmitApplication(props) {
         try {
             // Отправка данных формы на сервер
             await axios.post('https://transline.kz:4444/api/submit-form', formData);
-            ym(22331872,'reachGoal','konsult')
             router.push('/spasibo');
         } catch (error) {
             console.error('Ошибка при отправке заявки:', error);
