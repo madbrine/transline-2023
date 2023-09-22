@@ -55,6 +55,10 @@ function CoIntro() {
         console.log(`from intro ${sessionStorage.getItem('offerDataTo')} to ${sessionStorage.getItem('offerDataFrom')}`)
     }
 
+    const handleFormSent = () => {
+        ym(22331872,'reachGoal','form_sent');
+    };
+
     return (
         <div className={inter.className}>
             <div className={s['container']}>
@@ -105,7 +109,7 @@ function CoIntro() {
                                 <input className={s['input-bottom-border']} onChange={updateDescription} type="text" name="name" placeholder="Описание груза" />
                             </VanishDiv>
                             <VanishDiv className={s['input-container']}>
-                                <a href="/oformit-zayavku">
+                                <a href="/oformit-zayavku" onClick={handleFormSent}>
                                     <button onClick={storageLoader} className={inter.className}>Рассчитать</button>
                                 </a>
                             </VanishDiv>
