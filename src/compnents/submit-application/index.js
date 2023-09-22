@@ -59,7 +59,7 @@ function CoSubmitApplication(props) {
         try {
             // Отправка данных формы на сервер
             await axios.post('https://transline.kz:4444/submit-form', formData);
-
+            ym(22331872,'reachGoal','konsult')
             router.push('/spasibo');
         } catch (error) {
             console.error('Ошибка при отправке заявки:', error);

@@ -20,6 +20,10 @@ function CoHeader() {
         console.log(`state menu is ${showMobileMenu}`);
     }
 
+    const handleFormConnect = () => {
+        ym(22331872,'reachGoal','svyazatsya')
+    };
+
     return (
         <div className={inter.className}>
             <AnimatePresence>
@@ -110,7 +114,7 @@ function CoHeader() {
                     </div>
                 </div>
                 <button className={s['contact-us-button']}>
-                    <a href='/oformit-zayavku' className={s['contact-us-text']}>Связаться</a>
+                    <a href='/oformit-zayavku' className={s['contact-us-text']} onClick={handleFormConnect}>Связаться</a>
                 </button>
                 <button className={s['mobile-menu']}
                     onClick={handleMobileMenu}
