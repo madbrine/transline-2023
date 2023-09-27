@@ -5,13 +5,11 @@ import s from './styles.module.css';
 function MoLogo() {
     return (
         <a href='/'>
-        <Image
-            src={logo}
-            objectFit='fill'
-            layout='cover'
-            className={s['container']}
-        >
-        </Image>
+            <Image
+                src={logo}
+                className={s['container']}
+            >
+            </Image>
         </a>
     );
 }

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import CoHeader from '@/compnents/header'
 import CoFooter from '@/compnents/footer'
 import SertifikatyIntro from '@/compnents/sertifikaty-intro'
+import CoHeaderV2 from '@/compnents/header-v2'
 
 export default function Sertifikaty() {
     return (
@@ -13,7 +14,7 @@ export default function Sertifikaty() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <CoHeader />
+                <CoHeaderV2 />
                 <SertifikatyIntro />
                 <CoFooter />
             </main>

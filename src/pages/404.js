@@ -1,5 +1,6 @@
 import CoFooter from "@/compnents/footer";
 import CoHeader from "@/compnents/header";
+import CoHeaderV2 from "@/compnents/header-v2";
 import CoOurServices from "@/compnents/our-services";
 import CoSubmitApplication from "@/compnents/submit-application";
 import { Inter } from "next/font/google";
@@ -19,7 +20,7 @@ function MultimodalnyeGruzoperevozki() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={inter.className}>
-                <CoHeader />
+                <CoHeaderV2 />
                 {/* global.css */}
                 <div className="not-found-container">
                     <h1 style={{

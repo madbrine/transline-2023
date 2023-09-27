@@ -1,6 +1,7 @@
 import ArendaTehnikiIntro from "@/compnents/arenda-tehniki";
 import CoFooter from "@/compnents/footer";
 import CoHeader from "@/compnents/header";
+import CoHeaderV2 from "@/compnents/header-v2";
 import CoSubmitApplication from "@/compnents/submit-application";
 import Head from "next/head";
 
@@ -15,7 +16,7 @@ function ArendaSpecztehniki() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <CoHeader />
+                <CoHeaderV2 />
                 <ArendaTehnikiIntro />
                 <CoSubmitApplication />
                 <CoFooter />

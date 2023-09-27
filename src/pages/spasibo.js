@@ -1,5 +1,6 @@
 import CoFooter from "@/compnents/footer";
 import CoHeader from "@/compnents/header";
+import CoHeaderV2 from "@/compnents/header-v2";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 
@@ -18,7 +19,7 @@ function Spasibo() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={inter.className}>
-                <CoHeader />
+                <CoHeaderV2 />
                 <div className='spasibo-container'>
                     <h1>Спасибо!</h1>
                     <div className='spasibo-text'>

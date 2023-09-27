@@ -1,5 +1,6 @@
 import CoFooter from "@/compnents/footer";
 import CoHeader from "@/compnents/header";
+import CoHeaderV2 from "@/compnents/header-v2";
 import MultimodalnyeIntro from "@/compnents/perevozki-multimodalnye";
 import CoSubmitApplication from "@/compnents/submit-application";
 import Head from "next/head";
@@ -15,7 +16,7 @@ function MultimodalnyeGruzoperevozki() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <CoHeader />
+                <CoHeaderV2 />
                 <MultimodalnyeIntro />
                 <CoSubmitApplication />
                 <CoFooter />

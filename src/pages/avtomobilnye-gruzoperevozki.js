@@ -3,6 +3,7 @@ import CoHeader from "@/compnents/header";
 import CoSubmitApplication from "@/compnents/submit-application";
 import Head from "next/head";
 import AvtoperevozkiIntro from "@/compnents/perevozki-avto";
+import CoHeaderV2 from "@/compnents/header-v2";
 
 function AvtomobilnyeGruzoperevozki() {
     return (
@@ -14,7 +15,7 @@ function AvtomobilnyeGruzoperevozki() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <CoHeader />
+                <CoHeaderV2 />
                 <AvtoperevozkiIntro />
                 <CoSubmitApplication />
                 <CoFooter />

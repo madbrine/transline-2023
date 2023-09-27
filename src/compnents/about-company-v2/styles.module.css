@@ -1,0 +1,211 @@
+.container {
+    margin-top: 50px;
+}
+
+.photos-container {
+    height: 596px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding-left: 29%;
+    padding-right: 29%;
+    padding-bottom: 12px;
+}
+
+.image {
+    width: 504px;
+    height: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.about-company {
+    display: flex;
+    flex-direction: row;
+    margin-left: 367px;
+    margin-right: 209px;
+    justify-content: space-between;
+    margin-top: 68px;
+}
+
+.reasons {
+    color: #161616;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: -0.46px;
+    margin-top: 148px;
+}
+
+.read-more {
+    width: 174px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #999;
+    border-radius: 10px;
+    color: #161616;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.34px;
+    background-color: transparent;
+}
+
+.advantages {
+    width: 654px;
+}
+
+.text {
+    height: 621px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.text p {
+    margin: 0;
+    color: #161616;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.point-1,
+.point-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.point-pos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.line {
+    border-top: solid 1px #E3E3E3;
+}
+
+.point-1 span:nth-child(1) {
+    color: #161616;
+    font-size: 112px;
+    font-weight: 400;
+    line-height: 105px;
+    letter-spacing: -4.48px;
+    margin-bottom: 24px;
+}
+
+.point-2 span:nth-child(1) {
+    color: #161616;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 96px;
+    letter-spacing: -3.84px;
+    margin-bottom: 16px;
+}
+
+.point-text-1,
+.point-text-2 {
+    color: #161616;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.point-text-1 {
+    margin-top: 24px;
+}
+
+.point-text-2 {
+    margin-top: 16px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        margin-top: 22px;
+    }
+
+    .photos-container {
+        height: 350px;
+        padding-left: 20px;
+        padding-right: 12px;
+        padding-bottom: 6px;
+    }
+
+    .image {
+        width: 350px;
+        aspect-ratio: 1/1;
+        margin-right: 8px;
+    }
+
+    .about-company {
+        flex-direction: column-reverse;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 11px;
+        position: relative;
+    }
+
+    .reasons {
+        margin-top: 0;
+        position: absolute;
+        top: 106px;
+    }
+
+    .read-more {
+        margin-right: 76px;
+    }
+
+    .advantages {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .text {
+        height: 441px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 125px;
+    }
+
+    .text p {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .point-1 span:nth-child(1) {
+        margin-bottom: 15px;
+        font-size: 71px;
+        line-height: 64px;
+        letter-spacing: -0.71px;
+    }
+
+    .point-2 span:nth-child(1) {
+        margin-bottom: 14px;
+        font-size: 46px;
+        line-height: 41px;
+        letter-spacing: -0.46px;
+    }
+
+    .point-text-1,
+    .point-text-2 {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.14px;
+    }
+
+    .point-text-1 {
+        margin-top: 15px;
+    }
+
+    .point-text-2 {
+        margin-top: 14px;
+    }
+}

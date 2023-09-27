@@ -3,6 +3,7 @@ import CoHeader from "@/compnents/header";
 import CoSubmitApplication from "@/compnents/submit-application";
 import ZheleznodorozhnyeIntro from "@/compnents/perevozki-zheleznodorozhnye";
 import Head from "next/head";
+import CoHeaderV2 from "@/compnents/header-v2";
 
 
 export default function ZheleznodorozhnyePerevozki() {
@@ -15,7 +16,7 @@ export default function ZheleznodorozhnyePerevozki() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <CoHeader />
+                <CoHeaderV2 />
                 <ZheleznodorozhnyeIntro />
                 <CoSubmitApplication />
                 <CoFooter />

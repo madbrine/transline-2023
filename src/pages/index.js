@@ -9,8 +9,20 @@ import CoBlockServices from '@/compnents/add-block-services'
 import MoBlockHeader from '@/molecules/block-header'
 import MoBlockLine from '@/molecules/block-line'
 import VanishDiv from '@/molecules/vanish-div'
+import CoHeaderV2 from '@/compnents/header-v2'
+import MoBlockHeaderSolutions from '@/molecules/block-header-solutions'
+import { useRef } from 'react'
+import CoAboutCompanyV2 from '@/compnents/about-company-v2'
 
 export default function Home() {
+  const formRef = useRef(null);
+
+  const scrollToForm = () => {
+    if (formRef.current) {
+      formRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <Head>
@@ -19,8 +31,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, minimum-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main style={{ overflowX: 'hidden', width: '100vw' }}>
-        <CoHeader />
+      <main>
+        <CoHeaderV2 />
+        {/* <CoHeader /> */}
         <div style={{ display: 'none' }}>
           <a href='/arenda-avtokrana-v-kazahstane'></a>
           <a href='/arenda-avtovyshki-v-kazahstane'></a>
@@ -120,15 +133,15 @@ export default function Home() {
         </div>
         <CoIntro />
         <VanishDiv>
-          <MoBlockHeader text="Решения для Вашего бизнеса" />
+          <MoBlockLine text="Услуги" />
         </VanishDiv>
         <VanishDiv>
-          <MoBlockLine text="Наши решения" />
+          <MoBlockHeaderSolutions text="Решения для Вашего бизнеса" scrollToForm={scrollToForm} />
         </VanishDiv>
         <CoBlockServices />
-        <CoAboutCompany />
+        <CoAboutCompanyV2 />
         {/* <CoNews /> */}
-        <CoSubmitApplication />
+        <CoSubmitApplication formRef={formRef} />
         <CoFooter />
       </main>
     </>

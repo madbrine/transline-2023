@@ -1,6 +1,7 @@
 import CoAboutCompanyScreen from "@/compnents/about-company-screen";
 import CoFooter from "@/compnents/footer";
 import CoHeader from "@/compnents/header";
+import CoHeaderV2 from "@/compnents/header-v2";
 import Head from "next/head";
 
 function OKompanii() {
@@ -13,7 +14,7 @@ function OKompanii() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <CoHeader />
+                <CoHeaderV2 />
                 <CoAboutCompanyScreen />
                 <CoFooter />
             </main>

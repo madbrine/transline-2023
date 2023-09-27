@@ -1,6 +1,7 @@
 import CoAvtopark from "@/compnents/avtopark";
 import CoFooter from "@/compnents/footer";
 import CoHeader from "@/compnents/header";
+import CoHeaderV2 from "@/compnents/header-v2";
 import CoSubmitApplication from "@/compnents/submit-application";
 import Head from "next/head";
 
@@ -14,7 +15,7 @@ function Avtopark() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <CoHeader />
+                <CoHeaderV2 />
                 <CoAvtopark />
                 <CoSubmitApplication />
                 <CoFooter />

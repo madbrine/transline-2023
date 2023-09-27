@@ -1,5 +1,6 @@
 import CoFooter from "@/compnents/footer";
 import CoHeader from "@/compnents/header";
+import CoHeaderV2 from "@/compnents/header-v2";
 import CoSubmitApplication from "@/compnents/submit-application";
 import TplPage from "@/compnents/tpl-pages";
 import MoBlockHeaderH1 from "@/molecules/block-header-h1";
@@ -17,7 +18,7 @@ function GruzoperevozkiAstanaAktau() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <CoHeader />
+                <CoHeaderV2 />
                 <div className='tpl-margin-h'>
                     <MoBlockHeaderH1 text='Грузоперевозки Астана-Актау' />
                     <MoNavLinker

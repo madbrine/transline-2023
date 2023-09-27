@@ -48,7 +48,7 @@ function CoSubmitApplication(props) {
     const router = useRouter();
 
     const handleSubmit = async (e) => {
-        ym(22331872,'reachGoal','konsult')
+        ym(22331872, 'reachGoal', 'konsult')
         e.preventDefault();
 
         const validationErrors = validateForm(formData);
@@ -89,7 +89,7 @@ function CoSubmitApplication(props) {
     };
 
     return (
-        <div className={inter.className}>
+        <div className={inter.className} ref={props.formRef}>
             <VanishDiv>
                 <MoBlockLine text="Оставить заявку" />
             </VanishDiv>
@@ -100,29 +100,6 @@ function CoSubmitApplication(props) {
                             Получить консультацию
                         </div>
                     </div>
-                    {/* <div className={s['contacts-container']}>
-                        <div className={inter.className} style={{
-                            width: '138px',
-                            marginRight: '44px'
-                        }}>
-                            <div className={s['contacts-header']}>Соц. сети:</div>
-                            <div>
-                                <a>Facebook</a>
-                            </div>
-                            <div>
-                                <a>Twitter</a>
-                            </div>
-                        </div>
-                        <div className={inter.className}>
-                            <div className={s['contacts-header']}>Контакты:</div>
-                            <div>
-                                <a>+7 (727)-367-11-04</a>
-                            </div>
-                            <div>
-                                <a>info@transline.kz</a>
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
                 <form className={s['contacts-and-form-finish']}>
                     <div className={s['form-input-container']}>

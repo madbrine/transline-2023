@@ -14,9 +14,7 @@ function SertifikatyIntro() {
     return (
         <div className={inter.className}>
             <div className={s['margin-block']}>
-                <VanishDiv>
-                    <MoBlockHeaderH1 text="Сертификаты" />
-                </VanishDiv>
+                <MoBlockHeaderH1 text="Сертификаты" />
                 <VanishDiv>
                     <MoNavLinker
                         text2="Сертификаты"
@@ -89,12 +87,12 @@ function SertifikatyIntro() {
                             </button>
                         </VanishDiv>
                         <VanishDiv>
-                        <div className={s['buttons']}>
-                            <MoButton text={'Рассчитать'} blue onClick={console.log('clicked')} />
-                            <div className={s['margin-button']}>
-                                <MoButton text={'Услуги'} href="/" />
+                            <div className={s['buttons']}>
+                                <MoButton text={'Рассчитать'} blue onClick={console.log('clicked')} />
+                                <div className={s['margin-button']}>
+                                    <MoButton text={'Услуги'} href="/" />
+                                </div>
                             </div>
-                        </div>
                         </VanishDiv>
                     </div>
                 </div>

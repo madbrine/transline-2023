@@ -4,6 +4,7 @@ import CoFooter from '@/compnents/footer'
 import CoBlockServices from '@/compnents/add-block-services'
 import MoBlockLine from '@/molecules/block-line'
 import CoSubmitApplicationMore from '@/compnents/submit-application-more'
+import CoHeaderV2 from '@/compnents/header-v2'
 
 export default function OformitZayavku() {
     return (
@@ -15,7 +16,7 @@ export default function OformitZayavku() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <CoHeader />
+                <CoHeaderV2 />
                 <CoSubmitApplicationMore />
                 <MoBlockLine text="Другие услуги" />
                 <CoBlockServices />

@@ -3,6 +3,7 @@
     flex-direction: row;
     height: 646px;
     overflow-x: scroll;
+    padding-bottom: 10px;
 }
 
 .service {
