@@ -47,12 +47,12 @@ function CoFooter() {
                                     Автопарк
                                 </a>
                             </div>
-                            <div>
+                            {/* <div>
                                 <a style={{textDecoration:'none'}} href="/news" 
                                 className={s['nav-link']}>
                                     Новости
                                 </a>
-                            </div>
+                            </div> */}
                             <div>
                                 <a style={{textDecoration:'none'}} href="/kontakty" 
                                 className={s['nav-link']}>
@@ -92,14 +92,14 @@ function CoFooter() {
                                 </a>
                             </div>
                             <div>
-                                <a style={{textDecoration:'none'}} href="tel:+77273671104"
+                                <a style={{textDecoration:'none'}} href="mailto:info@transline.kz"
                                 className={s['nav-link']}>
                                     info@transline.kz
                                 </a>
                             </div>
                         </div>
                         <button className={s['contact-us-button']}>
-                            <a style={{ color: '#fff' }}>Связаться</a>
+                            Связаться
                         </button>
                     </div>
                 </div>

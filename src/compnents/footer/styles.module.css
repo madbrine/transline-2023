@@ -38,7 +38,18 @@
     height: fit-content;
     border-radius: 10px;
     font-size: 17px;
-    background: #00ACCD;
+    background-color: #00ACCD;
+    color: white;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.contact-us-button:hover {
+    background-color: #009DBB;
+}
+
+.contact-us-button:active {
+    background-color: #00829B;
 }
 
 #navigate {
@@ -84,7 +95,11 @@
     color: #161616;
     margin-bottom: 12px;
     line-height: 135%;
-    /* 20.25px */
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-link:hover {
+    color: #00ACCD;
 }
 
 .navigate-column-1 a {

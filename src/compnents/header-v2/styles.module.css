@@ -53,6 +53,15 @@
     line-height: 23px;
 }
 
+.container ul a {
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.container ul a:hover {
+    color: #00ACCD;
+    border-bottom: solid 1px #00ACCD;
+}
+
 .menu {
     display: flex;
     flex-direction: row;
@@ -93,6 +102,15 @@
     letter-spacing: -0.34px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-form:hover {
+    background-color: #009DBB;
+}
+
+.button-form:active {
+    background-color: #00829B;
 }
 
 .social-sites {
@@ -226,6 +244,15 @@
     letter-spacing: -0.34px;
     border: none;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-btn button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
 }
 
 .send-btn p {
@@ -235,6 +262,52 @@
     font-weight: 400;
     line-height: 18px;
     width: 263px;
+}
+
+.loader {
+    width: 22px;
+    height: 22px;
+    animation: rotate 2s linear infinite;
+    transform-origin: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;
+    }
+
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;
+    }
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -24px;
+    margin-bottom: 24px;
 }
 
 @media (max-width: 1350px) {
@@ -374,5 +447,113 @@
         font-weight: 400;
         line-height: 14px;
         letter-spacing: -0.14px;
+    }
+
+    .form-connect {
+        width: calc(100% - 40px);
+        height: calc(100% - 63px);
+        padding: 40px 20px 23px 20px;
+        border-radius: 0;
+    }
+
+    .close-modal p {
+        width: auto;
+        font-size: 22px;
+        line-height: 120%;
+        letter-spacing: -0.44px;
+    }
+
+    .close-modal button {
+        width: auto;
+        height: auto;
+        background-color: inherit;
+        border-radius: 0;
+        cursor: pointer;
+        padding: 0;
+        margin-right: -4px;
+    }
+
+    .close-modal button span {
+        display: none;
+    }
+
+    .close-icon {
+        width: 24px;
+        height: 24px;
+        margin-left: 0;
+    }
+
+    .form {
+        margin-top: 160px;
+    }
+
+
+
+
+    .input-pos {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 2px;
+    }
+
+    .form-input {
+        border-radius: 0;
+    }
+
+    .form-input:focus {
+        outline: none;
+    }
+
+    #margin-right-input {
+        margin-right: 0;
+        border-radius: 10px 10px 0 0;
+        margin-bottom: 2px;
+    }
+
+    #margin-bottom-input {
+        margin-bottom: 2px;
+    }
+
+    #bottom-borders-input {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .send-btn {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        margin-top: 230px;
+    }
+
+    .send-btn button {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .send-btn button:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+    }
+
+    .send-btn p {
+        margin: 0;
+        color: #666;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        width: 263px;
+    }
+
+    .loader {
+        width: 22px;
+        height: 22px;
+        animation: rotate 2s linear infinite;
+        transform-origin: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

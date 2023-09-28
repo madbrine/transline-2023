@@ -44,14 +44,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 1px #999;
+    border: solid 1px #00ACCD;
     border-radius: 10px;
-    color: #161616;
+    color: #00ACCD;
     font-size: 17px;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: -0.34px;
     background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: rgba(28, 28, 30, 0.05);
+}
+
+.read-more:active {
+    background-color: rgba(28, 28, 30, 0.1);
 }
 
 .advantages {

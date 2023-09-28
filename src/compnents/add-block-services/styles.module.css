@@ -65,7 +65,17 @@
     border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
+    transition: background-color 0.3s;
 }
+
+.text a:hover {
+    background-color: #009DBB;
+}
+
+.text a:active {
+    background-color: #00829B;
+}
+
 .text div h2 {
     text-decoration: none;
 }
