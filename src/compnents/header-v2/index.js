@@ -145,18 +145,16 @@ export default function CoHeaderV2() {
                         <li>
                             <a href='/kontakty'>Контакты</a>
                         </li>
-                        <div className={s['connections-mobile']}>
-                            <div className={s['social-sites']}>
-                                <div>Соц. сети</div>
-                                <a href="https://twitter.com/TranslineKz/">Twitter</a>
-                                <a href="https://facebook.com/transline.kz/">Facebook</a>
-                                <a href="https://instagram.com/transline.kz/">Instagram</a>
-                            </div>
-                            <div className={s['contacts-mobile']}>
-                                <div>Контакты</div>
-                                <div className={s['mail']}>info@transline.kz</div>
-                                <div className={s['phone']}>+7 (707) 367-11-04</div>
-                            </div>
+                        <div className={s['social-sites']}>
+                            <div>Соц. сети</div>
+                            <a href="https://twitter.com/TranslineKz/">Twitter</a>
+                            <a href="https://facebook.com/transline.kz/">Facebook</a>
+                            <a href="https://instagram.com/transline.kz/">Instagram</a>
+                        </div>
+                        <div className={s['contacts-mobile']}>
+                            <div>Контакты</div>
+                            <a className={s['mail']} href='mailto:info@transline.kz'>info@transline.kz</a>
+                            <a className={s['phone']} href='tel:+7 (707) 367-11-04'>+7 (707) 367-11-04</a>
                         </div>
                     </ul>
                 </div>

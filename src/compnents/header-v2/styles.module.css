@@ -113,6 +113,10 @@
     background-color: #00829B;
 }
 
+.connections-mobile {
+    display: none;
+}
+
 .social-sites {
     display: none;
 }
@@ -370,6 +374,10 @@
         letter-spacing: -1.2px;
     }
 
+    .connections-mobile {
+        display: flex;
+    }
+
     .social-sites {
         display: flex;
         flex-direction: column;
@@ -408,7 +416,7 @@
         bottom: 75px;
     }
 
-    .contacts-mobile div:nth-child(1) {
+    .contacts-mobile div {
         display: block;
         color: #161616;
         font-size: 16px;
