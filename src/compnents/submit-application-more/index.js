@@ -69,6 +69,8 @@ function CoSubmitApplicationMore(props) {
             return;
         }
 
+        ga('send', 'event', 'zayavka', 'sent', 'perevozka');
+
         try {
             const allData = {
                 ...formData,

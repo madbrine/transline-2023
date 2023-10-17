@@ -94,6 +94,7 @@ export default function CoHeaderV2() {
 
     const handleSubmit = async (e) => {
         ym(22331872, 'reachGoal', 'svyazatsya')
+        ga('send', 'event', 'form_kartochka', 'sent', 'kartochka');
         e.preventDefault();
 
         const validationErrors = validateForm(formData);
@@ -120,6 +121,10 @@ export default function CoHeaderV2() {
         } finally {
             setIsSubmitting(false);
         }
+    };
+
+    const clickOnPhone = () => {
+        ga('send', 'event', 'number', 'click', 'zvonok');
     };
 
     return (
@@ -154,14 +159,14 @@ export default function CoHeaderV2() {
                         <div className={s['contacts-mobile']}>
                             <div>Контакты</div>
                             <a className={s['mail']} href='mailto:info@transline.kz'>info@transline.kz</a>
-                            <a className={s['phone']} href='tel:+7 (707) 367-11-04'>+7 (707) 367-11-04</a>
+                            <a className={s['phone']} onClick={clickOnPhone} href='tel:+7 (707) 367-11-04'>+7 (707) 367-11-04</a>
                         </div>
                     </ul>
                 </div>
                 <div className={s['header-r']}>
                     <div className={s['contacts']}>
                         <span><a href="mailto:info@transline.kz">info@transline.kz</a></span>
-                        <span>+7 (707) 367-11-04</span>
+                        <span onClick={clickOnPhone}>+7 (707) 367-11-04</span>
                     </div>
                     <button className={s['button-form']} onClick={openModal}>Связаться</button>
                 </div>

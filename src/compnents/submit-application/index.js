@@ -48,7 +48,8 @@ function CoSubmitApplication(props) {
     const router = useRouter();
 
     const handleSubmit = async (e) => {
-        ym(22331872, 'reachGoal', 'konsult')
+        ym(22331872, 'reachGoal', 'konsult');
+        ga('send', 'event', 'form', 'sent', 'vnizy');
         e.preventDefault();
 
         const validationErrors = validateForm(formData);
