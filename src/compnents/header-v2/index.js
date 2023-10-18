@@ -10,8 +10,8 @@ import { useRouter } from 'next/router';
 import axios from 'axios';
 
 const inter = Inter({
-    subsets: ["latin"],
-    weights: ['400']
+    subsets: ['latin'],
+    weights: '400',
 })
 
 export default function CoHeaderV2() {

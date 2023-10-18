@@ -5,7 +5,7 @@ import { useRef, useState } from 'react';
 import VanishDiv from '@/molecules/vanish-div';
 
 const inter = Inter({
-    subsets: ['latin-ext'],
+    subsets: ['latin'],
     weight: '400',
 })
 function CoIntro() {

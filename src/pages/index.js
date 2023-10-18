@@ -13,6 +13,7 @@ import CoHeaderV2 from '@/compnents/header-v2'
 import MoBlockHeaderSolutions from '@/molecules/block-header-solutions'
 import { useRef } from 'react'
 import CoAboutCompanyV2 from '@/compnents/about-company-v2'
+import CoIntroV2 from '@/compnents/intro-v2'
 
 export default function Home() {
   const formRef = useRef(null);
@@ -33,7 +34,6 @@ export default function Home() {
       </Head>
       <main>
         <CoHeaderV2 />
-        {/* <CoHeader /> */}
         <div style={{ display: 'none' }}>
           <a href='/arenda-avtokrana-v-kazahstane'></a>
           <a href='/arenda-avtovyshki-v-kazahstane'></a>
@@ -131,7 +131,7 @@ export default function Home() {
           <a href='/gruzoperevozki-karaganda-taraz'></a>
           <a href='/gruzoperevozki-karaganda-uralsk'></a>
         </div>
-        <CoIntro />
+        <CoIntroV2 />
         <VanishDiv>
           <MoBlockLine text="Услуги" />
         </VanishDiv>
