@@ -56,7 +56,8 @@
     line-height: 15px;
 }
 
-.form-input input::placeholder {
+.form-input input::placeholder,
+.input-pos input::placeholder {
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
@@ -64,12 +65,15 @@
     line-height: 15px;
 }
 
-.form-input input:focus {
+.form-input input:focus,
+.input-pos input:focus {
     outline: none;
 }
 
 .form-input input[type="number"]::-webkit-inner-spin-button,
-.form-input input[type="number"]::-webkit-outer-spin-button {
+.form-input input[type="number"]::-webkit-outer-spin-button,
+.input-pos input[type="number"]::-webkit-inner-spin-button,
+.input-pos input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
@@ -78,11 +82,11 @@
     border-radius: 10px 0 0 10px;
 }
 
-.input-to {}
+/* .input-to {}
 
 .input-volume {}
 
-.input-weight {}
+.input-weight {} */
 
 .input-description {
     border-radius: 0 10px 10px 0;
@@ -101,6 +105,16 @@
     font-weight: 500;
     line-height: 15px;
     margin-left: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form-input button:hover {
+    background-color: #009DBB;
+}
+
+.form-input button:active {
+    background-color: #00829B;
 }
 
 .input-number {
@@ -122,11 +136,11 @@
 .insurance-box {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
     margin-top: 10px;
     align-items: center;
     margin: 0;
     margin-top: 10px;
+    justify-content: flex-end;
 }
 
 .text-insurance {
@@ -169,4 +183,19 @@
 
 .insurance-checkbox:checked+.checkmark::before {
     opacity: 1;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.40);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

@@ -10,7 +10,7 @@
     left: 0;
     right: 0;
     z-index: 1;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .scrolled {

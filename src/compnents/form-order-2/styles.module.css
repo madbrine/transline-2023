@@ -1,0 +1,134 @@
+.modal-form {
+    width: 708px;
+    height: auto;
+    padding: 59px 77px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.top-form,
+.top-form-pos,
+.top-elements-pos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top-form {
+    justify-content: space-between;
+}
+
+.top-elements-pos p {
+    color: #161616;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.4px;
+    margin: 0;
+}
+
+.line {
+    border-top: solid 1px #161616;
+    width: 60px;
+    opacity: 0.2;
+    margin: 0 12px 0 12px;
+}
+
+.close-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 129px;
+    height: 36px;
+    color: #161616;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.17px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.close-button:hover {
+    background-color: rgba(28, 28, 30, 0.05);
+}
+
+.close-button:active {
+    background-color: rgba(28, 28, 30, 0.1);
+}
+
+.close-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+}
+
+.location-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.phone-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.full-form {
+    margin-top: 48px;
+}
+
+.name-form-pos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 1px red;
+}
+
+.name-form {
+    width: 345px;
+    margin: 0;
+
+    color: #161616;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94%;
+    letter-spacing: -1.6px;
+}
+
+.order-values {
+    display: flex;
+    flex-direction: column;
+}
+
+.values {
+    display: flex;
+    flex-direction: row;
+}
+
+.values div {
+    padding: 6px 8px;
+    border-radius: 6px;
+    background-color: #F0F2F2;
+
+    color: #161616;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+#margin-l-r {
+    margin: 0 10px 0 10px;
+}
