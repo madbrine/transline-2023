@@ -1,5 +1,6 @@
 import s from './styles.module.css';
 import React from 'react';
+import InputMask from 'react-input-mask';
 
 export default function FormOrder2({ formData, setFormData, prevStep, handleModalClose }) {
     const handleChange = (e) => {
@@ -9,6 +10,15 @@ export default function FormOrder2({ formData, setFormData, prevStep, handleModa
             ...prevFormData,
             [name]: newValue,
         }));
+    };
+
+    const handleBack = () => {
+        prevStep();
+    };
+
+    const handleSend = () => {
+        console.log(formData);
+
     };
 
     return (
@@ -32,30 +42,82 @@ export default function FormOrder2({ formData, setFormData, prevStep, handleModa
                 <button className={s['close-button']} onClick={handleModalClose}>
                     Закрыть
                     <svg className={s['close-icon']} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
-                        <path d="M6 14L14 6M14 14L6 6" stroke="#161616" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M6 14L14 6M14 14L6 6" stroke="#161616" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                 </button>
             </div>
-            <form className={s['full-form']}>
+            <div className={s['full-form']}>
                 <div className={s['name-form-pos']}>
                     <p className={s['name-form']}>Как нам с вами связаться?</p>
                     <div className={s['order-values']}>
-                        <div className={s['values']}>
+                        <div className={s['values-desc']}>
                             <div>{formData.weight} тонн</div>
                             <div id={s['margin-l-r']}>{formData.volume} м³</div>
                             <div>{formData.description}</div>
                         </div>
-                        <div className={s['from-to']}>
-                            <svg width="7" height="55" viewBox="0 0 7 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div className={s['values-from-to']}>
+                            <svg className={s['from-to-icon']} width="7" viewBox="0 0 7 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="3.5" cy="4" r="3.5" fill="#00ACCD" />
                                 <rect x="3" y="7.5" width="1" height="40" fill="#00ACCD" />
                                 <circle cx="3.5" cy="51" r="3.5" fill="#00ACCD" />
                             </svg>
-                            <div></div>
+                            <div className={s['from-to-pos']}>
+                                <p>{formData.from}</p>
+                                <p>{formData.to}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </form>
+                <div className={s['form-inputs']}>
+                    <div className={s['inputs-pos']}>
+                        <input
+                            className={s['input-style']}
+                            type="text"
+                            name="name"
+                            placeholder="Имя"
+                            value={formData.name}
+                            onChange={handleChange}
+                        />
+                        <InputMask
+                            mask="+7 (999) 999-99-99"
+                            value={formData.phone}
+                            onChange={handleChange}
+                        >
+                            {(inputProps) => (
+                                <input
+                                    {...inputProps}
+                                    className={s['input-style']}
+                                    name="phone"
+                                    placeholder="Телефон"
+                                />
+                            )}
+                        </InputMask>
+                    </div>
+                    <input
+                        className={s['email-input']}
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        value={formData.email}
+                        onChange={handleChange}
+                    />
+                    <input
+                        className={s['comment-input']}
+                        type="text"
+                        name="comments"
+                        placeholder="Коментарии (Не обязательно)"
+                        value={formData.comments}
+                        onChange={handleChange}
+                    />
+                </div>
+                <div className={s['send-form']}>
+                    <div className={s['btn-pos']}>
+                        <button className={s['btn-send']} onClick={handleSend}>Отправить</button>
+                        <button className={s['btn-back']} onClick={handleBack}>Назад</button>
+                    </div>
+                    <p>Нажимая “Отправить” вы соглашаетесь с обработкой персональных данных</p>
+                </div>
+            </div>
         </div>
     )
 }

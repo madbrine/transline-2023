@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google';
 import s from './styles.module.css'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import FormOrder1 from '../form-order-1';
 import FormOrder2 from '../form-order-2';
 
@@ -16,6 +16,7 @@ function CoIntroV2() {
         volume: '',
         weight: '',
         description: '',
+        commentsOrder: '',
         name: '',
         phone: '',
         email: '',
@@ -26,12 +27,20 @@ function CoIntroV2() {
 
     const handleModalOpen = () => {
         setIsModalOpen(true);
+        document.body.classList.add(s['body-no-scroll']);
     };
 
     const handleModalClose = () => {
         setIsModalOpen(false);
         setCurrentStep(1);
+        document.body.classList.remove(s['body-no-scroll']);
     };
+
+    useEffect(() => {
+        return () => {
+            document.body.classList.remove(s['body-no-scroll']);
+        };
+    }, []);
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;

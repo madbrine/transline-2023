@@ -1,5 +1,5 @@
 import s from './styles.module.css';
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function FormOrder1({ formData, setFormData, nextStep, handleModalClose }) {
     const handleChange = (e) => {
@@ -14,7 +14,7 @@ export default function FormOrder1({ formData, setFormData, nextStep, handleModa
     const handleNext = () => {
         nextStep();
     };
-
+    
     return (
         <div className={s['modal-form']}>
             <div className={s['top-form']}>
@@ -36,16 +36,16 @@ export default function FormOrder1({ formData, setFormData, nextStep, handleModa
                 <button className={s['close-button']} onClick={handleModalClose}>
                     Закрыть
                     <svg className={s['close-icon']} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
-                        <path d="M6 14L14 6M14 14L6 6" stroke="#161616" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M6 14L14 6M14 14L6 6" stroke="#161616" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                 </button>
             </div>
-            <form className={s['full-form']}>
+            <div className={s['full-form']}>
                 <p className={s['name-form']}>Рассчитать</p>
                 <div className={s['full-form-inputs']}>
                     <div className={s['input-pos']}>
                         <input
-                            className={s['input-from']}
+                            className={s['input-style']}
                             id={s['input-width-l']}
                             onChange={handleChange}
                             type="text"
@@ -54,7 +54,7 @@ export default function FormOrder1({ formData, setFormData, nextStep, handleModa
                             value={formData.from}
                         />
                         <input
-                            className={s['input-to']}
+                            className={s['input-style']}
                             id={s['input-width-r']}
                             onChange={handleChange}
                             type="text"
@@ -66,7 +66,7 @@ export default function FormOrder1({ formData, setFormData, nextStep, handleModa
                     <div className={s['input-pos']}>
                         <div className={s['input-number']} id={s['margin-r']}>
                             <input
-                                className={s['input-volume']}
+                                className={s['input-style']}
                                 id={s['input-width-small-l']}
                                 onChange={handleChange}
                                 type="number"
@@ -78,7 +78,7 @@ export default function FormOrder1({ formData, setFormData, nextStep, handleModa
                         </div>
                         <div className={s['input-number']} id={s['margin-l-r']}>
                             <input
-                                className={s['input-weight']}
+                                className={s['input-style']}
                                 id={s['input-width-small-m']}
                                 onChange={handleChange}
                                 type="number"
@@ -89,7 +89,7 @@ export default function FormOrder1({ formData, setFormData, nextStep, handleModa
                             <span className={s['input-addon']}>тонн</span>
                         </div>
                         <input
-                            className={s['input-description']}
+                            className={s['input-style']}
                             id={s['input-width-small-r']}
                             onChange={handleChange}
                             type="text"
@@ -98,7 +98,12 @@ export default function FormOrder1({ formData, setFormData, nextStep, handleModa
                             value={formData.description}
                         />
                     </div>
-                    <textarea placeholder='Комментарий к заказу (Не обязательно)' />
+                    <textarea
+                        placeholder='Комментарий к заказу (Не обязательно)'
+                        name='commentsOrder'
+                        value={formData.commentsOrder}
+                        onChange={handleChange}
+                    />
                     <label className={s['insurance-box']}>
                         <input
                             className={s['insurance-checkbox']}
@@ -118,7 +123,7 @@ export default function FormOrder1({ formData, setFormData, nextStep, handleModa
                     </div>
                     <p>Нажимая “Отправить” вы соглашаетесь с обработкой персональных данных</p>
                 </div>
-            </form>
+            </div>
         </div>
     )
 }
