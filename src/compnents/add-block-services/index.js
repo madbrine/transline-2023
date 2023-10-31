@@ -168,7 +168,7 @@ export default function CoBlockServices() {
           </div>
           <div className={s["text"]}>
             <div>
-              <div className={s["h2"]}>Аренда спец. техники</div>
+              <div className={s["h2"]}>Аренда спецтехники</div>
               <p>
                 У нас вы найдете самосвалы различных марок, моделей и
                 грузоподъемности.{" "}

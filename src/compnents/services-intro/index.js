@@ -117,7 +117,7 @@ function ServicesIntro() {
           <div className={s["service"]}>
             <div className={s["desc"]}>
               <div>
-                <div className={s["h1"]}>Аренда спец. техники</div>
+                <div className={s["h1"]}>Аренда спецтехники</div>
                 <p>
                   Максимальное качество транспортно-экспедиционных услуг при
                   минимальных затратах.
