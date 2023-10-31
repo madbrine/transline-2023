@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import s from "./styles.module.css";
 
 import photoSpectehnika1 from "../../assets/spectehnika-1.webp";
@@ -9,10 +8,11 @@ import MoBlockLineV2 from "@/molecules/block-line-v2";
 import MoBlockHeaderH1V2 from "@/molecules/block-header-h1-v2";
 import MoNavLinkerV2 from "@/molecules/nav-linker-v2";
 import CoBlockServices from "../add-block-services";
+import { Inter } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: "400",
+  weights: "400",
 });
 
 export default function ArendaTehnikiIntroV2(props) {

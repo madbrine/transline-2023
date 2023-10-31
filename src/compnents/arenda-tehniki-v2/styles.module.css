@@ -51,7 +51,6 @@
   border: none;
   transition: all 0.3s ease-in-out;
 
-  font-family: Inter;
   font-size: 0.885vw;
   font-style: normal;
   font-weight: 500;
@@ -110,7 +109,6 @@
   margin: 0;
 
   color: #161616;
-  font-family: Inter;
   font-size: 3.335vw;
   font-style: normal;
   font-weight: 400;
@@ -131,7 +129,6 @@
   width: 30vw;
 
   color: #161616;
-  font-family: Inter;
   font-size: 0.885vw;
   font-style: normal;
   font-weight: 400;
@@ -172,7 +169,6 @@
 
 .about-p-2 {
   color: #161616;
-  font-family: Inter;
   font-size: 0.885vw;
   font-style: normal;
   font-weight: 400;
