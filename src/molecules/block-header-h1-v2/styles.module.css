@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  margin: 0 60px;
+  margin: 0 3.1vw;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -10,23 +10,9 @@
 
   color: #161616;
   font-family: Inter;
-  font-size: 96px;
+  font-size: 5vw;
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
-  letter-spacing: -3.84px;
-}
-
-@media (max-width: 1200px) {
-  .container {
-    margin: 0 20px;
-  }
-
-  .container h1 {
-    width: 72vw;
-  }
-
-  #h1_style {
-    font-size: 32px;
-  }
+  letter-spacing: -0.2vw;
 }

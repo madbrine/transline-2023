@@ -5,8 +5,17 @@ import CoHeader from "@/compnents/header";
 import CoHeaderV2 from "@/compnents/header-v2";
 import CoSubmitApplication from "@/compnents/submit-application";
 import Head from "next/head";
+import { useRef } from "react";
 
 function ArendaSpectehniki() {
+  const formRef = useRef(null);
+
+  const scrollToForm = () => {
+    if (formRef.current) {
+      formRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <Head>
@@ -20,8 +29,8 @@ function ArendaSpectehniki() {
       </Head>
       <main>
         <CoHeaderV2 />
-        <ArendaTehnikiIntroV2 />
-        <CoSubmitApplication />
+        <ArendaTehnikiIntroV2 scrollToForm={scrollToForm} />
+        <CoSubmitApplication formRef={formRef} />
         <CoFooter />
       </main>
     </>
