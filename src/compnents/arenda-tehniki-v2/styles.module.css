@@ -215,5 +215,10 @@
 }
 
 .about-h-3 {
-  margin-bottom: -17px;
+  margin-bottom: -1.63vh;
+}
+
+.container-uslugi {
+  margin: 0 3.1vw 5.6vh 3.1vw;
+  height: 7.4vh;
 }

@@ -125,6 +125,9 @@ export default function ArendaTehnikiIntroV2(props) {
         </div>
       </div>
       <MoBlockLineV2 text="Другие услуги" />
+      <div className={s["container-uslugi"]}>
+        <p className={s["about-h-3"]}>Другие услуги</p>
+      </div>
       <CoBlockServices />
     </div>
   );
