@@ -1,121 +1,143 @@
-import MoBlockHeader from '@/molecules/block-header';
-import MoBlockLine from '@/molecules/block-line';
-import MoNavLinker from '@/molecules/nav-linker';
-import VanishDiv from '@/molecules/vanish-div';
-import { motion } from 'framer-motion';
-import { Inter } from 'next/font/google';
-import Image from 'next/image';
-import CoNews from '../news';
-import CoSubmitApplication from '../submit-application';
-import CoWhyWe from '../why-we';
-import s from './styles.module.css';
-import headerPhoto from '../../assets/multimodal-cargo-header.webp'
-import aboutPhoto from './about-photo.webp'
-import bottom1Photo from './bottom1.webp'
-import bottom2Photo from './bottom2.webp'
-import bottom3Photo from './bottom3.webp'
-import NewsIntro from '../news-intro';
-import MoBlockHeaderH1 from '@/molecules/block-header-h1';
-
+import MoBlockHeader from "@/molecules/block-header";
+import MoBlockLine from "@/molecules/block-line";
+import MoNavLinker from "@/molecules/nav-linker";
+import VanishDiv from "@/molecules/vanish-div";
+import { motion } from "framer-motion";
+import { Inter } from "next/font/google";
+import Image from "next/image";
+import CoNews from "../news";
+import CoSubmitApplication from "../submit-application";
+import CoWhyWe from "../why-we";
+import s from "./styles.module.css";
+import headerPhoto from "../../assets/o-kompanii.webp";
+import aboutPhoto from "./about-photo.webp";
+import bottom1Photo from "./bottom1.webp";
+import bottom2Photo from "./bottom2.webp";
+import bottom3Photo from "./bottom3.webp";
+import NewsIntro from "../news-intro";
+import MoBlockHeaderH1 from "@/molecules/block-header-h1";
 
 const inter = Inter({
-    subsets: ['latin'],
-    weight: '400',
-})
+  subsets: ["latin"],
+  weight: "400",
+});
 
 function CoAboutCompanyScreen() {
-    return (
-        <div className={inter.className} style={{ marginTop: '180px' }}>
-            <MoBlockHeaderH1 text={"О компании"} />
-            <MoNavLinker text2={"О компании"} />
-            <div className={s['container']}>
-                <div className={s['header']}>
-                    Крупнейшая логистическая компания Центральной Азии
+  return (
+    <div className={inter.className} style={{ marginTop: "180px" }}>
+      <MoBlockHeaderH1 text={"О компании"} />
+      <MoNavLinker text2={"О компании"} />
+      <div className={s["container"]}>
+        <div className={s["header"]}>
+          Крупнейшая логистическая компания Центральной Азии
+        </div>
+        <div className={s["header-photo"]}>
+          <Image
+            src={headerPhoto}
+            alt="header photo"
+            layout="fill"
+            objectFit="cover"
+            style={{ borderRadius: 15 }}
+          />
+        </div>
+        <div className={s["box-first"]}>
+          <div className={s["left"]}>
+            <VanishDiv>
+              <div className={s["reasons-left-header"]}>Преимущества</div>
+            </VanishDiv>
+          </div>
+          <div className={s["right"]}>
+            <VanishDiv>
+              <div className={s["reasons-desc"]}>
+                Мы организуем надежные и безопасные транспортные решения для
+                отечественных компаний и за рубежом. Наша команда профессионалов
+                может предоставить индивидуальные решения для удовлетворения
+                ваших уникальных потребностей и гарантировать своевременную
+                доставку вашего груза по востребованным маршрутам.
+              </div>
+            </VanishDiv>
+            <VanishDiv>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  marginTop: "88px",
+                  marginBottom: "70px",
+                }}
+              >
+                <div>
+                  <div className={s["reason-value-big"]}>100 млн</div>
+                  <div className={s["reason-line"]} />
+                  <div className={s["reason-desc"]}>
+                    Страхование груза на 100 млн тенге
+                  </div>
+                  <div className={s["reason-desc"]}> </div>
                 </div>
-                <div className={s['header-photo']}>
-                    <Image 
-                        src={headerPhoto} 
-                        alt="header photo" 
-                        layout="fill"
-                        objectFit="cover"
-                        style={{borderRadius: 15}}
-                    />
+              </div>
+            </VanishDiv>
+            <VanishDiv>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  marginBottom: "140px",
+                }}
+              >
+                <div style={{ width: "290px", marginRight: "90px" }}>
+                  <div className={s["reason-value"]}>350+</div>
+                  <div className={s["reason-line"]} />
+                  <a className={s["reason-desc"]}>
+                    Единиц собственного транспорта
+                  </a>
                 </div>
-                <div className={s['box-first']}>
-                    <div className={s['left']}>
-                        <VanishDiv>
-                            <div className={s['reasons-left-header']} >
-                                Преимущества
-                            </div>
-                        </VanishDiv>
-                    </div>
-                    <div className={s['right']}>
-                        <VanishDiv>
-                            <div className={s['reasons-desc']}>
-                                Мы организуем надежные и безопасные транспортные решения для отечественных компаний и за рубежом. Наша команда профессионалов может предоставить индивидуальные решения для удовлетворения ваших уникальных потребностей и гарантировать своевременную доставку вашего груза по востребованным маршрутам.
-                            </div>
-                        </VanishDiv >
-                        <VanishDiv>
-                            <div style={{
-                                display: 'flex',
-                                justifyContent: 'space-between',
-                                marginTop: '88px',
-                                marginBottom: '70px'
-                            }}>
-                                <div>
-                                    <div className={s['reason-value-big']}>100 млн</div>
-                                    <div className={s['reason-line']} />
-                                    <div className={s['reason-desc']}>Страхование груза на 100 млн тенге</div>
-                                    <div className={s['reason-desc']}> </div>
-                                </div>
-                            </div>
-                        </VanishDiv>
-                        <VanishDiv>
-                            <div style={{
-                                display: 'flex',
-                                justifyContent: 'space-between',
-                                marginBottom: '140px'
-                            }}>
-                                <div style={{ width: '290px', marginRight: '90px' }}>
-                                    <div className={s['reason-value']}>350+</div>
-                                    <div className={s['reason-line']} />
-                                    <a className={s['reason-desc']}>Единиц собственного транспорта</a>
-                                </div>
-                                <div style={{ width: '316px' }}>
-                                    <div className={s['reason-value']}>16 лет</div>
-                                    <div className={s['reason-line']} />
-                                    <a className={s['reason-desc']}>Бережно доставляем ваш груз</a>
-                                </div>
-                            </div>
-                        </VanishDiv>
-                    </div>
+                <div style={{ width: "316px" }}>
+                  <div className={s["reason-value"]}>16 лет</div>
+                  <div className={s["reason-line"]} />
+                  <a className={s["reason-desc"]}>
+                    Бережно доставляем ваш груз
+                  </a>
                 </div>
+              </div>
+            </VanishDiv>
+          </div>
+        </div>
+      </div>
+      <MoBlockLine text="О нас" />
+      <div className={s["container"]}>
+        <div className={s["box"]}>
+          <div className={s["left-2"]}>
+            <div className={s["photo"]} style={{ position: "relative" }}>
+              <Image
+                src={aboutPhoto}
+                alt="about photo"
+                layout="fill"
+                objectFit="cover"
+                style={{ borderRadius: 15 }}
+              />
             </div>
-            <MoBlockLine text="О нас" />
-            <div className={s['container']}>
-                <div className={s['box']}>
-                    <div className={s['left-2']}>
-                        <div className={s['photo']} style={{position: 'relative'}}>
-                            <Image src={aboutPhoto}
-                            alt="about photo"
-                            layout='fill'
-                            objectFit='cover' 
-                            style={{borderRadius: 15}}
-                            />
-                        </div>
-                    </div>
-                    <div className={s['right-2']}>
-                        <div className={s['about-header']}>О нас</div>
-                        <div className={s['about-desc']}>
-                            TRANSLINE — транспортная компания, базирующаяся в Казахстане, которая предлагает свои услуги как внутри страны, так и за ее пределами. Мы организуем надежные и безопасные транспортные решения для отечественных компаний и за рубежом.
-                            Наша команда профессионалов может предоставить индивидуальные решения для удовлетворения ваших уникальных потребностей и гарантировать своевременную доставку вашего груза по востребованным маршрутам.
-                            У нас собственный парк современного автотранспорта, опытный штат сотрудников, развитая логистическая сеть, более 50 международных партнеров, страхование ответственности на 100 млн. тенге — все это позволяет нам гарантировать услуги высочайшего качества.
-                            Вы можете отследить свой груз, благодаря удобной CRM-системе в процессе транспортировки. Transline предоставляет безопасность и удобство для своих клиентов.
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div className={s["right-2"]}>
+            <div className={s["about-header"]}>О нас</div>
+            <div className={s["about-desc"]}>
+              TRANSLINE — транспортная компания, базирующаяся в Казахстане,
+              которая предлагает свои услуги как внутри страны, так и за ее
+              пределами. Мы организуем надежные и безопасные транспортные
+              решения для отечественных компаний и за рубежом. Наша команда
+              профессионалов может предоставить индивидуальные решения для
+              удовлетворения ваших уникальных потребностей и гарантировать
+              своевременную доставку вашего груза по востребованным маршрутам. У
+              нас собственный парк современного автотранспорта, опытный штат
+              сотрудников, развитая логистическая сеть, более 50 международных
+              партнеров, страхование ответственности на 100 млн. тенге — все это
+              позволяет нам гарантировать услуги высочайшего качества. Вы можете
+              отследить свой груз, благодаря удобной CRM-системе в процессе
+              транспортировки. Transline предоставляет безопасность и удобство
+              для своих клиентов.
             </div>
-            {/* <MoBlockLine text="История компании" />
+          </div>
+        </div>
+      </div>
+      {/* <MoBlockLine text="История компании" />
             <div className={s['container']}>
                 <div className={s['box']}>
                     <div className={s['left']}>
@@ -183,8 +205,8 @@ function CoAboutCompanyScreen() {
                     </div>
                 </div>
             </div> */}
-            <CoSubmitApplication/>
-        </div>
-    )
+      <CoSubmitApplication />
+    </div>
+  );
 }
 export default CoAboutCompanyScreen;

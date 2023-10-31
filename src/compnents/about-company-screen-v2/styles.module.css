@@ -1,0 +1,226 @@
+.container {
+  padding-top: 188px;
+}
+
+.margin-page {
+  margin: 0 60px 0 60px;
+}
+
+.header {
+  color: #4e4e4e;
+  font-family: Inter;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -1.16px;
+
+  width: 50%;
+  margin: 90px 0 60px 0;
+}
+
+.photo-about-company {
+  position: relative;
+  height: 486px;
+  width: 100%;
+}
+
+.advantages {
+  margin: 83px 228px 0px 228px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.adv-block-1 {
+  width: 167px;
+  margin: 0;
+
+  color: #161616;
+  font-family: Inter;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+  letter-spacing: -0.46px;
+}
+
+.adv-block-2 {
+  width: 654px;
+  height: auto;
+}
+
+.adv-text {
+  color: #161616;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+
+  margin: 0;
+  height: 115px;
+}
+
+.adv-nums {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 418px;
+  margin-top: 88px;
+}
+
+.num-block-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.num-1 {
+  color: #161616;
+  font-family: Inter;
+  font-size: 112px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 94%;
+  letter-spacing: -4.48px;
+
+  margin: 0;
+}
+
+.line {
+  border-top: solid 1px #e3e3e3;
+  margin: 24px 0;
+}
+
+.num-text {
+  color: #161616;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+
+  margin: 0;
+}
+
+.num-block-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.num-2 {
+  color: #161616;
+  font-family: Inter;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -3.84px;
+
+  margin: 0;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.photo-cars {
+  position: relative;
+  height: 952px;
+  border-radius: 15px;
+  width: 45%;
+  object-fit: cover;
+}
+
+.text-about {
+  margin: 0 0 0 110px;
+  width: 654px;
+}
+
+.h-about {
+  color: #161616;
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+  letter-spacing: -1.28px;
+  margin: 0;
+}
+
+.p-about {
+  margin-top: 40px;
+}
+
+.p-about p {
+  color: #161616;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.history-company {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-sites {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 14.5%;
+}
+
+.social-sites a {
+  color: #161616;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.social-sites a:hover {
+  color: #00accd;
+  border-bottom: solid 1px #00accd;
+}
+
+.history-text {
+  width: 791px;
+  margin-right: 93px;
+}
+
+.history-h {
+  margin: 0;
+  margin-bottom: 50px;
+
+  color: #161616;
+  font-family: Inter;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+  letter-spacing: -0.46px;
+}
+
+.history-p {
+  margin: 0;
+  margin-top: 32px;
+
+  color: var(--black-black-70, #4d4d4d);
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+}
