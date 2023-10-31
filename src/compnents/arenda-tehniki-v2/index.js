@@ -12,7 +12,7 @@ import CoBlockServices from "../add-block-services";
 
 const inter = Inter({
   subsets: ["latin"],
-  weights: "400",
+  weight: "400",
 });
 
 export default function ArendaTehnikiIntroV2(props) {
