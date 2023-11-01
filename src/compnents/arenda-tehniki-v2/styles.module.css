@@ -88,6 +88,7 @@
   width: 38.1vw;
   height: 100%;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .about-text-1,
@@ -182,6 +183,7 @@
   width: 46.29vw;
   height: 49.55vh;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .about-container-3 {
@@ -200,6 +202,7 @@
   height: 100%;
   width: 50.2vw;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .about-text-3 {
