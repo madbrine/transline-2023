@@ -174,7 +174,7 @@ export default function CoBlockServices() {
                 грузоподъемности.{" "}
               </p>
             </div>
-            <a href="/arenda-spectehniki">Узнать больше</a>
+            <a href="/arenda-specztehniki">Узнать больше</a>
           </div>
         </div>
       </div>

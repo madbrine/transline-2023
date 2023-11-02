@@ -42,7 +42,10 @@ export default function ArendaTehnikiIntroV3(props) {
   return (
     <div className={inter.className}>
       <div className={s["intro"]}>
-        <MoNavLinkerV2 text3="Аренда спецтехники" link3="/arenda-spectehniki" />
+        <MoNavLinkerV2
+          text3="Аренда спецтехники"
+          link3="/arenda-specztehniki"
+        />
         <div className={s["intro-text"]}>
           <MoBlockHeaderH1V2 text="Аренда спецтехники" />
           <p className={s["intro-p"]}>

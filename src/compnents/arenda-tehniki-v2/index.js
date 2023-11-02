@@ -20,7 +20,10 @@ export default function ArendaTehnikiIntroV2(props) {
     <div className={inter.className}>
       <div className={s["margin-top-container"]}>
         <MoBlockHeaderH1V2 text="Аренда спецтехники" />
-        <MoNavLinkerV2 text3="Аренда спецтехники" link3="/arenda-spectehniki" />
+        <MoNavLinkerV2
+          text3="Аренда спецтехники"
+          link3="/arenda-specztehniki"
+        />
       </div>
       <div className={s["container"]}>
         <div className={s["intro"]}>

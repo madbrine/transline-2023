@@ -123,7 +123,7 @@ function ServicesIntro() {
                   минимальных затратах.
                 </p>
               </div>
-              <a href="/arenda-spectehniki">Подробнее</a>
+              <a href="/arenda-specztehniki">Подробнее</a>
             </div>
             <div className={s["pos-count"]}>
               <div className={s["image"]}>
