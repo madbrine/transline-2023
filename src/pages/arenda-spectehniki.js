@@ -28,7 +28,7 @@ function ArendaSpectehniki() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <CoHeaderV2 whiteText />
+        <CoHeaderV2 />
         <ArendaTehnikiIntroV2 scrollToForm={scrollToForm} />
         <CoSubmitApplication formRef={formRef} />
         <CoFooter />
