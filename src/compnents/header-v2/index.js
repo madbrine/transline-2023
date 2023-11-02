@@ -14,7 +14,7 @@ const inter = Inter({
   weights: "400",
 });
 
-export default function CoHeaderV2() {
+export default function CoHeaderV2(props) {
   const [isNav, setNav] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -27,6 +27,7 @@ export default function CoHeaderV2() {
   const [errors, setErrors] = useState({});
   const [isFormValid, setIsFormValid] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [whiteText, setWhiteText] = useState(props.whiteText);
   const router = useRouter();
 
   const handleChange = (e) => {
@@ -141,7 +142,12 @@ export default function CoHeaderV2() {
 
   return (
     <header className={inter.className}>
-      <div className={`${s["container"]} ${scrolled ? s["scrolled"] : ""}`}>
+      <div
+        className={`
+        ${whiteText ? s["container-white"] : s["container"]} 
+        ${scrolled ? s["scrolled"] : ""}
+        `}
+      >
         <div className={s["header-l"]}>
           <div className={s["logo"]}>
             <MoLogo />
