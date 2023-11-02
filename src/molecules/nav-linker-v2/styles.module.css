@@ -1,14 +1,9 @@
 .container {
   margin: 0 3.1vw;
-  padding-top: 12.71vh;
-  height: 5.78vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .container a {
-  color: #fff;
+  color: #161616;
   font-feature-settings:
     "clig" off,
     "liga" off;
@@ -21,10 +16,11 @@
 }
 
 .line {
+  margin-top: 5.73vh;
+  margin-bottom: 3.89vh;
   width: 100%;
   height: 1px;
   background-color: #e3e3e3;
-  opacity: 0.4;
 }
 
 .bar {
