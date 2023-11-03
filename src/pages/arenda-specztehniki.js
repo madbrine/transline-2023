@@ -1,5 +1,6 @@
 import ArendaTehnikiIntro from "@/compnents/arenda-tehniki";
 import ArendaTehnikiIntroV2 from "@/compnents/arenda-tehniki-v2";
+import CoBlockServicesV2 from "@/compnents/block-services-v2";
 import CoFooter from "@/compnents/footer";
 import CoHeader from "@/compnents/header";
 import CoHeaderV2 from "@/compnents/header-v2";
@@ -28,8 +29,9 @@ function ArendaSpectehniki() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <CoHeaderV2 />
+        <CoHeaderV2 whiteText />
         <ArendaTehnikiIntroV2 scrollToForm={scrollToForm} />
+        <CoBlockServicesV2 />
         <CoSubmitApplication formRef={formRef} />
         <CoFooter />
       </main>

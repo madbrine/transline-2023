@@ -6,8 +6,6 @@ import MoBlockLine from "@/molecules/block-line";
 import CoBlockServices from "../add-block-services";
 import MoBlockHeaderH1 from "@/molecules/block-header-h1";
 
-import photoSpectehnika1 from "../../assets/spectehnika-1.webp";
-import photoSpectehnika2 from "../../assets/spectehnika-2.webp";
 import Image from "next/image";
 
 const inter = Inter({

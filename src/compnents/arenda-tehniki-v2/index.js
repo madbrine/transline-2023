@@ -3,20 +3,19 @@ import Image from "next/image";
 import MoBlockLineV2 from "@/molecules/block-line-v2";
 import MoBlockHeaderH1V2 from "@/molecules/block-header-h1-v2";
 import MoNavLinkerV2 from "@/molecules/nav-linker-v2";
-import CoBlockServices from "../add-block-services";
 import { Inter } from "next/font/google";
 import { useState } from "react";
 
 import photoSpectehnika1 from "../../assets/spectehnika-1-new.webp";
 import photoSpectehnika2 from "../../assets/spectehnika-2-new.webp";
-import photoSpectehnika3 from "../../assets/spectehnika-3.webp";
+import photoSpectehnika3 from "../../assets/spectehnika-3-new.webp";
 
 const inter = Inter({
   subsets: ["latin"],
   weights: "400",
 });
 
-export default function ArendaTehnikiIntroV3(props) {
+export default function ArendaTehnikiIntroV2(props) {
   const dataText = {
     "01": "Тяжелые строительные машины, краны, бульдозеры, экскаваторы, бетоносмесители и другое строительное оборудование.",
     "02": "Аренда экскаваторов, бульдозеров, грейдеров и погрузчиков для земельных работ и строительства.\nБетононасосы и бетоносмесители для бетонных работ.\nКраны для поднятия и перемещения тяжелых строительных материалов.",

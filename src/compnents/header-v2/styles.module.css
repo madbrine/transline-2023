@@ -3,8 +3,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 108px;
-  padding: 0 60px;
+  height: 10.4vh;
+  padding: 0 3.1vw;
   justify-content: space-between;
   position: fixed;
   top: 0;
@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 1012px;
+  width: 52.7vw;
   justify-content: space-between;
 }
 
@@ -43,19 +43,19 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 423px;
+  width: 22.03vw;
   justify-content: space-between;
 }
 
 .logo {
-  width: 184px;
-  height: 31px;
+  width: 9.6vw;
+  height: 2.98vh;
 }
 
 .container a,
 .container span {
   color: #3f3f3f;
-  font-size: 17px;
+  font-size: 0.89vw;
   font-style: normal;
   line-height: 23px;
 }
@@ -63,9 +63,9 @@
 .container-white a,
 .container-white span {
   color: #fff;
-  font-size: 17px;
+  font-size: 0.89vw;
   font-style: normal;
-  line-height: 23px;
+  line-height: 1.1vw;
 }
 
 .scrolled a,
@@ -89,7 +89,7 @@
 .menu {
   display: flex;
   flex-direction: row;
-  width: 708px;
+  width: 36.88vw;
   justify-content: space-between;
 }
 
@@ -103,10 +103,9 @@
 }
 
 .contacts span:nth-child(1) {
-  margin-bottom: 8px;
   text-decoration: underline;
-  text-underline-offset: 6px;
-  margin-bottom: 8px;
+  text-underline-offset: 0.6vh;
+  margin-bottom: 0.8vh;
 }
 
 .contacts span:nth-child(2) {
@@ -114,16 +113,15 @@
 }
 
 .button-form {
-  width: 130px;
-  height: 40px;
+  width: 6.755vw;
+  height: 3.8vh;
   border-radius: 10px;
   background-color: #00accd;
   color: white;
-  font-size: 17px;
+  font-size: 0.884vw;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px;
-  letter-spacing: -0.34px;
+  letter-spacing: -0.02vw;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
