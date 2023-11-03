@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
@@ -15,7 +15,11 @@ export default function Document() {
         />
         <noscript>
           <div>
-            <img src="https://mc.yandex.ru/watch/22331872" style={{ position: 'absolute', left: '-9999px' }} alt="" />
+            <img
+              src="https://mc.yandex.ru/watch/22331872"
+              style={{ position: "absolute", left: "-9999px" }}
+              alt=""
+            />
           </div>
         </noscript>
         {/* Конец Яндекс Метрики */}
@@ -53,7 +57,10 @@ export default function Document() {
         {/* Конец Гугл Тэг Менеджера */}
 
         {/* Гугл Тэг (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HPJ82XBPM0"></script>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-HPJ82XBPM0"
+        ></script>
         <script
           type="text/javascript"
           dangerouslySetInnerHTML={{
@@ -69,11 +76,21 @@ export default function Document() {
           }}
         />
         {/* Конец Гугл Тэга */}
+        {/* <!-- Google tag (gtag.js) --> */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-978508649"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'AW-978508649');
+        </script>
       </Head>
       <body>
         <Main />
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }
