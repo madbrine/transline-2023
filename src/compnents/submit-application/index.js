@@ -6,6 +6,7 @@ import s from "./styles.module.css";
 import validator from "validator";
 import InputMask from "react-input-mask";
 import { useRouter } from "next/router";
+import MoBlockLineV2 from "@/molecules/block-line-v2";
 
 const interM = Inter({
   subsets: ["latin"],
@@ -92,11 +93,49 @@ function CoSubmitApplication(props) {
 
   return (
     <div className={inter.className} ref={props.formRef}>
-      <MoBlockLine text="Оставить заявку" />
+      <MoBlockLineV2 text="Оставить заявку" />
       <div className={s["block-pos"]}>
-        <div className={s["container"]}>
-          <div className={s["container-width"]}>
-            <div className={inter.className}>Получить консультацию</div>
+        <div className={s["container-width"]}>
+          <p className={s["container-width-h"]}>Получить консультацию</p>
+          <div className={s["social-sites"]}>
+            <div className={s["social-sites-block"]}>
+              <p className={s["social-sites-h"]}>Соц. сети:</p>
+              <div className={s["social-sites-pos"]}>
+                <a
+                  className={s["social-sites-p"]}
+                  href="https://facebook.com/transline.kz/"
+                  target="_blank"
+                >
+                  Facebook
+                </a>
+                <a
+                  className={s["social-sites-p"]}
+                  href="https://twitter.com/TranslineKz/"
+                  target="_blank"
+                >
+                  Twitter
+                </a>
+              </div>
+            </div>
+            <div className={s["social-sites-block"]}>
+              <p className={s["social-sites-h"]}>Контакты:</p>
+              <div>
+                <div className={s["social-sites-pos"]}>
+                  <a
+                    className={s["social-sites-p"]}
+                    href="tel:+7 (707) 367-11-04"
+                  >
+                    +7 (727)-367-11-04
+                  </a>
+                  <a
+                    className={s["social-sites-p"]}
+                    href="mailto:info@transline.kz"
+                  >
+                    info@transline.kz
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <form className={s["contacts-and-form-finish"]}>
@@ -108,9 +147,9 @@ function CoSubmitApplication(props) {
               value={formData.name}
               onChange={handleChange}
             />
-            {errors.name && (
+            {/* {errors.name && (
               <div className={s["error-message"]}>{errors.name}</div>
-            )}
+            )} */}
             <InputMask
               mask="+7 (999) 999-99-99"
               value={formData.phone}
@@ -127,9 +166,9 @@ function CoSubmitApplication(props) {
                 />
               )}
             </InputMask>
-            {errors.phone && (
+            {/* {errors.phone && (
               <div className={s["error-message"]}>{errors.phone}</div>
-            )}
+            )} */}
             <input
               className={s["form-input"]}
               placeholder="Email"
@@ -137,9 +176,9 @@ function CoSubmitApplication(props) {
               value={formData.email}
               onChange={handleChange}
             />
-            {errors.email && (
+            {/* {errors.email && (
               <div className={s["error-message"]}>{errors.email}</div>
-            )}
+            )} */}
             <input
               className={s["form-input"]}
               placeholder="Коментарии (не обязательно)"
@@ -148,23 +187,19 @@ function CoSubmitApplication(props) {
               onChange={handleChange}
             />
           </div>
-          <div className={s["form-input-finish-container"]}>
-            <div className={s["form-input-button-container"]}>
-              <button
-                type="submit"
-                onClick={handleSubmit}
-                disabled={!isFormValid}
-              >
-                Отправить
-              </button>
-              <div className={s["form-input-button-desc"]}>
-                <a className={inter.className} style={{ color: "#666" }}>
-                  Нажимая "Отправить" вы{" "}
-                </a>
-                <a className={inter.className}>
-                  соглашаетесь с обработкой персональных данных
-                </a>
-              </div>
+          <div className={s["form-input-button-container"]}>
+            <button
+              type="submit"
+              onClick={handleSubmit}
+              disabled={!isFormValid}
+            >
+              Отправить
+            </button>
+            <div className={s["form-input-button-desc"]}>
+              <a className={s["personal-data-p"]}>
+                Нажимая “Отправить” вы соглашаетесь с обработкой персональных
+                данных
+              </a>
             </div>
           </div>
         </form>
