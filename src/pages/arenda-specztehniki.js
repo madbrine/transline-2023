@@ -1,10 +1,8 @@
-import ArendaTehnikiIntro from "@/compnents/arenda-tehniki";
 import ArendaTehnikiIntroV2 from "@/compnents/arenda-tehniki-v2";
 import CoBlockServicesV2 from "@/compnents/block-services-v2";
-import CoFooter from "@/compnents/footer";
-import CoHeader from "@/compnents/header";
+import CoFooterV2 from "@/compnents/footer-v2";
+import FormGetConsult from "@/compnents/form-get-consult";
 import CoHeaderV2 from "@/compnents/header-v2";
-import CoSubmitApplication from "@/compnents/submit-application";
 import Head from "next/head";
 import { useRef } from "react";
 
@@ -32,8 +30,8 @@ function ArendaSpectehniki() {
         <CoHeaderV2 whiteText />
         <ArendaTehnikiIntroV2 scrollToForm={scrollToForm} />
         <CoBlockServicesV2 />
-        <CoSubmitApplication formRef={formRef} />
-        <CoFooter />
+        <FormGetConsult formRef={formRef} />
+        <CoFooterV2 />
       </main>
     </>
   );

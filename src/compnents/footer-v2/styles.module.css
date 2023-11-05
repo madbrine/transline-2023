@@ -1,0 +1,141 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 9.6vh 3.1vw 0 3.1vw;
+  height: 20.3vh;
+  padding: 6.75vh 0;
+  border-top: solid 1px #e3e3e3;
+}
+
+.footer-l {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 19.79vw;
+  height: 12.4vh;
+}
+
+.soglasie-p {
+  color: #666;
+  font-size: 0.781vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+  letter-spacing: -0.0315vw;
+
+  margin: 0;
+}
+
+.footer-r {
+  width: 42.15vw;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.links {
+  width: 29.56vw;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-p {
+  color: #666;
+  font-size: 0.885vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+
+  opacity: 0.8;
+  margin: 0 0 1.345vh 0;
+}
+
+.info-links-pos {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  color: #161616;
+  font-size: 0.885vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+
+  opacity: 0.8;
+  margin-top: 0.575vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: #00accd;
+  text-decoration: underline;
+  text-underline-offset: 0.5vh;
+}
+
+.button-form {
+  width: 6.3vw;
+  height: 3.84vh;
+  border-radius: 10px;
+  border: none;
+  background-color: #00accd;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  color: #fff;
+  font-size: 0.885vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.015vw;
+}
+
+.button-form:hover {
+  background-color: #009dbb;
+}
+
+.button-form:active {
+  background-color: #00829b;
+}
+
+.under-footer {
+  margin: 0 3.1vw;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.soglasheniya {
+  width: 30.64vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.link-soglasie,
+.company-name {
+  color: #999;
+  font-size: 0.885vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+
+  margin: 0;
+}
+
+.link-soglasie {
+  cursor: pointer;
+}
