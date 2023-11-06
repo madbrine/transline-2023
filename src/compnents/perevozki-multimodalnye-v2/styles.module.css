@@ -292,15 +292,14 @@
 
 .scroll-element {
   height: 1390px;
-  border: solid 1px red;
   margin-top: 77px;
   display: flex;
   flex-direction: row;
-  position: relative;
+  justify-content: flex-end;
 }
 
 .circle {
-  flex: 1;
+  width: 50%;
   display: flex;
   justify-content: center;
   position: sticky;
@@ -308,7 +307,7 @@
 }
 
 .progress-text {
-  flex: 1;
+  width: 50%;
   height: 100%;
   background-color: #009dbb;
   border-radius: 20px 0 0 20px;

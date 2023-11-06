@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import s from "./styles.module.css";
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import MoNavLinkerV2 from "@/molecules/nav-linker-v2";
 import MoBlockHeaderH1V2 from "@/molecules/block-header-h1-v2";
 import MoBlockLineV2 from "@/molecules/block-line-v2";
@@ -203,7 +203,16 @@ export default function MultimodalnyeIntroV2(props) {
           </div>
         </div>
       </div>
-      <div className={s["about-2"]}>
+      <div className={s["about-2-test"]}>
+        <p className={s["about-2-test-h"]}>Преимущества нашей услуги</p>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      {/* <div className={s["about-2"]}>
         <div className={s["about-h-2"]}>
           <p className={s["about-h-2-l"]}>Преимущества</p>
           <p className={s["about-h-2-r"]}>нашей услуги</p>
@@ -361,8 +370,8 @@ export default function MultimodalnyeIntroV2(props) {
             </div>
           </div>
         </div>
-      </div>
-      <div
+      </div> */}
+      {/* <div
         className={s["about-3"]}
         ref={containerRef}
         onMouseDown={onDragStart}
@@ -418,7 +427,7 @@ export default function MultimodalnyeIntroV2(props) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

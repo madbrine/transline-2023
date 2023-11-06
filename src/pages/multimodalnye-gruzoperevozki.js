@@ -30,9 +30,10 @@ function MultimodalnyeGruzoperevozki() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <CoHeaderV2 whiteText />
-        <MultimodalnyeIntroV2 scrollToForm={scrollToForm} />
-        <CoBlockServicesV2 />
+        <CoHeaderV2 />
+        <MultimodalnyeIntro />
+        {/* <MultimodalnyeIntroV2 scrollToForm={scrollToForm} />
+        <CoBlockServicesV2 /> */}
         <FormGetConsult formRef={formRef} />
         <CoFooterV2 />
       </main>
