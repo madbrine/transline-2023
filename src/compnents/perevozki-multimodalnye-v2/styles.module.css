@@ -289,3 +289,211 @@
   justify-content: flex-end;
   margin-right: 3.1vw;
 }
+
+.scroll-element {
+  height: 1390px;
+  border: solid 1px red;
+  margin-top: 77px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.circle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 20px;
+}
+
+.progress-text {
+  flex: 1;
+  height: 100%;
+  background-color: #009dbb;
+  border-radius: 20px 0 0 20px;
+}
+
+.container-text {
+  margin: 200px 330px 214px 82px;
+  height: calc(100% - 414px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.step-h {
+  color: #fff;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.36px;
+
+  margin: 16px 0;
+}
+
+.step-p {
+  color: #fff;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.16px;
+
+  margin: 0;
+}
+
+#margin-step-top {
+  margin-top: 200px;
+}
+
+#margin-step-bottom {
+  margin-bottom: 200px;
+}
+
+.about-3 {
+  height: 773px;
+  margin-top: 220px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+
+  scrollbar-width: none; /* Для Firefox */
+  -ms-overflow-style: none; /* Для Internet Explorer и Edge */
+}
+
+.about-3::-webkit-scrollbar {
+  display: none;
+}
+
+.direction-p {
+  width: 772px;
+  margin: 0 143px 0 3.1vw;
+
+  color: #1c1c1e;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.96px;
+}
+
+.direction-1,
+.direction-2,
+.direction-3,
+.direction-4 {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.direction-1 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url("../../assets/multimodal-about-3-1.webp");
+  margin-right: 12px;
+}
+
+.direction-2 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url("../../assets/multimodal-about-3-2.webp");
+  margin-right: 12px;
+}
+
+.direction-3 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url("../../assets/multimodal-about-3-3.webp");
+  margin-right: 12px;
+}
+
+.direction-4 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url("../../assets/multimodal-about-3-4.webp");
+  margin-right: 3.1vw;
+}
+
+.card {
+  height: calc(100% - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 50px 60px 40px 60px;
+}
+
+.direction-h {
+  color: #fff;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 78px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.78px;
+
+  margin: 0;
+}
+
+.elements-pos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 612px;
+  padding-top: 30px;
+  border-top: solid 1px #fff;
+}
+
+.podrobnee-p {
+  color: #fff;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.48px;
+}
+
+.icon-back {
+  height: 100%;
+  width: 60px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.icon-size {
+  width: 30px;
+  height: 26px;
+}
