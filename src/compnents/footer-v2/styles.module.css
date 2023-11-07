@@ -45,6 +45,10 @@
   justify-content: space-between;
 }
 
+.contacts-mobile {
+  display: none;
+}
+
 .info {
   display: flex;
   flex-direction: column;
@@ -138,4 +142,129 @@
 
 .link-soglasie {
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 8px;
+    height: auto;
+    padding: 0 0 40px 0;
+
+    border-top: none;
+    border-bottom: solid 1px #e3e3e3;
+  }
+
+  .footer-l {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 320px;
+    height: 143px;
+    padding: 40px 0;
+  }
+
+  .soglasie-p {
+    letter-spacing: 0;
+    font-size: 14px;
+    line-height: 145%;
+
+    margin: 0;
+  }
+
+  .footer-r {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .links {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .info-p {
+    font-size: 14px;
+    line-height: 145%;
+    min-width: 138px;
+    max-width: 168px;
+
+    margin: 0 0 12px 0;
+  }
+
+  .link {
+    font-size: 14px;
+    line-height: 145%;
+
+    margin-top: 8px;
+  }
+
+  .link:hover {
+    text-underline-offset: 4px;
+  }
+
+  .contacts {
+    display: none;
+  }
+
+  .contacts-mobile {
+    display: block;
+  }
+
+  .contacts-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 40px;
+  }
+
+  .button-form {
+    width: 117px;
+    height: 36px;
+
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -0.17px;
+  }
+
+  .under-footer {
+    margin: 40px 8px 0 8px;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .soglasheniya {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .link-soglasie,
+  .company-name {
+    font-size: 14px;
+    line-height: 145%;
+
+    margin: 0;
+  }
+
+  .link-soglasie {
+    margin-bottom: 12px;
+  }
+
+  .company-name {
+    margin-top: 36px;
+    margin-bottom: 20px;
+  }
 }

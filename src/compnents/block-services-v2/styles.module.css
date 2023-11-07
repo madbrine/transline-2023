@@ -142,14 +142,66 @@
   margin: 0;
 }
 
-.text div h2 {
-  text-decoration: none;
-}
+@media (max-width: 768px) {
+  .head-block-services {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 8px 28px 8px;
+  }
 
-#margin-left {
-  margin-left: 3.1vw;
-}
+  .head-h {
+    font-feature-settings:
+      "clig" off,
+      "liga" off;
+    font-size: 36px;
+    letter-spacing: -0.36px;
 
-#margin-right {
-  margin-right: 3.1vw;
+    margin: 0 0 102px 0;
+  }
+
+  .btn-head {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .block-services {
+    padding: 0 0 0 8px;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  .service {
+    width: auto;
+    height: auto;
+    margin-right: 12px;
+    justify-content: flex-start;
+  }
+
+  .service-image {
+    width: 344px;
+    height: 331px;
+  }
+
+  .text {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .text .h2 {
+    font-size: 28px;
+    line-height: 140%;
+    letter-spacing: -0.28px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    width: 150px;
+  }
+
+  .text p {
+    font-size: 16px;
+    letter-spacing: -0.16px;
+  }
 }

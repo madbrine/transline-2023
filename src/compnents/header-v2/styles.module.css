@@ -337,7 +337,8 @@
 }
 
 @media (max-width: 1350px) {
-  .container {
+  .container,
+  .container-white {
     padding: 0 20px;
     height: 82px;
   }
@@ -387,7 +388,8 @@
     margin-bottom: 20px;
   }
 
-  .container a {
+  .container a,
+  .container-white a {
     color: #666;
     font-size: 40px;
     font-style: normal;

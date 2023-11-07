@@ -16,3 +16,15 @@
   height: 1px;
   background-color: #e3e3d3;
 }
+@media (max-width: 768px) {
+  #container {
+    margin: 80px 10px 40px 10px;
+
+    font-size: 14px;
+    line-height: 145%;
+  }
+
+  .line {
+    margin-left: 8px;
+  }
+}

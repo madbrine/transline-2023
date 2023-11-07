@@ -19,6 +19,7 @@ function MoNavLinkerV2(props) {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
                 fill="none"
+                className={s["size-icon"]}
               >
                 <path
                   d="M6.66656 4.00012L5.72656 4.94012L8.7799 8.00012L5.72656 11.0601L6.66656 12.0001L10.6666 8.00012L6.66656 4.00012Z"
@@ -39,6 +40,7 @@ function MoNavLinkerV2(props) {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 16 16"
                     fill="none"
+                    className={s["size-icon"]}
                   >
                     <path
                       d="M6.66656 4.00012L5.72656 4.94012L8.7799 8.00012L5.72656 11.0601L6.66656 12.0001L10.6666 8.00012L6.66656 4.00012Z"

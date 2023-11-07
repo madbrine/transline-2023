@@ -1,4 +1,3 @@
-import VanishDiv from "@/molecules/vanish-div";
 import { Inter } from "next/font/google";
 import MoLogo from "../logo";
 import s from "./styles.module.css";
@@ -72,7 +71,20 @@ function CoFooterV2() {
               </div>
             </div>
           </div>
-          <button className={s["button-form"]}>Связаться</button>
+          <div className={s["contacts-btn"]}>
+            <div className={s["contacts-mobile"]}>
+              <p className={s["info-p"]}>Контакты:</p>
+              <div className={s["info-links-pos"]}>
+                <a className={s["link"]} href="tel:+7 (707) 367-11-04">
+                  +7 (727)-367-11-04
+                </a>
+                <a className={s["link"]} href="mailto:info@transline.kz">
+                  info@transline.kz
+                </a>
+              </div>
+            </div>
+            <button className={s["button-form"]}>Связаться</button>
+          </div>
         </div>
       </div>
       <div className={s["under-footer"]}>

@@ -46,3 +46,38 @@
   width: 0.84vw;
   height: 0.84vh;
 }
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0 20px;
+    padding-top: 103px;
+    height: 56px;
+  }
+
+  .container a {
+    font-size: 14px;
+
+    margin-right: 0.21vw;
+  }
+
+  .bar {
+    height: 32px;
+  }
+
+  .nav-pos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .icon {
+    margin-right: 16px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .size-icon {
+    width: 16px;
+    height: 16px;
+  }
+}

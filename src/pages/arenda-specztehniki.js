@@ -6,7 +6,7 @@ import CoHeaderV2 from "@/compnents/header-v2";
 import Head from "next/head";
 import { useRef } from "react";
 
-function ArendaSpectehniki() {
+function ArendaSpecztehniki() {
   const formRef = useRef(null);
 
   const scrollToForm = () => {
@@ -36,4 +36,4 @@ function ArendaSpectehniki() {
     </>
   );
 }
-export default ArendaSpectehniki;
+export default ArendaSpecztehniki;

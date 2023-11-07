@@ -319,6 +319,11 @@ export default function ArendaTehnikiIntroV2(props) {
           <div className={s["switch-text"]}>
             <p className={s["switch-text-h"]}>{headText}</p>
             <p className={s["switch-text-p"]}>{text}</p>
+            <Image
+              className={s["about-img-2-1"]}
+              src={photoSpectehnika3}
+              alt="Фото спецтехники 4"
+            />
           </div>
         </div>
       </div>

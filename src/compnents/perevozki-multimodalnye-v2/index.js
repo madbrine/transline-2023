@@ -205,7 +205,7 @@ export default function MultimodalnyeIntroV2(props) {
       </div>
       <div className={s["about-2-test"]}>
         <p className={s["about-2-test-h"]}>Преимущества нашей услуги</p>
-        <div>
+        <div className={s["about-2-block"]}>
           <div></div>
           <div></div>
           <div></div>

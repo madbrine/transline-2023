@@ -232,8 +232,11 @@ export default function CoHeaderV2(props) {
               viewBox="0 0 24 24"
               fill="none"
             >
-              <path d="M2 8H22V10H2V8Z" fill="#161616" />
-              <path d="M2 14H22V16H2V14Z" fill="#161616" />
+              <path d="M2 8H22V10H2V8Z" fill={scrolled ? "#161616" : "#fff"} />
+              <path
+                d="M2 14H22V16H2V14Z"
+                fill={scrolled ? "#161616" : "#fff"}
+              />
             </svg>
           )}
         </div>

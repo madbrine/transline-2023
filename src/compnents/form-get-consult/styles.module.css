@@ -133,3 +133,96 @@
   margin: 0;
   width: 13.7vw;
 }
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0 8px;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .desc-form {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .desc-h {
+    font-size: 32px;
+    letter-spacing: -1.28px;
+
+    margin: 0 0 40px 0;
+  }
+
+  .social-sites {
+    width: 100%;
+    height: 95px;
+    justify-content: flex-start;
+  }
+
+  .social-sites-block {
+    min-width: 138px;
+    max-width: 160px;
+    margin-right: 44px;
+    white-space: nowrap;
+  }
+
+  .social-sites-pos {
+    height: 52px;
+  }
+
+  .social-sites-h {
+    font-size: 17px;
+
+    opacity: 0.8;
+    margin: 0 0 20px 0;
+  }
+
+  .social-sites-p {
+    font-size: 17px;
+
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  .inputs-form {
+    width: 100%;
+    height: 376px;
+    margin-top: 80px;
+  }
+
+  .form-input {
+    width: 100%;
+    height: 35px;
+
+    font-size: 17px;
+    letter-spacing: -0.17px;
+  }
+
+  .send-form-btn {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+  }
+
+  .send-form-btn button {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 16px;
+
+    font-size: 17px;
+    letter-spacing: -0.34px;
+  }
+
+  .info-form-p {
+    font-size: 13px;
+    line-height: 135%;
+    letter-spacing: -0.13px;
+
+    margin: 0;
+    width: 320px;
+  }
+}
