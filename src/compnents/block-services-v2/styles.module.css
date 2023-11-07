@@ -147,17 +147,17 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0 8px 28px 8px;
+    margin: 0 2vw 3.35vh 2vw;
   }
 
   .head-h {
     font-feature-settings:
       "clig" off,
       "liga" off;
-    font-size: 36px;
-    letter-spacing: -0.36px;
+    font-size: 9.23vw;
+    letter-spacing: -0.1vw;
 
-    margin: 0 0 102px 0;
+    margin: 0 0 12.05vh 0;
   }
 
   .btn-head {
@@ -167,7 +167,7 @@
   }
 
   .block-services {
-    padding: 0 0 0 8px;
+    padding: 0 0 0 2vw;
     margin-bottom: 0;
     margin-right: 0;
   }
@@ -175,13 +175,13 @@
   .service {
     width: auto;
     height: auto;
-    margin-right: 12px;
+    margin-right: 3.07vw;
     justify-content: flex-start;
   }
 
   .service-image {
-    width: 344px;
-    height: 331px;
+    width: 88.25vw;
+    height: 39.2vh;
   }
 
   .text {
@@ -192,16 +192,16 @@
   }
 
   .text .h2 {
-    font-size: 28px;
+    font-size: 7.18vw;
     line-height: 140%;
-    letter-spacing: -0.28px;
-    margin-top: 32px;
-    margin-bottom: 16px;
-    width: 150px;
+    letter-spacing: -0.07vw;
+    margin-top: 3.8vh;
+    margin-bottom: 1.9vh;
+    width: 38vw;
   }
 
   .text p {
-    font-size: 16px;
-    letter-spacing: -0.16px;
+    font-size: 4.1vw;
+    letter-spacing: -0.04vw;
   }
 }

@@ -136,7 +136,7 @@
 
 @media (max-width: 768px) {
   .container {
-    margin: 0 8px;
+    margin: 0 2vw;
     height: auto;
     flex-direction: column;
     justify-content: flex-start;
@@ -149,38 +149,38 @@
   }
 
   .desc-h {
-    font-size: 32px;
-    letter-spacing: -1.28px;
+    font-size: 8.2vw;
+    letter-spacing: -0.33vw;
 
-    margin: 0 0 40px 0;
+    margin: 0 0 4.75vh 0;
   }
 
   .social-sites {
     width: 100%;
-    height: 95px;
+    height: 11.25vh;
     justify-content: flex-start;
   }
 
   .social-sites-block {
-    min-width: 138px;
-    max-width: 160px;
-    margin-right: 44px;
+    min-width: 35.38vw;
+    max-width: 41.02vw;
+    margin-right: 11.28vw;
     white-space: nowrap;
   }
 
   .social-sites-pos {
-    height: 52px;
+    height: 6.16vh;
   }
 
   .social-sites-h {
-    font-size: 17px;
+    font-size: 4.358vw;
 
     opacity: 0.8;
-    margin: 0 0 20px 0;
+    margin: 0 0 2.369vh 0;
   }
 
   .social-sites-p {
-    font-size: 17px;
+    font-size: 4.358vw;
 
     opacity: 0.8;
     cursor: pointer;
@@ -188,16 +188,16 @@
 
   .inputs-form {
     width: 100%;
-    height: 376px;
-    margin-top: 80px;
+    height: 44.549vh;
+    margin-top: 9.478vh;
   }
 
   .form-input {
     width: 100%;
-    height: 35px;
+    height: 4.146vh;
 
-    font-size: 17px;
-    letter-spacing: -0.17px;
+    font-size: 4.358vw;
+    letter-spacing: -0.043vw;
   }
 
   .send-form-btn {
@@ -210,19 +210,19 @@
 
   .send-form-btn button {
     width: 100%;
-    height: 48px;
-    margin-bottom: 16px;
+    height: 5.687vh;
+    margin-bottom: 1.895vh;
 
-    font-size: 17px;
-    letter-spacing: -0.34px;
+    font-size: 4.358vw;
+    letter-spacing: -0.087vw;
   }
 
   .info-form-p {
-    font-size: 13px;
+    font-size: 3.333vw;
     line-height: 135%;
-    letter-spacing: -0.13px;
+    letter-spacing: -0.033vw;
 
     margin: 0;
-    width: 320px;
+    width: 82.051vw;
   }
 }

@@ -148,9 +148,9 @@
   .footer {
     flex-direction: column;
     justify-content: flex-start;
-    margin: 0 8px;
+    margin: 0 2vw;
     height: auto;
-    padding: 0 0 40px 0;
+    padding: 0 0 4.739vh 0;
 
     border-top: none;
     border-bottom: solid 1px #e3e3e3;
@@ -160,14 +160,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 320px;
-    height: 143px;
-    padding: 40px 0;
+    width: 82.051vw;
+    height: 16.943vh;
+    padding: 4.739vh 0;
   }
 
   .soglasie-p {
     letter-spacing: 0;
-    font-size: 14px;
+    font-size: 3.589vw;
     line-height: 145%;
 
     margin: 0;
@@ -192,19 +192,19 @@
   }
 
   .info-p {
-    font-size: 14px;
+    font-size: 3.589vw;
     line-height: 145%;
-    min-width: 138px;
-    max-width: 168px;
+    min-width: 35.384vw;
+    max-width: 43.076vw;
 
-    margin: 0 0 12px 0;
+    margin: 0 0 1.421vh 0;
   }
 
   .link {
-    font-size: 14px;
+    font-size: 3.589vw;
     line-height: 145%;
 
-    margin-top: 8px;
+    margin-top: 0.947vh;
   }
 
   .link:hover {
@@ -224,20 +224,20 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 40px;
+    margin-top: 4.739vh;
   }
 
   .button-form {
-    width: 117px;
-    height: 36px;
+    width: 30vw;
+    height: 4.265vh;
 
-    font-size: 17px;
+    font-size: 4.358vw;
     font-weight: 400;
-    letter-spacing: -0.17px;
+    letter-spacing: -0.043vw;
   }
 
   .under-footer {
-    margin: 40px 8px 0 8px;
+    margin: 4.739vh 2vw 0 2vw;
     height: auto;
     flex-direction: column;
     justify-content: flex-start;
@@ -253,18 +253,18 @@
 
   .link-soglasie,
   .company-name {
-    font-size: 14px;
+    font-size: 3.589vw;
     line-height: 145%;
 
     margin: 0;
   }
 
   .link-soglasie {
-    margin-bottom: 12px;
+    margin-bottom: 1.421vh;
   }
 
   .company-name {
-    margin-top: 36px;
-    margin-bottom: 20px;
+    margin-top: 4.265vh;
+    margin-bottom: 2.369vh;
   }
 }

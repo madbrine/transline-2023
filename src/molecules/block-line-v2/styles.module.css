@@ -18,13 +18,13 @@
 }
 @media (max-width: 768px) {
   #container {
-    margin: 80px 10px 40px 10px;
+    margin: 9.48vh 2vw 4.74vh 2vw;
 
-    font-size: 14px;
+    font-size: 3.59vw;
     line-height: 145%;
   }
 
   .line {
-    margin-left: 8px;
+    margin-left: 2vw;
   }
 }
