@@ -1,0 +1,258 @@
+.intro {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.46) 0%,
+      rgba(0, 0, 0, 0.46) 100%
+    ),
+    url("../../assets/auto-uslugi.webp");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intro-text {
+  margin: 0 3.1vw 6.45vh 3.1vw;
+}
+
+.intro-p {
+  margin: 2.35vh 0 3.85vh 0;
+  width: 30.3vw;
+
+  color: #fff;
+  font-size: 0.886vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+}
+
+.btn-consult {
+  width: 12.22vw;
+  height: 3.85vh;
+  border-radius: 10px;
+  border: none;
+  background-color: #00accd;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  color: #fff;
+  font-size: 0.886vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.017vw;
+}
+
+.btn-consult:hover {
+  background-color: #009dbb;
+}
+
+.btn-consult:active {
+  background-color: #00829b;
+}
+
+.about-1,
+.about-2,
+.about-3 {
+  margin: 0 3.1vw;
+  height: 69.1vh;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.about-desc-1 {
+  width: 38.065vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about-head-1 {
+  width: 33.85vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-h-1,
+.about-h-2 {
+  color: #161616;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.025vw;
+
+  margin: 0;
+  width: 100%;
+}
+
+.about-p-1 {
+  color: #161616;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 0.833vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.008vw;
+
+  width: 22.552vw;
+  opacity: 0.6;
+  margin: 1.156vh 0 0 0;
+}
+
+.about-img-1 {
+  width: 100%;
+  height: 38.1vh;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.switch-block {
+  width: 30.92vw;
+  height: 100%;
+  margin-right: 16.65vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.switch-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 45.25vw;
+}
+
+.switch-links li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  color: #161616;
+  margin-bottom: 1.15vh;
+}
+
+.switch-links li:hover {
+  color: #00accd;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-num {
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 0.78vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.014vw;
+
+  margin-right: 0.2vw;
+}
+
+.link-num-pressed {
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 0.78vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: -0.014vw;
+
+  margin-right: 0.2vw;
+  color: #00accd;
+}
+
+.link-text {
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 0.938vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.009vw;
+}
+
+.link-text-pressed {
+  color: #00accd;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 0.938vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.009vw;
+  text-decoration: underline;
+  text-underline-offset: 0.5vh;
+}
+
+.link-text:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.5vh;
+}
+
+.switch-text {
+  height: 38.1vh;
+  width: 28.45vw;
+}
+
+.switch-text-h {
+  color: #161616;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 3.335vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.033vw;
+
+  margin: 0 0 2.28vh 0;
+  width: 100%;
+}
+
+.switch-text-p {
+  color: #161616;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-size: 0.834vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.008vw;
+
+  margin: 0;
+  width: 21.95vw;
+  white-space: pre-wrap;
+}
+
+.about-2 {
+  margin: 7.35vh 3.1vw;
+}
+
+.about-h-2 {
+  width: 100%;
+}
