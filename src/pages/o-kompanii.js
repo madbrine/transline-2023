@@ -1,7 +1,6 @@
 import CoAboutCompanyScreen from "@/compnents/about-company-screen";
 import CoAboutCompanyScreenV2 from "@/compnents/about-company-screen-v2";
 import CoFooter from "@/compnents/footer";
-import CoHeader from "@/compnents/header";
 import CoHeaderV2 from "@/compnents/header-v2";
 import Head from "next/head";
 
