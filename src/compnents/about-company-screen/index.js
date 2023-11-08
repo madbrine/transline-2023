@@ -7,7 +7,6 @@ import { Inter } from "next/font/google";
 import Image from "next/image";
 import CoNews from "../news";
 import CoSubmitApplication from "../submit-application";
-import CoWhyWe from "../why-we";
 import s from "./styles.module.css";
 import headerPhoto from "../../assets/o-kompanii.webp";
 import aboutPhoto from "./about-photo.webp";
