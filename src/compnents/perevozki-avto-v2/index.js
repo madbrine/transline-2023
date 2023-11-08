@@ -164,7 +164,7 @@ export default function AvtoperevozkiIntroV2(props) {
         </div>
         <div className={s["switch-block"]}>
           <div className={s["switch-links"]}>
-            <div className={s["link-list"]}>
+            <ul className={s["link-list"]}>
               <li id="01" onClick={handleClickLink}>
                 <span
                   className={
@@ -245,7 +245,7 @@ export default function AvtoperevozkiIntroV2(props) {
                   Авто для перевозки труб
                 </span>
               </li>
-            </div>
+            </ul>
           </div>
           <div className={s["switch-text"]}>
             <p className={s["switch-text-h"]}>{headText}</p>
@@ -285,7 +285,7 @@ export default function AvtoperevozkiIntroV2(props) {
         </div>
         <div className={s["switch-block"]}>
           <div className={s["switch-links"]}>
-            <div className={s["link-list"]}>
+            <ul className={s["link-list"]}>
               <li id="01" onClick={handleClickLink2}>
                 <span
                   className={
@@ -366,8 +366,8 @@ export default function AvtoperevozkiIntroV2(props) {
                   Негабаритные грузы
                 </span>
               </li>
-            </div>
-            <div className={s["link-list"]}>
+            </ul>
+            <ul className={s["link-list"]}>
               <li id="06" onClick={handleClickLink2}>
                 <span
                   className={
@@ -448,7 +448,7 @@ export default function AvtoperevozkiIntroV2(props) {
                   Дорожное строительство и тяжелое оборудование
                 </span>
               </li>
-            </div>
+            </ul>
           </div>
           <div className={s["switch-text"]}>
             <p className={s["switch-text-h"]}>{headText2}</p>
@@ -482,7 +482,7 @@ export default function AvtoperevozkiIntroV2(props) {
         </div>
         <div className={s["switch-block"]}>
           <div className={s["switch-links"]}>
-            <div className={s["link-list"]}>
+            <ul className={s["link-list"]}>
               <li id="01" onClick={handleClickLink3}>
                 <span
                   className={
@@ -563,7 +563,7 @@ export default function AvtoperevozkiIntroV2(props) {
                   Отслеживание груза
                 </span>
               </li>
-            </div>
+            </ul>
           </div>
           <div className={s["switch-text"]}>
             <p className={s["switch-text-h"]}>{headText3}</p>

@@ -1,12 +1,8 @@
 import Head from "next/head";
-import CoHeader from "@/compnents/header";
 import CoIntro from "@/compnents/intro";
-import CoAboutCompany from "@/compnents/about-company";
-import CoNews from "@/compnents/news";
 import CoSubmitApplication from "@/compnents/submit-application";
 import CoFooter from "@/compnents/footer";
 import CoBlockServices from "@/compnents/add-block-services";
-import MoBlockHeader from "@/molecules/block-header";
 import MoBlockLine from "@/molecules/block-line";
 import VanishDiv from "@/molecules/vanish-div";
 import CoHeaderV2 from "@/compnents/header-v2";
@@ -14,6 +10,8 @@ import MoBlockHeaderSolutions from "@/molecules/block-header-solutions";
 import { useRef } from "react";
 import CoAboutCompanyV2 from "@/compnents/about-company-v2";
 import CoIntroV2 from "@/compnents/intro-v2";
+import CoFooterV2 from "@/compnents/footer-v2";
+import FormGetConsult from "@/compnents/form-get-consult";
 
 export default function Home() {
   const formRef = useRef(null);
@@ -148,8 +146,8 @@ export default function Home() {
         <CoBlockServices />
         <CoAboutCompanyV2 />
         {/* <CoNews /> */}
-        <CoSubmitApplication formRef={formRef} />
-        <CoFooter />
+        <FormGetConsult formRef={formRef} />
+        <CoFooterV2 />
       </main>
     </>
   );

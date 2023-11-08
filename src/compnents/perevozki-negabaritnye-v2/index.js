@@ -164,7 +164,7 @@ export default function NegabaritnyeIntroV2(props) {
         </div>
         <div className={s["switch-block"]}>
           <div className={s["switch-links"]}>
-            <div className={s["link-list"]}>
+            <ul className={s["link-list"]}>
               <li id="01" onClick={handleClickLink}>
                 <span
                   className={
@@ -245,8 +245,8 @@ export default function NegabaritnyeIntroV2(props) {
                   Конструкции и сооружения
                 </span>
               </li>
-            </div>
-            <div className={s["link-list"]}>
+            </ul>
+            <ul className={s["link-list"]}>
               <li id="06" onClick={handleClickLink}>
                 <span
                   className={
@@ -327,7 +327,7 @@ export default function NegabaritnyeIntroV2(props) {
                   Архитектурные и художественные объекты
                 </span>
               </li>
-            </div>
+            </ul>
           </div>
           <div className={s["switch-text"]}>
             <p className={s["switch-text-h"]}>{headText}</p>
@@ -363,7 +363,7 @@ export default function NegabaritnyeIntroV2(props) {
         </div>
         <div className={s["switch-block"]}>
           <div className={s["switch-links"]}>
-            <div className={s["link-list"]}>
+            <ul className={s["link-list"]}>
               <li id="01" onClick={handleClickLink2}>
                 <span
                   className={
@@ -444,8 +444,8 @@ export default function NegabaritnyeIntroV2(props) {
                   Тралы
                 </span>
               </li>
-            </div>
-            <div className={s["link-list"]}>
+            </ul>
+            <ul className={s["link-list"]}>
               <li id="06" onClick={handleClickLink2}>
                 <span
                   className={
@@ -510,7 +510,7 @@ export default function NegabaritnyeIntroV2(props) {
                   Специализированные контейнеры
                 </span>
               </li>
-            </div>
+            </ul>
           </div>
           <div className={s["switch-text"]}>
             <p className={s["switch-text-h"]}>{headText2}</p>
@@ -544,7 +544,7 @@ export default function NegabaritnyeIntroV2(props) {
         </div>
         <div className={s["switch-block"]}>
           <div className={s["switch-links"]}>
-            <div className={s["link-list"]}>
+            <ul className={s["link-list"]}>
               <li id="01" onClick={handleClickLink3}>
                 <span
                   className={
@@ -625,7 +625,7 @@ export default function NegabaritnyeIntroV2(props) {
                   Соблюдение нормативов и безопасности
                 </span>
               </li>
-            </div>
+            </ul>
           </div>
           <div className={s["switch-text"]}>
             <p className={s["switch-text-h"]}>{headText3}</p>

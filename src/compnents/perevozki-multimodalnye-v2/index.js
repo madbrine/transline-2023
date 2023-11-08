@@ -121,7 +121,7 @@ export default function MultimodalnyeIntroV2(props) {
         </div>
         <div className={s["switch-block"]}>
           <div className={s["switch-links"]}>
-            <div className={s["link-list"]}>
+            <ul className={s["link-list"]}>
               <li id="01" onClick={handleClickLink}>
                 <span
                   className={
@@ -186,7 +186,7 @@ export default function MultimodalnyeIntroV2(props) {
                   Авиаперевозки
                 </span>
               </li>
-            </div>
+            </ul>
           </div>
           <div className={s["switch-text"]}>
             <p className={s["switch-text-h"]}>{headText}</p>

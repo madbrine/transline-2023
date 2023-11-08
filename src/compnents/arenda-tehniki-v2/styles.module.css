@@ -95,8 +95,9 @@
 }
 
 .about-list {
-  margin-left: 0.72vw;
+  margin: 0 0 0 0.72vw;
   opacity: 0.8;
+  padding: 0;
 }
 
 .about-list li {
@@ -262,6 +263,8 @@
 .link-list {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .link-num {

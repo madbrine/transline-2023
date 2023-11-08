@@ -93,10 +93,10 @@ export default function ArendaTehnikiIntroV2(props) {
           </div>
           <div className={s["about-text-1"]}>
             <p className={s["about-h-1"]}>Виды услуг</p>
-            <div className={s["about-list"]}>
+            <ul className={s["about-list"]}>
               <li>Предоставление в аренду других видов спец техники</li>
               <li>Перевозка вашего сырья, с пункта А в пункт Б, под ключ</li>
-            </div>
+            </ul>
           </div>
         </div>
         <div className={s["about-block-2"]}>
@@ -167,7 +167,7 @@ export default function ArendaTehnikiIntroV2(props) {
         </div>
         <div className={s["switch-block"]}>
           <div className={s["switch-links"]}>
-            <div className={s["link-list"]}>
+            <ul className={s["link-list"]}>
               <li id="01" onClick={handleClickLink}>
                 <span
                   className={
@@ -248,8 +248,8 @@ export default function ArendaTehnikiIntroV2(props) {
                   Топливная промышленность и энергетика
                 </span>
               </li>
-            </div>
-            <div className={s["link-list"]}>
+            </ul>
+            <ul className={s["link-list"]}>
               <li id="06" onClick={handleClickLink}>
                 <span
                   className={
@@ -314,7 +314,7 @@ export default function ArendaTehnikiIntroV2(props) {
                   Товары народного потребления
                 </span>
               </li>
-            </div>
+            </ul>
           </div>
           <div className={s["switch-text"]}>
             <p className={s["switch-text-h"]}>{headText}</p>

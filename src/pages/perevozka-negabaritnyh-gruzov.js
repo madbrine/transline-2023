@@ -2,7 +2,6 @@ import CoBlockServicesV2 from "@/compnents/block-services-v2";
 import CoFooterV2 from "@/compnents/footer-v2";
 import FormGetConsult from "@/compnents/form-get-consult";
 import CoHeaderV2 from "@/compnents/header-v2";
-import NegabaritnyeIntro from "@/compnents/perevozki-negabaritnye";
 import NegabaritnyeIntroV2 from "@/compnents/perevozki-negabaritnye-v2";
 import Head from "next/head";
 import { useRef } from "react";
