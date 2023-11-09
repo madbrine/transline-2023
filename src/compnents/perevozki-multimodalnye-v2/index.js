@@ -298,7 +298,7 @@ export default function MultimodalnyeIntroV2(props) {
         </div>
         <div className={s["direct-card-3"]}>
           <div className={s["direct-card-content"]}>
-            <p className={s["direct-h2"]}>Импорт</p>
+            <p className={s["direct-h2"]}>Экспорт</p>
             <div className={s["direct-link"]}>
               <p className={s["direct-p"]}>Подробнее</p>
               <div className={s["direct-btn"]}>
@@ -309,7 +309,7 @@ export default function MultimodalnyeIntroV2(props) {
         </div>
         <div className={s["direct-card-4"]}>
           <div className={s["direct-card-content"]}>
-            <p className={s["direct-h2"]}>Импорт</p>
+            <p className={s["direct-h2"]}>ПСЖВ</p>
             <div className={s["direct-link"]}>
               <p className={s["direct-p"]}>Подробнее</p>
               <div className={s["direct-btn"]}>
