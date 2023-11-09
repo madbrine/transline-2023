@@ -126,11 +126,10 @@ export default function NegabaritnyeIntroV2(props) {
         <div className={s["intro-text"]}>
           <MoBlockHeaderH1V2 text="Негабаритные перевозки" />
           <p className={s["intro-p"]}>
-            Мы предоставляем вам широкий выбор специализированной техники,
-            которая поможет вам реализовать проекты эффективно и в срок.
-            Сотрудничая с нами, вы получаете доступ к современной технике и
-            профессиональному сервису, который поддерживает ваш бизнес на пути к
-            успеху.
+            Гарантия безопасности и эффективности. Мы специализируемся на
+            обеспечении безопасной и эффективной доставки крупногабаритных
+            грузов по всей стране и за её пределами. Наш опыт и экспертиза
+            позволяют нам предложить вам надежные решения для сложных перевозок.
           </p>
           <button onClick={props.scrollToForm} className={s["btn-consult"]}>
             Получить консультацию
@@ -332,6 +331,11 @@ export default function NegabaritnyeIntroV2(props) {
           <div className={s["switch-text"]}>
             <p className={s["switch-text-h"]}>{headText}</p>
             <p className={s["switch-text-p"]}>{text}</p>
+            <Image
+              className={s["about-img-1-2"]}
+              src={photoNegabarit1}
+              alt="Фото негабаритные перевозки 1"
+            />
           </div>
         </div>
       </div>
@@ -515,6 +519,11 @@ export default function NegabaritnyeIntroV2(props) {
           <div className={s["switch-text"]}>
             <p className={s["switch-text-h"]}>{headText2}</p>
             <p className={s["switch-text-p"]}>{text2}</p>
+            <Image
+              className={s["about-img-1-2"]}
+              src={photoNegabarit2}
+              alt="Фото негабаритные перевозки 2"
+            />
           </div>
         </div>
       </div>
@@ -630,6 +639,11 @@ export default function NegabaritnyeIntroV2(props) {
           <div className={s["switch-text"]}>
             <p className={s["switch-text-h"]}>{headText3}</p>
             <p className={s["switch-text-p"]}>{text3}</p>
+            <Image
+              className={s["about-img-1-2"]}
+              src={photoNegabarit3}
+              alt="Фото негабаритные перевозки 3"
+            />
           </div>
         </div>
       </div>
